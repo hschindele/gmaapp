@@ -24,6 +24,14 @@ app = dash.Dash(__name__, suppress_callback_exceptions=True, external_stylesheet
 df = pd.read_csv("/Users/hschindele/Desktop/gmaapp/data/out.csv")
 hirdf = pd.read_csv("/Users/hschindele/Desktop/gmaapp/data/hirschalm.csv")
 waldf = pd.read_csv("/Users/hschindele/Desktop/gmaapp/data/waldtal.csv")
+elndf = pd.read_csv("/Users/hschindele/Desktop/gmaapp/data/elnakka.csv")
+daldf = pd.read_csv("/Users/hschindele/Desktop/gmaapp/data/dalarna.csv")
+rotdf = pd.read_csv("/Users/hschindele/Desktop/gmaapp/data/rotkamm.csv")
+saidf = pd.read_csv("/Users/hschindele/Desktop/gmaapp/data/saint luvette.csv")
+pasdf = pd.read_csv("/Users/hschindele/Desktop/gmaapp/data/passo grolla.csv")
+bendf = pd.read_csv("/Users/hschindele/Desktop/gmaapp/data/ben ailig.csv")
+moudf = pd.read_csv("/Users/hschindele/Desktop/gmaapp/data/mount fairview.csv")
+pindf = pd.read_csv("/Users/hschindele/Desktop/gmaapp/data/pinecone peaks.csv")
 allwrs = pd.read_csv("/Users/hschindele/Desktop/gmaapp/data/allwrs.csv")
 sortedwrs = pd.read_csv("/Users/hschindele/Desktop/gmaapp/data/sortedwrs.csv")
 challenges = pd.read_csv("/Users/hschindele/Desktop/gmaapp/data/gmachallenges.csv")
@@ -480,7 +488,7 @@ def mountain_layout(mountain, prefix, defchal):
                             value = 'Top 5',
                             style = {"width": "40%",'margin-left':'10px'},
                         )]),
-                        dbc.Col([html.Div(id='challenge info',style={"border":"2px black solid"}) ], style={'padding-right':30,'padding-top':50})
+                        dbc.Col([html.Div(id=prefix+' challenge info',style={"border":"2px black solid"}) ], style={'padding-right':30,'padding-top':50})
                     ]),
                     html.Br(),
                     html.Div(id=mountain+'-content'),
@@ -783,6 +791,14 @@ sidebar = html.Div(
             [
                 dbc.NavLink("Hirschalm 🇦🇹", href="/hirschalm", active="exact"),
                 dbc.NavLink("Waldtal 🇩🇪", href="/waldtal", active="exact"),
+                dbc.NavLink("Elnakka", href="/elnakka", active="exact"),
+                dbc.NavLink("Dalarna", href="/dalarna", active="exact"),
+                dbc.NavLink("Rotkamm", href="rotkamm", active="exact"),
+                dbc.NavLink("Saint Luvette", href="/saintluvette", active="exact"),
+                dbc.NavLink("Passo Grolla", href="/passogrolla", active="exact"),
+                dbc.NavLink("Ben Ailig", href="/benailig", active="exact"),
+                dbc.NavLink("Mount Fairview", href="/mountfairview", active="exact"),
+                dbc.NavLink("Pinecone Peaks", href="/pineconepeaks", active="exact")
             ],
             vertical=True,
             pills=True,
@@ -978,7 +994,9 @@ records_layout = html.Div([
                         }
                     )
                 ])
-            ]),
+            ],
+            justify='start',
+            ),
             html.Br(),
             dbc.Row([
                 html.Div(id='record-content')
@@ -996,6 +1014,22 @@ def display_page(pathname):
         return hirschalm_layout
     elif pathname == '/waldtal':
         return waldtal_layout
+    elif pathname == '/elnakka':
+        return elnakka_layout
+    elif pathname == '/dalarna':
+        return dalarna_layout
+    elif pathname == '/rotkamm':
+        return rotkamm_layout
+    elif pathname == '/saintluvette':
+        return saint_luvette_layout
+    elif pathname == '/passogrolla':
+        return passo_grolla_layout
+    elif pathname == '/benailig':
+        return ben_ailig_layout
+    elif pathname == '/mountfairview':
+        return mount_fairview_layout
+    elif pathname == '/pineconepeaks':
+        return pinecone_peaks_layout
     elif pathname == '/player-search':
         return player_layout
     elif pathname == '/records-and-rankings':
@@ -1214,9 +1248,7 @@ def update_player_page(playername, n_clicks):
                              style = {'maxHeight': '500px','overflow': 'scroll'}
                     )
                 ])
-            ],
-            justify = 'center',
-        )
+            ])
 @app.callback(Output('player-comp-cont', 'children'), [Input('Player-Select', 'value'),Input('Player-Compare-Select', 'value')])
 def player_compare(orgplayer, playertocomp):
     playerinfo = makePBdf(orgplayer)
@@ -1611,17 +1643,13 @@ def update_record(chaltypedrop, sorttype):
         ],style={'margin-left':15}
         )
         
-#======  HIRSCHALM  ==========================================================
+#====== MOUNTAIN STUFF ==========================================================
 
-hirschalm_layout = mountain_layout('Hirschalm','Hir','The First Turns')
-waldtal_layout = mountain_layout('Waldtal','Wal','The Woodland Slalom')
-        
-@app.callback(Output('Hirschalm-content', 'children'), [Input('Hir_dropdown', 'value'), Input('Range', 'value'),Input('Players','value')])
-def update_rows(challenge_selected, range_selected, player_selected):
+def mountaincontent(challenge_selected, range_selected, player_selected, mountain):
     istt = True
     type = 'Time'
     wrdff = allwrs.copy()
-    if (challenge_selected == 'Glacier Park') | (challenge_selected == 'The Glacier Kicker'):
+    if challenges[challenges['Challenge Name'] == challenge_selected].iloc[0].type != 'Time Trial':
         istt = False
         type = 'Score'
         
@@ -1634,9 +1662,9 @@ def update_rows(challenge_selected, range_selected, player_selected):
     elif range_selected == "All":
         num = dff['Name'].nunique()
         
-    sumdt = ttwrs[ttwrs['Mountain'] == 'Hirschalm']
+    sumdt = ttwrs[ttwrs['Mountain'] == mountain]
     sumofbest = (sumdt['score'].sum())*1000
-    wrdff = wrdff[wrdff['Mountain'] == 'Hirschalm']
+    wrdff = wrdff[wrdff['Mountain'] == mountain]
     wrdff = wrdff[['challenge name', 'score','Name','Timestamp','OS','chaltype']]
     
     if num > dff['Name'].nunique():
@@ -1655,7 +1683,7 @@ def update_rows(challenge_selected, range_selected, player_selected):
     dff10 = dff10.rename(columns={'Timestamp':'Date Set', 'score':'Score'})
     wrdff = wrdff.rename(columns={'Timestamp':'Date Set', 'challenge name':'Challenge Name', 'score':'Score'})
     wrdff = wrdff.set_index('Challenge Name')
-    wrdff = wrdff.reindex(index=get_challenge_names('Hirschalm')['Challenge Name'])
+    wrdff = wrdff.reindex(index=get_challenge_names(mountain)['Challenge Name'])
     wrdff = wrdff.reset_index()
         
     columns =  [{"name": i, "id": i,} for i in (dff10.columns)]
@@ -1785,28 +1813,27 @@ def update_rows(challenge_selected, range_selected, player_selected):
                 )
             ]),
             dbc.Col([
-                html.H2("Hirschalm WRs",
+                html.H2(mountain+" WRs",
                     style={'text-decoration':'underline'}
                 ),
                 html.Div([curwrsdt],
                     style={'display': 'inline-block','padding-right':20}
                 ),
-                html.H5("Hirschalm Sum Of Best: "+convertMillisNoHours(int(sumofbest)),
+                html.H5(mountain+" Sum Of Best: "+convertMillisNoHours(int(sumofbest)),
                     style={'textAlign':'center'}
                 )
             ])
         ]
     ),html.Br()
 
-@app.callback(Output('Hirschalm-content2', 'children'), [Input('Hir_dropdown','value'),Input('Players','value')])
-def update_graph_hir(challenge_selected, player_selected):
+def graphinfo(challenge_selected, player_selected, indf):
     istt = True
     type = 'Time'
     wrdff = allwrs.copy()
-    if (challenge_selected == 'Glacier Park') | (challenge_selected == 'The Glacier Kicker'):
+    if challenges[challenges['Challenge Name'] == challenge_selected].iloc[0].type != 'Time Trial':
         istt = False
         type = 'Score'
-    dff = hirdf.copy()
+    dff = indf.copy()
     dff = dff[dff["challenge name"] == challenge_selected]
     dffpast = dff[dff['Was WR'] == True]
     curnumWRs = dff.shape[0]
@@ -1835,14 +1862,13 @@ def update_graph_hir(challenge_selected, player_selected):
         'displayModeBar': False
     })
     
-@app.callback(Output('challenge info','children'),Input('Hir_dropdown', 'value'))
-def update_hir_info(challenge_selected):
+def challengeinfo(challenge_selected, indf):
     istt = True
     type = 'Time'
-    if (challenge_selected == 'Glacier Park') | (challenge_selected == 'The Glacier Kicker'):
+    if challenges[challenges['Challenge Name'] == challenge_selected].iloc[0].type != 'Time Trial':
         istt = False
         type = 'Score'
-    dff = hirdf.copy()
+    dff = indf.copy()
     dff = dff[dff["challenge name"] == challenge_selected]
     dffpast = dff[dff['Was WR'] == True]
     curnumWRs = dffpast.shape[0]
@@ -1886,6 +1912,146 @@ def update_hir_info(challenge_selected):
             html.H5("Current WR Holder: "+wr['Name'],
             style={'text-align': 'Center'}
             )]
+
+hirschalm_layout = mountain_layout('Hirschalm','Hir','The First Turns')
+waldtal_layout = mountain_layout('Waldtal','Wal','The Woodland Slalom')
+elnakka_layout = mountain_layout('Elnakka','Eln','The Elements')
+dalarna_layout = mountain_layout('Dalarna','Dal','The Dala Horse Trail')
+rotkamm_layout = mountain_layout('Rotkamm','Rot','The Village Run')
+saint_luvette_layout = mountain_layout('Saint Luvette','Sai','Tour De Moyen')
+passo_grolla_layout = mountain_layout('Passo Grolla','Pas','Loggers Groove')
+ben_ailig_layout = mountain_layout('Ben Ailig','Ben','The Swindler')
+mount_fairview_layout = mountain_layout('Mount Fairview','Mou','Grand Mountain Cup I')
+pinecone_peaks_layout = mountain_layout('Pinecone Peaks','Pin','City Woods')
+
+@app.callback(Output('Hirschalm-content', 'children'), [Input('Hir_dropdown', 'value'), Input('Range', 'value'),Input('Players','value')])
+def update_hir_rows(challenge_selected, range_selected, player_selected):
+    return mountaincontent(challenge_selected, range_selected, player_selected, 'Hirschalm')
+            
+@app.callback(Output('Hir challenge info','children'),Input('Hir_dropdown', 'value'))
+def update_hir_info(challenge_selected):
+    return challengeinfo(challenge_selected, hirdf)
+    
+@app.callback(Output('Hirschalm-content2', 'children'), [Input('Hir_dropdown','value'),Input('Players','value')])
+def update_graph_hir(challenge_selected, player_selected):
+    return graphinfo(challenge_selected, player_selected, hirdf)
+    
+    
+@app.callback(Output('Waldtal-content', 'children'), [Input('Wal_dropdown', 'value'), Input('Range', 'value'),Input('Players','value')])
+def update_wal_rows(challenge_selected, range_selected, player_selected):
+    return mountaincontent(challenge_selected, range_selected, player_selected, 'Waldtal')
+
+@app.callback(Output('Wal challenge info','children'),Input('Wal_dropdown', 'value'))
+def update_wal_info(challenge_selected):
+    return challengeinfo(challenge_selected, waldf)
+    
+@app.callback(Output('Waldtal-content2', 'children'), [Input('Wal_dropdown','value'),Input('Players','value')])
+def update_graph_wal(challenge_selected, player_selected):
+    return graphinfo(challenge_selected, player_selected, waldf)
+    
+    
+@app.callback(Output('Elnakka-content', 'children'), [Input('Eln_dropdown', 'value'), Input('Range', 'value'),Input('Players','value')])
+def update_eln_rows(challenge_selected, range_selected, player_selected):
+    return mountaincontent(challenge_selected, range_selected, player_selected, 'Elnakka')
+
+@app.callback(Output('Eln challenge info','children'),Input('Eln_dropdown', 'value'))
+def update_eln_info(challenge_selected):
+    return challengeinfo(challenge_selected, elndf)
+    
+@app.callback(Output('Elnakka-content2', 'children'), [Input('Eln_dropdown','value'),Input('Players','value')])
+def update_graph_eln(challenge_selected, player_selected):
+    return graphinfo(challenge_selected, player_selected, elndf)
+    
+    
+@app.callback(Output('Dalarna-content', 'children'), [Input('Dal_dropdown', 'value'), Input('Range', 'value'),Input('Players','value')])
+def update_dal_rows(challenge_selected, range_selected, player_selected):
+    return mountaincontent(challenge_selected, range_selected, player_selected, 'Dalarna')
+
+@app.callback(Output('Dal challenge info','children'),Input('Dal_dropdown', 'value'))
+def update_dal_info(challenge_selected):
+    return challengeinfo(challenge_selected, daldf)
+    
+@app.callback(Output('Dalarna-content2', 'children'), [Input('Dal_dropdown','value'),Input('Players','value')])
+def update_graph_dal(challenge_selected, player_selected):
+    return graphinfo(challenge_selected, player_selected, daldf)
+    
+    
+@app.callback(Output('Rotkamm-content', 'children'), [Input('Rot_dropdown', 'value'), Input('Range', 'value'),Input('Players','value')])
+def update_rot_rows(challenge_selected, range_selected, player_selected):
+    return mountaincontent(challenge_selected, range_selected, player_selected, 'Rotkamm')
+
+@app.callback(Output('Rot challenge info','children'),Input('Rot_dropdown', 'value'))
+def update_rot_info(challenge_selected):
+    return challengeinfo(challenge_selected, rotdf)
+    
+@app.callback(Output('Rotkamm-content2', 'children'), [Input('Rot_dropdown','value'),Input('Players','value')])
+def update_graph_rot(challenge_selected, player_selected):
+    return graphinfo(challenge_selected, player_selected, rotdf)
+    
+    
+@app.callback(Output('Saint Luvette-content', 'children'), [Input('Sai_dropdown', 'value'), Input('Range', 'value'),Input('Players','value')])
+def update_sai_rows(challenge_selected, range_selected, player_selected):
+    return mountaincontent(challenge_selected, range_selected, player_selected, 'Saint Luvette')
+
+@app.callback(Output('Sai challenge info','children'),Input('Sai_dropdown', 'value'))
+def update_sai_info(challenge_selected):
+    return challengeinfo(challenge_selected, saidf)
+    
+@app.callback(Output('Saint Luvette-content2', 'children'), [Input('Sai_dropdown','value'),Input('Players','value')])
+def update_graph_sai(challenge_selected, player_selected):
+    return graphinfo(challenge_selected, player_selected, saidf)
+    
+    
+@app.callback(Output('Passo Grolla-content', 'children'), [Input('Pas_dropdown', 'value'), Input('Range', 'value'),Input('Players','value')])
+def update_pas_rows(challenge_selected, range_selected, player_selected):
+    return mountaincontent(challenge_selected, range_selected, player_selected, 'Passo Grolla')
+
+@app.callback(Output('Pas challenge info','children'),Input('Pas_dropdown', 'value'))
+def update_pas_info(challenge_selected):
+    return challengeinfo(challenge_selected, pasdf)
+    
+@app.callback(Output('Passo Grolla-content2', 'children'), [Input('Pas_dropdown','value'),Input('Players','value')])
+def update_graph_pas(challenge_selected, player_selected):
+    return graphinfo(challenge_selected, player_selected, pasdf)
+
+
+@app.callback(Output('Ben Ailig-content', 'children'), [Input('Ben_dropdown', 'value'), Input('Range', 'value'),Input('Players','value')])
+def update_ben_rows(challenge_selected, range_selected, player_selected):
+    return mountaincontent(challenge_selected, range_selected, player_selected, 'Ben Ailig')
+
+@app.callback(Output('Ben challenge info','children'),Input('Ben_dropdown', 'value'))
+def update_ben_info(challenge_selected):
+    return challengeinfo(challenge_selected, bendf)
+    
+@app.callback(Output('Ben Ailig-content2', 'children'), [Input('Ben_dropdown','value'),Input('Players','value')])
+def update_graph_ben(challenge_selected, player_selected):
+    return graphinfo(challenge_selected, player_selected, bendf)
+
+
+@app.callback(Output('Mount Fairview-content', 'children'), [Input('Mou_dropdown', 'value'), Input('Range', 'value'),Input('Players','value')])
+def update_mou_rows(challenge_selected, range_selected, player_selected):
+    return mountaincontent(challenge_selected, range_selected, player_selected, 'Mount Fairview')
+
+@app.callback(Output('Mou challenge info','children'),Input('Mou_dropdown', 'value'))
+def update_mou_info(challenge_selected):
+    return challengeinfo(challenge_selected, moudf)
+    
+@app.callback(Output('Mount Fairview-content2', 'children'), [Input('Mou_dropdown','value'),Input('Players','value')])
+def update_graph_mou(challenge_selected, player_selected):
+    return graphinfo(challenge_selected, player_selected, moudf)
+    
+
+@app.callback(Output('Pinecone Peaks-content', 'children'), [Input('Pin_dropdown', 'value'), Input('Range', 'value'),Input('Players','value')])
+def update_pin_rows(challenge_selected, range_selected, player_selected):
+    return mountaincontent(challenge_selected, range_selected, player_selected, 'Pinecone Peaks')
+
+@app.callback(Output('Pin challenge info','children'),Input('Pin_dropdown', 'value'))
+def update_pin_info(challenge_selected):
+    return challengeinfo(challenge_selected, pindf)
+    
+@app.callback(Output('Pinecone Peaks-content2', 'children'), [Input('Pin_dropdown','value'),Input('Players','value')])
+def update_graph_pin(challenge_selected, player_selected):
+    return graphinfo(challenge_selected, player_selected, pindf)
     
 if __name__ == '__main__':
 	app.run_server(debug=True)
