@@ -45,17 +45,22 @@ recentnames = recentdf[recentdf['Days Since'] <= 30].Name.unique()
 def getTDcount(player):
     return int(TDdf[TDdf['Name'] == player].TD.iloc[0])
 
-def calcSumofBests():
-    sum_of_bests = []
-    sumdt = sortedwrs[sortedwrs['type'] != 'High score']
-    for mountain in mountains_list:
-        mtnsumdt = sumdt[sumdt['Mountain'] == mountain]
-        sumofbest = (mtnsumdt['score'].sum())*1000
-        sum_of_bests.append(sumofbest)
-    return sum_of_bests
-
-sum_of_bests = calcSumofBests()
-                  
+def getchallengeImage(chaltype, width, height):
+    if chaltype == 'Race':
+        return html.Img(src=app.get_asset_url('challenge_gatetime.png'),style={'height':height, 'width':width})
+    elif chaltype == 'Trail' or chaltype == 'Airtime' or chaltype == 'Long Jump' or chaltype == 'Slap' or chaltype == 'Single Trick' or chaltype == 'Single Drop':
+        return html.Img(src=app.get_asset_url('challenge_trial.png'),style={'height':height, 'width':width})
+    elif chaltype == 'TTB':
+        return html.Img(src=app.get_asset_url('challenge_toptobottom_trial.png'),style={'height':height, 'width':width})
+    elif chaltype == 'Distance':
+        return html.Img(src=app.get_asset_url('challenge_distance.png'),style={'height':height, 'width':width})
+    elif chaltype == 'Gated Trick':
+        return html.Img(src=app.get_asset_url('challenge_gatetrick.png'),style={'height':height, 'width':width})
+    elif chaltype == 'Open Trick':
+        return html.Img(src=app.get_asset_url('challenge_timetrick.png'),style={'height':height, 'width':width})
+    elif chaltype == 'Triple Drop':
+        return html.Img(src=app.get_asset_url('challenge_drop.png'),style={'height':height, 'width':width})
+    
 def calcHSpoints(x1,y1,x2,y2,score):
     gradient = (np.log(y2)-np.log(y1))/(x2-x1)
     intercept = np.log(y1)-(gradient*x1)
@@ -111,6 +116,80 @@ def makemountainWRs(sortedcopy, type):
                     'textAlign': 'center'
                 }
             ],
+            style_data_conditional=[
+                {
+                    'if': {
+                        'filter_query': '{chaltype} eq "Race"'
+                    },
+                    'backgroundColor': '#6abe7c'
+                },
+                {
+                    'if': {
+                        'filter_query': '{chaltype} eq "Trail"'
+                    },
+                    'backgroundColor': '#deabd8'
+                },
+                {
+                    'if': {
+                        'filter_query': '{chaltype} eq "Slap"'
+                    },
+                    'backgroundColor': '#deabd8'
+                },
+                {
+                    'if': {
+                        'filter_query': '{chaltype} eq "Single Trick"'
+                    },
+                    'backgroundColor': '#deabd8'
+                },
+                {
+                    'if': {
+                        'filter_query': '{chaltype} eq "Single Drop"'
+                    },
+                    'backgroundColor': '#deabd8'
+                },
+                {
+                    'if': {
+                        'filter_query': '{chaltype} eq "Airtime"'
+                    },
+                    'backgroundColor': '#deabd8'
+                },
+                {
+                    'if': {
+                        'filter_query': '{chaltype} eq "Long Jump"'
+                    },
+                    'backgroundColor': '#deabd8'
+                },
+                {
+                    'if': {
+                        'filter_query': '{chaltype} eq "TTB"'
+                    },
+                    'backgroundColor': '#9c6ab3'
+                },
+                {
+                    'if': {
+                        'filter_query': '{chaltype} eq "Gated Trick"'
+                    },
+                    'backgroundColor': '#fe7198'
+                },
+                {
+                    'if': {
+                        'filter_query': '{chaltype} eq "Open Trick"'
+                    },
+                    'backgroundColor': '#ffa162'
+                },
+                {
+                    'if': {
+                        'filter_query': '{chaltype} eq "Distance"'
+                    },
+                    'backgroundColor': '#4d9bd8'
+                },
+                {
+                    'if': {
+                        'filter_query': '{chaltype} eq "Triple Drop"'
+                    },
+                    'backgroundColor': '#55c8ba'
+                }
+            ],
             hidden_columns=['chaltype','type','Mountain']
         )
         wrtables.append(wrdt)
@@ -147,6 +226,84 @@ def makemountainrankings(chaltype):
 overallranks = makemountainrankings('')
 ttranks = makemountainrankings('tt')
 hsranks = makemountainrankings('hs')
+
+def makecomparisonPB(pbdf, orgplayer, playertocomp):
+    pblist = []
+    orgsum = []
+    compsum = []
+    for mountain in mountains_list:
+        mountaintable = pbdf[pbdf['Mountain'] == mountain]
+        orgcolumns =  [{"name": i, "id": i,} for i in (mountaintable.columns)]
+        mountaindt = dt.DataTable(
+            data=mountaintable.to_dict('rows'),
+            columns=orgcolumns,
+            css=[{'selector': ".show-hide", "rule": "display: none"}],
+            style_header={ 'border': '1px solid black' },
+            style_cell={'textAlign':'center','border': '1px solid grey'},
+            hidden_columns=['Better','Mountain','type','chaltype'],
+            style_data_conditional=[
+                {
+                    'if': {
+                        'filter_query': '{Better} = 1',
+                        'column_id': orgplayer
+                    },
+                    'backgroundColor': '#c0ff00'
+                },
+                {
+                    'if': {
+                        'filter_query': '{Better} = 1',
+                        'column_id': playertocomp
+                    },
+                    'backgroundColor': '#d3d3d3'
+                },
+                {
+                    'if': {
+                        'filter_query': '{Better} = 0',
+                        'column_id': playertocomp
+                    },
+                    'backgroundColor': '#c0ff00'
+                },
+                {
+                    'if': {
+                        'filter_query': '{Better} = 0',
+                        'column_id': orgplayer
+                    },
+                    'backgroundColor': '#d3d3d3'
+                },
+                {
+                    'if': {
+                        'filter_query': '{Better} = 2',
+                        'column_id': orgplayer
+                    },
+                    'backgroundColor': '#d3d3d3'
+                },
+                {
+                    'if': {
+                        'filter_query': '{Better} = 2',
+                        'column_id': playertocomp
+                    },
+                    'backgroundColor': '#d3d3d3'
+                }
+            ],
+            fill_width=False,
+        )
+        pblist.append(mountaindt)
+        ttdt = mountaintable[mountaintable['type'] == 'Time Trial']
+        if 'No Score' in ttdt[orgplayer].values:
+            orgsum.append('Incomplete')
+        else:
+            ttdt[orgplayer] = pd.to_numeric(ttdt[orgplayer])
+            presum = (ttdt[orgplayer].sum())*1000
+            sumofbest = convertMillisNoHours(int(presum))
+            orgsum.append(sumofbest)
+        if 'No Score' in ttdt[playertocomp].values:
+            compsum.append('Incomplete')
+        else:
+            ttdt[playertocomp] = pd.to_numeric(ttdt[playertocomp])
+            presum = (ttdt[playertocomp].sum())*1000
+            sumofbest = convertMillisNoHours(int(presum))
+            compsum.append(sumofbest)
+    return pblist, orgsum, compsum
 
 def mountainrankpage(outtype):
     if outtype != 'timetrial' and outtype != 'highscore':
@@ -374,6 +531,116 @@ def convertMillisNoHours(millis):
         seconds = '0'+str(mils)
     return str(minutes)+":"+str(seconds)+"."+str(mils)[:2]
 
+def makemountainPBs(pbdf):
+    pbtables = []
+    sumofbests = []
+    for mountain in mountains_list:
+        mountaincopy = pbdf[pbdf['Mountain'] == mountain]
+        ttdt = mountaincopy[mountaincopy['type'] == 'Time Trial']
+        if 'No Score' in ttdt['Time / Score'].values:
+            sumofbests.append('Incomplete')
+        else:
+            ttdt['Time / Score'] = pd.to_numeric(ttdt['Time / Score'])
+            presum = (ttdt['Time / Score'].sum())*1000
+            sumofbest = convertMillisNoHours(int(presum))
+            sumofbests.append(sumofbest)
+        playerdt = dt.DataTable(
+            data=mountaincopy.to_dict('rows'),
+            columns=[{'name': i, 'id': i} for i in mountaincopy.columns],
+            css=[{'selector': ".show-hide", "rule": "display: none"}],
+            style_header={ 'border': '1px solid black' },
+            style_cell={'textAlign':'center','border': '1px solid grey'},
+            fill_width=False,
+            style_data_conditional=[
+                {
+                    'if': {
+                        'filter_query': '{chaltype} eq "Race"'
+                    },
+                    'backgroundColor': '#6abe7c'
+                },
+                {
+                    'if': {
+                        'filter_query': '{chaltype} eq "Trail"'
+                    },
+                    'backgroundColor': '#deabd8'
+                },
+                {
+                    'if': {
+                        'filter_query': '{chaltype} eq "Slap"'
+                    },
+                    'backgroundColor': '#deabd8'
+                },
+                {
+                    'if': {
+                        'filter_query': '{chaltype} eq "Single Trick"'
+                    },
+                    'backgroundColor': '#deabd8'
+                },
+                {
+                    'if': {
+                        'filter_query': '{chaltype} eq "Single Drop"'
+                    },
+                    'backgroundColor': '#deabd8'
+                },
+                {
+                    'if': {
+                        'filter_query': '{chaltype} eq "Airtime"'
+                    },
+                    'backgroundColor': '#deabd8'
+                },
+                {
+                    'if': {
+                        'filter_query': '{chaltype} eq "Long Jump"'
+                    },
+                    'backgroundColor': '#deabd8'
+                },
+                {
+                    'if': {
+                        'filter_query': '{chaltype} eq "TTB"'
+                    },
+                    'backgroundColor': '#9c6ab3'
+                },
+                {
+                    'if': {
+                        'filter_query': '{chaltype} eq "Gated Trick"'
+                    },
+                    'backgroundColor': '#fe7198'
+                },
+                {
+                    'if': {
+                        'filter_query': '{chaltype} eq "Open Trick"'
+                    },
+                    'backgroundColor': '#ffa162'
+                },
+                {
+                    'if': {
+                        'filter_query': '{chaltype} eq "Distance"'
+                    },
+                    'backgroundColor': '#4d9bd8'
+                },
+                {
+                    'if': {
+                        'filter_query': '{chaltype} eq "Triple Drop"'
+                    },
+                    'backgroundColor': '#55c8ba'
+                }
+            ],
+            hidden_columns=['type','Mountain','chaltype']
+        )
+        pbtables.append(playerdt)
+    return pbtables, sumofbests
+
+def calcSumofBests():
+    sum_of_bests = []
+    sumdt = sortedwrs[sortedwrs['type'] != 'High score']
+    for mountain in mountains_list:
+        mtnsumdt = sumdt[sumdt['Mountain'] == mountain]
+        sumofbest = (mtnsumdt['score'].sum())*1000
+        sum_of_bests.append(convertMillisNoHours(int(sumofbest)))
+    return sum_of_bests
+
+sum_of_bests = calcSumofBests()
+
 
 def recentWRs():
     wrdf = allwrs.copy()
@@ -399,7 +666,6 @@ def makePBdf(playername):
         prevwrcount = len(prevplayerwrs.index)
         chaldf = challenges.copy()
         chaldf.reset_index(drop=True)
-        del chaldf['Mountain']
         chaldf['Time / Score'] = 0
         chaldf['Points'] = 0
         chaldf['Rank'] = 'N/A'
@@ -504,8 +770,8 @@ sidebar = html.Div(
         dbc.Nav(
             [
                 dbc.NavLink("Home", href="/home", active="exact"),
-                dbc.NavLink("Player Search", href="/player-search", active="exact"),
-                dbc.NavLink("Records and Rankings", href="/records-and-rankings", active="exact")
+                dbc.NavLink("Records and Rankings", href="/records-and-rankings", active="exact"),
+                dbc.NavLink("Player Search", href="/player-search", active="exact")
             ],
             vertical=True,
             pills=True
@@ -515,8 +781,8 @@ sidebar = html.Div(
         html.Hr(),
         dbc.Nav(
             [
-                dbc.NavLink("Hirschalm", href="/hirschalm", active="exact"),
-                dbc.NavLink("Waldtal", href="/waldtal", active="exact"),
+                dbc.NavLink("Hirschalm 🇦🇹", href="/hirschalm", active="exact"),
+                dbc.NavLink("Waldtal 🇩🇪", href="/waldtal", active="exact"),
             ],
             vertical=True,
             pills=True,
@@ -677,7 +943,7 @@ records_layout = html.Div([
                             {'label': 'All', 'value': 'all'},
                             {'label': 'Time Trial', 'value': 'timetrial'},
                             {'label': 'High Score', 'value': 'highscore'},
-                            {'label': 'By Mountain', 'value': 'mountain'}
+                            {'label': 'Mountain Pt Ranking', 'value': 'mountain'}
                         ],
                         value='all',
                         searchable=False,
@@ -685,6 +951,8 @@ records_layout = html.Div([
                             'width':'70%'
                         }
                     ),
+                ]),
+                dbc.Col([
                     html.H5('Sort By'),
                     dcc.Dropdown(
                         id='sortselect',
@@ -701,14 +969,15 @@ records_layout = html.Div([
                             'width':'70%'
                         }
                     ),
-                ],width=3
-                ),
-                html.Div([
-                    html.H5(' Community Sum of Best: '+convertMillis(int(totsumofbest))+' ')
-                ],
-                style={'border':'2px black solid','text-align': 'Center','verticalAlign':'middle'
-                    }
-                )
+                ]),
+                dbc.Col([
+                    html.Div([
+                        html.H5(' Community Sum of Best: '+convertMillis(int(totsumofbest))+' ')
+                    ],
+                    style={'border':'2px black solid','text-align': 'Center','verticalAlign':'middle'
+                        }
+                    )
+                ])
             ]),
             html.Br(),
             dbc.Row([
@@ -761,7 +1030,10 @@ def update_player_page(playername, n_clicks):
             hsrank = hsrankrow['Rank'].iloc[0] + 1
         playerinfo = makePBdf(playername)
         playerdf = playerinfo[7]
-        playerdf = playerdf.drop(columns=['type','chaltype'])
+        playersectionedinfo = makemountainPBs(playerdf)
+        mountainpbs = playersectionedinfo[0]
+        pbsumofbests = playersectionedinfo[1]
+        playerdf = playerdf.drop(columns=['chaltype'])
         playercolumns =  [{"name": i, "id": i,} for i in (playerdf.columns)]
         playerdt = dt.DataTable(
             data=playerdf.to_dict('rows'),
@@ -772,23 +1044,73 @@ def update_player_page(playername, n_clicks):
             fill_width=False,
         )
         recentpbs = playerinfo[6]
-        iswrstrings = ['','','','','']
-        for ind in range(5):
-            wrtocompare = sortedwrs[sortedwrs['challenge name'] == recentpbs['challenge name'].iloc[ind]].iloc[0]
-            originalsub = df[df['challenge name'] == recentpbs['challenge name'].iloc[ind]]
+        
+        numrecent = 5
+        if len(recentpbs.index) < 5:
+            numrecent = len(recentpbs.index)
+            
+        recent_submission_strings = []
+        for i in range(0, numrecent):
+            substring =  recentpbs['Timestamp'].iloc[i]+' - '+recentpbs['challenge name'].iloc[i]+' - '+str(recentpbs['score'].iloc[i])
+            wrtocompare = sortedwrs[sortedwrs['challenge name'] == recentpbs['challenge name'].iloc[i]].iloc[0]
+            originalsub = df[df['challenge name'] == recentpbs['challenge name'].iloc[i]]
             originalsub = originalsub[originalsub['Name'] == playername]
-            originalsub = originalsub[originalsub['score'] == recentpbs['score'].iloc[ind]]
-            if originalsub['Was WR'].iloc[0] == True:
-                iswrstrings[ind] = ' - (Prev WR)'
-            if wrtocompare['score'] == recentpbs['score'].iloc[ind]:
-                iswrstrings[ind] = ' - (WR)'
+            originalsub = originalsub[originalsub['score'] == recentpbs['score'].iloc[i]]
+            if wrtocompare['score'] == recentpbs['score'].iloc[i]:
+                substring = substring+' - (WR)'
+            elif originalsub['Was WR'].iloc[0] == True:
+                substring = substring+' - (Prev WR)'
+            recent_submission_strings.append(substring)
+
+            
         
         if n_clicks % 2 == 0:
             return dbc.Col([
                 html.H5(playername+"'s Personal Bests",
                 ),
                 dbc.Row([
-                    playerdt,
+                    dbc.Col([
+                        html.H5('Hirschalm'),
+                        mountainpbs[0],
+                        html.H5('Hirschalm Sum of Best: '+pbsumofbests[0]),
+                        html.Br(),
+                        html.H5('Waldtal'),
+                        mountainpbs[1],
+                        html.H5('Waldtal Sum of Best: '+pbsumofbests[1]),
+                        html.Br(),
+                        html.H5('Elnakka'),
+                        mountainpbs[2],
+                        html.H5('Elnakka Sum of Best: '+pbsumofbests[2]),
+                        html.Br(),
+                        html.H5('Dalarna'),
+                        mountainpbs[3],
+                        html.H5('Dalarna Sum of Best: '+pbsumofbests[3]),
+                        html.Br(),
+                        html.H5('Rotkamm'),
+                        mountainpbs[4],
+                        html.H5('Rotkamm Sum of Best: '+pbsumofbests[4]),
+                        html.Br(),
+                        html.H5('Saint Luvette'),
+                        mountainpbs[5],
+                        html.H5('Saint Luvette Sum of Best: '+pbsumofbests[5]),
+                        html.Br(),
+                        html.H5('Passo Grolla'),
+                        mountainpbs[6],
+                        html.H5('Passo Grolla Sum of Best: '+pbsumofbests[6]),
+                        html.Br(),
+                        html.H5('Ben Ailig'),
+                        mountainpbs[7],
+                        html.H5('Ben Ailig Sum of Best: '+pbsumofbests[7]),
+                        html.Br(),
+                        html.H5('Mount Fairview'),
+                        mountainpbs[8],
+                        html.H5('Mount Fairview Sum of Best: '+pbsumofbests[8]),
+                        html.Br(),
+                        html.H5('Pinecone Peaks'),
+                        mountainpbs[9],
+                        html.H5('Pinecone Peaks Sum of Best: '+pbsumofbests[9]),
+                        html.Br(),
+                    ]),
                     dbc.Col([
                         html.Div([
                             html.H3(playername+"'s Info TDs: "+str(getTDcount(playername))+" / 171",
@@ -837,11 +1159,7 @@ def update_player_page(playername, n_clicks):
                         html.Div([
                             html.H5("Recent Submissions"),
                             html.Hr(),
-                            html.Div(recentpbs['Timestamp'].iloc[0]+' - '+recentpbs['challenge name'].iloc[0]+' - '+str(recentpbs['score'].iloc[0])+iswrstrings[0]),
-                            html.Div(recentpbs['Timestamp'].iloc[1]+' - '+recentpbs['challenge name'].iloc[1]+' - '+str(recentpbs['score'].iloc[1])+iswrstrings[1]),
-                            html.Div(recentpbs['Timestamp'].iloc[2]+' - '+recentpbs['challenge name'].iloc[2]+' - '+str(recentpbs['score'].iloc[2])+iswrstrings[2]),
-                            html.Div(recentpbs['Timestamp'].iloc[3]+' - '+recentpbs['challenge name'].iloc[3]+' - '+str(recentpbs['score'].iloc[3])+iswrstrings[3]),
-                            html.Div(recentpbs['Timestamp'].iloc[4]+' - '+recentpbs['challenge name'].iloc[4]+' - '+str(recentpbs['score'].iloc[4])+iswrstrings[4]),
+                            html.Div([html.P(substring) for substring in recent_submission_strings])
                         ],
                         style = {'padding-left':40}),
                         html.Br(),
@@ -943,67 +1261,65 @@ def player_compare(orgplayer, playertocomp):
         orghs = len(hs[hs['Better'] == 1])
         comphs = len(hs[hs['Better'] == 0])
         drawhs = len(hs[hs['Better'] == 2])
-        playerdf = playerdf.drop(columns=['type','chaltype'])
-        orgcolumns =  [{"name": i, "id": i,} for i in (playerdf.columns)]
-        orgdt = dt.DataTable(
-            data=playerdf.to_dict('rows'),
-            columns=orgcolumns,
-            css=[{'selector': ".show-hide", "rule": "display: none"}],
-            style_header={ 'border': '1px solid black' },
-            style_cell={'textAlign':'center','border': '1px solid grey'},
-            hidden_columns=['Better'],
-            style_data_conditional=[
-                {
-                    'if': {
-                        'filter_query': '{Better} = 1',
-                        'column_id': orgplayer
-                    },
-                    'backgroundColor': '#c0ff00'
-                },
-                {
-                    'if': {
-                        'filter_query': '{Better} = 1',
-                        'column_id': playertocomp
-                    },
-                    'backgroundColor': '#d3d3d3'
-                },
-                {
-                    'if': {
-                        'filter_query': '{Better} = 0',
-                        'column_id': playertocomp
-                    },
-                    'backgroundColor': '#c0ff00'
-                },
-                {
-                    'if': {
-                        'filter_query': '{Better} = 0',
-                        'column_id': orgplayer
-                    },
-                    'backgroundColor': '#d3d3d3'
-                },
-                {
-                    'if': {
-                        'filter_query': '{Better} = 2',
-                        'column_id': orgplayer
-                    },
-                    'backgroundColor': '#d3d3d3'
-                },
-                {
-                    'if': {
-                        'filter_query': '{Better} = 2',
-                        'column_id': playertocomp
-                    },
-                    'backgroundColor': '#d3d3d3'
-                }
-            ],
-            fill_width=False,
-        )
+        compinfo = makecomparisonPB(playerdf, orgplayer, playertocomp)
+        pblist = compinfo[0]
+        orgsum = compinfo[1]
+        compsum = compinfo[2]
         return html.Div([
                 dbc.Row([
                     dbc.Col([
                         html.H3("Comparing against "+str(playertocomp)),
                         html.Hr(),
-                        orgdt
+                        html.H5('Hirschalm 🇦🇹'),
+                        pblist[0],
+                        html.H5(orgplayer+' Sum of Bests: '+orgsum[0]),
+                        html.H5(playertocomp+' Sum of Bests: '+compsum[0]),
+                        html.Br(),
+                        html.H5('Waldtal 🇩🇪'),
+                        pblist[1],
+                        html.H5(orgplayer+' Sum of Bests: '+orgsum[1]),
+                        html.H5(playertocomp+' Sum of Bests: '+compsum[1]),
+                        html.Br(),
+                        html.H5('Elnakka 🇫🇮'),
+                        pblist[2],
+                        html.H5(orgplayer+' Sum of Bests: '+orgsum[2]),
+                        html.H5(playertocomp+' Sum of Bests: '+compsum[2]),
+                        html.Br(),
+                        html.H5('Dalarna 🇸🇪'),
+                        pblist[3],
+                        html.H5(orgplayer+' Sum of Bests: '+orgsum[3]),
+                        html.H5(playertocomp+' Sum of Bests: '+compsum[3]),
+                        html.Br(),
+                        html.H5('Rotkamm 🇨🇭'),
+                        pblist[4],
+                        html.H5(orgplayer+' Sum of Bests: '+orgsum[4]),
+                        html.H5(playertocomp+' Sum of Bests: '+compsum[4]),
+                        html.Br(),
+                        html.H5('Saint Luvette 🇫🇷'),
+                        pblist[5],
+                        html.H5(orgplayer+' Sum of Bests: '+orgsum[5]),
+                        html.H5(playertocomp+' Sum of Bests: '+compsum[5]),
+                        html.Br(),
+                        html.H5('Passo Grolla 🇮🇹'),
+                        pblist[6],
+                        html.H5(orgplayer+' Sum of Bests: '+orgsum[6]),
+                        html.H5(playertocomp+' Sum of Bests: '+compsum[6]),
+                        html.Br(),
+                        html.H5('Ben Ailig 🏴󠁧󠁢󠁳󠁣󠁴󠁿'),
+                        pblist[7],
+                        html.H5(orgplayer+' Sum of Bests: '+orgsum[7]),
+                        html.H5(playertocomp+' Sum of Bests: '+compsum[7]),
+                        html.Br(),
+                        html.H5('Mount Fairview 🇨🇦'),
+                        pblist[8],
+                        html.H5(orgplayer+' Sum of Bests: '+orgsum[8]),
+                        html.H5(playertocomp+' Sum of Bests: '+compsum[8]),
+                        html.Br(),
+                        html.H5('Pinecone Peaks 🇺🇸'),
+                        pblist[9],
+                        html.H5(orgplayer+' Sum of Bests: '+orgsum[9]),
+                        html.H5(playertocomp+' Sum of Bests: '+compsum[9]),
+                        html.Br(),
                     ],
                     style={'margin-top':26}),
                     dbc.Col([
@@ -1098,6 +1414,80 @@ def update_record(chaltypedrop, sorttype):
                     'textAlign': 'center'
                 }
             ],
+            style_data_conditional=[
+                {
+                    'if': {
+                        'filter_query': '{chaltype} eq "Race"'
+                    },
+                    'backgroundColor': '#6abe7c'
+                },
+                {
+                    'if': {
+                        'filter_query': '{chaltype} eq "Trail"'
+                    },
+                    'backgroundColor': '#deabd8'
+                },
+                {
+                    'if': {
+                        'filter_query': '{chaltype} eq "Slap"'
+                    },
+                    'backgroundColor': '#deabd8'
+                },
+                {
+                    'if': {
+                        'filter_query': '{chaltype} eq "Single Trick"'
+                    },
+                    'backgroundColor': '#deabd8'
+                },
+                {
+                    'if': {
+                        'filter_query': '{chaltype} eq "Single Drop"'
+                    },
+                    'backgroundColor': '#deabd8'
+                },
+                {
+                    'if': {
+                        'filter_query': '{chaltype} eq "Airtime"'
+                    },
+                    'backgroundColor': '#deabd8'
+                },
+                {
+                    'if': {
+                        'filter_query': '{chaltype} eq "Long Jump"'
+                    },
+                    'backgroundColor': '#deabd8'
+                },
+                {
+                    'if': {
+                        'filter_query': '{chaltype} eq "TTB"'
+                    },
+                    'backgroundColor': '#9c6ab3'
+                },
+                {
+                    'if': {
+                        'filter_query': '{chaltype} eq "Gated Trick"'
+                    },
+                    'backgroundColor': '#fe7198'
+                },
+                {
+                    'if': {
+                        'filter_query': '{chaltype} eq "Open Trick"'
+                    },
+                    'backgroundColor': '#ffa162'
+                },
+                {
+                    'if': {
+                        'filter_query': '{chaltype} eq "Distance"'
+                    },
+                    'backgroundColor': '#4d9bd8'
+                },
+                {
+                    'if': {
+                        'filter_query': '{chaltype} eq "Triple Drop"'
+                    },
+                    'backgroundColor': '#55c8ba'
+                }
+            ],
             hidden_columns=['chaltype','Mountain','type'],
             page_size=numchallenges
         )
@@ -1115,6 +1505,7 @@ def update_record(chaltypedrop, sorttype):
                     dbc.Col([
                         html.Br(),
                         html.H5(returnstring+" World Records"),
+                        html.Br(),
                         wrdt,
                         html.Br(),
                         mtnranks
@@ -1141,45 +1532,56 @@ def update_record(chaltypedrop, sorttype):
                 dbc.Row([
                     dbc.Col([
                         html.H4(returnstring+" World Records"),
-                        html.H5('Hirschalm'),
+                        html.Br(),
+                        html.H4('Hirschalm 🇦🇹', className='title'),
+                        html.Hr(),
                         mountainwrlist[0],
-                        html.H5('Hirschalm Sum of Best: '+convertMillisNoHours(int(sum_of_bests[0]))),
+                        html.H4('Hirschalm Sum of Best: '+sum_of_bests[0]),
                         html.Br(),
-                        html.H5('Waldtal'),
+                        html.H4('Waldtal 🇩🇪'),
+                        html.Hr(),
                         mountainwrlist[1],
-                        html.H5('Waldtal Sum of Best: '+convertMillisNoHours(int(sum_of_bests[1]))),
+                        html.H4('Waldtal Sum of Best: '+sum_of_bests[1]),
                         html.Br(),
-                        html.H5('Elnakka'),
+                        html.H4('Elnakka 🇫🇮'),
+                        html.Hr(),
                         mountainwrlist[2],
-                        html.H5('Elnakka Sum of Best: '+convertMillisNoHours(int(sum_of_bests[2]))),
+                        html.H4('Elnakka Sum of Best: '+sum_of_bests[2]),
                         html.Br(),
-                        html.H5('Dalarna'),
+                        html.H4('Dalarna 🇸🇪'),
+                        html.Hr(),
                         mountainwrlist[3],
-                        html.H5('Dalarna Sum of Best: '+convertMillisNoHours(int(sum_of_bests[3]))),
+                        html.H4('Dalarna Sum of Best: '+sum_of_bests[3]),
                         html.Br(),
-                        html.H5('Rotkamm'),
+                        html.H4('Rotkamm 🇨🇭'),
+                        html.Hr(),
                         mountainwrlist[4],
-                        html.H5('Rotkamm Sum of Best: '+convertMillisNoHours(int(sum_of_bests[4]))),
+                        html.H4('Rotkamm Sum of Best: '+sum_of_bests[4]),
                         html.Br(),
-                        html.H6('Saint Luvette'),
+                        html.H4('Saint Luvette 🇫🇷'),
+                        html.Hr(),
                         mountainwrlist[5],
-                        html.H5('Saint Luvette Sum of Best: '+convertMillisNoHours(int(sum_of_bests[5]))),
+                        html.H4('Saint Luvette Sum of Best: '+sum_of_bests[5]),
                         html.Br(),
-                        html.H6('Passo Grolla'),
+                        html.H4('Passo Grolla 🇮🇹'),
+                        html.Hr(),
                         mountainwrlist[6],
-                        html.H5('Passo Grolla Sum of Best: '+convertMillisNoHours(int(sum_of_bests[6]))),
+                        html.H4('Passo Grolla Sum of Best: '+sum_of_bests[6]),
                         html.Br(),
-                        html.H6('Ben Ailig'),
+                        html.H4('Ben Ailig 🏴󠁧󠁢󠁳󠁣󠁴󠁿'),
+                        html.Hr(),
                         mountainwrlist[7],
-                        html.H5('Ben Ailig Sum of Best: '+convertMillisNoHours(int(sum_of_bests[7]))),
+                        html.H4('Ben Ailig Sum of Best: '+sum_of_bests[7]),
                         html.Br(),
-                        html.H6('Mount Fairview'),
+                        html.H4('Mount Fairview 🇨🇦'),
+                        html.Hr(),
                         mountainwrlist[8],
-                        html.H5('Mount Fairview Sum of Best: '+convertMillisNoHours(int(sum_of_bests[8]))),
+                        html.H4('Mount Fairview Sum of Best: '+sum_of_bests[8]),
                         html.Br(),
-                        html.H6('Passo Grolla'),
+                        html.H4('Pinecone Peaks 🇺🇸'),
+                        html.Hr(),
                         mountainwrlist[9],
-                        html.H5('Pinecone Peaks Sum of Best: '+convertMillisNoHours(int(sum_of_bests[9]))),
+                        html.H4('Pinecone Peaks Sum of Best: '+sum_of_bests[9]),
                         html.Br(),
                         mtnranks
                         ],
@@ -1187,7 +1589,9 @@ def update_record(chaltypedrop, sorttype):
                     ),
                     dbc.Col([
                         html.Br(),
+                        html.Br(),
                         html.H5(rankstring+" WR Totals"),
+                        html.Hr(),
                         dt.DataTable(data = sortuniqnamesindex.to_dict('rows'),
                             columns = sortuniqcolumns,
                             style_cell = {'text-align':'center'}
@@ -1195,6 +1599,7 @@ def update_record(chaltypedrop, sorttype):
                         html.Br(),
                         html.Br(),
                         html.H5(rankstring+" Point Rankings"),
+                        html.Hr(),
                         rankdt
                     ], width=3,
                     style={'margin-left':20,'margin-top':10})
@@ -1232,7 +1637,7 @@ def update_rows(challenge_selected, range_selected, player_selected):
     sumdt = ttwrs[ttwrs['Mountain'] == 'Hirschalm']
     sumofbest = (sumdt['score'].sum())*1000
     wrdff = wrdff[wrdff['Mountain'] == 'Hirschalm']
-    wrdff = wrdff[['challenge name', 'score','Name','Timestamp','OS']]
+    wrdff = wrdff[['challenge name', 'score','Name','Timestamp','OS','chaltype']]
     
     if num > dff['Name'].nunique():
         num = dff['Name'].nunique()
@@ -1256,8 +1661,6 @@ def update_rows(challenge_selected, range_selected, player_selected):
     columns =  [{"name": i, "id": i,} for i in (dff10.columns)]
     wrdata = wrdff.to_dict('rows')
     wrcolumns =  [{"name": i, "id": i,} for i in (wrdff.columns)]
-    
-            
     
     curchaldt = dt.DataTable(
         data=dff10.to_dict('rows'),
@@ -1283,6 +1686,7 @@ def update_rows(challenge_selected, range_selected, player_selected):
     curwrsdt = dt.DataTable(
         data=wrdata,
         columns = wrcolumns,
+        css=[{'selector': ".show-hide", "rule": "display: none"}],
         style_header={ 'border': '1px solid black' },
         style_cell={'textAlign':'center','border': '1px solid grey'},
         fill_width=False,
@@ -1295,7 +1699,82 @@ def update_rows(challenge_selected, range_selected, player_selected):
          'width': '60px'},
         {'if': {'column_id': 'Name'},
          'width': '200px', 'textAlign':'left'},
-        ]
+        ],
+        style_data_conditional=[
+                {
+                    'if': {
+                        'filter_query': '{chaltype} eq "Race"'
+                    },
+                    'backgroundColor': '#6abe7c'
+                },
+                {
+                    'if': {
+                        'filter_query': '{chaltype} eq "Trail"'
+                    },
+                    'backgroundColor': '#deabd8'
+                },
+                {
+                    'if': {
+                        'filter_query': '{chaltype} eq "Slap"'
+                    },
+                    'backgroundColor': '#deabd8'
+                },
+                {
+                    'if': {
+                        'filter_query': '{chaltype} eq "Single Trick"'
+                    },
+                    'backgroundColor': '#deabd8'
+                },
+                {
+                    'if': {
+                        'filter_query': '{chaltype} eq "Single Drop"'
+                    },
+                    'backgroundColor': '#deabd8'
+                },
+                {
+                    'if': {
+                        'filter_query': '{chaltype} eq "Airtime"'
+                    },
+                    'backgroundColor': '#deabd8'
+                },
+                {
+                    'if': {
+                        'filter_query': '{chaltype} eq "Long Jump"'
+                    },
+                    'backgroundColor': '#deabd8'
+                },
+                {
+                    'if': {
+                        'filter_query': '{chaltype} eq "TTB"'
+                    },
+                    'backgroundColor': '#9c6ab3'
+                },
+                {
+                    'if': {
+                        'filter_query': '{chaltype} eq "Gated Trick"'
+                    },
+                    'backgroundColor': '#fe7198'
+                },
+                {
+                    'if': {
+                        'filter_query': '{chaltype} eq "Open Trick"'
+                    },
+                    'backgroundColor': '#ffa162'
+                },
+                {
+                    'if': {
+                        'filter_query': '{chaltype} eq "Distance"'
+                    },
+                    'backgroundColor': '#4d9bd8'
+                },
+                {
+                    'if': {
+                        'filter_query': '{chaltype} eq "Triple Drop"'
+                    },
+                    'backgroundColor': '#55c8ba'
+                }
+        ],
+        hidden_columns=['chaltype']
     )
     
     return dbc.Row([dbc.Col([
@@ -1375,10 +1854,19 @@ def update_hir_info(challenge_selected):
     size = len(wrstring)
     if (not istt) and (size > 5):
         wrstring = wrstring[:size - 2]
-
-    return [html.H3(challenge_selected+" Info",
-            style={'text-align': 'Center'}
-            ),
+    chaltype = curchal.chaltype.iloc[0]
+    
+    return [html.Div([
+                html.Div(
+                    getchallengeImage(chaltype, '60%', '60%'), style={'display':'inline-block','margin-right':'4px'}
+                ),
+                html.Div(
+                    html.H3(challenge_selected+" Info "), style={'display':'inline-block'}
+                ),
+                html.Div(
+                    getchallengeImage(chaltype, '60%', '60%'), style={'display':'inline-block','margin-left':'8px'}
+                )
+            ], style={'textAlign':'center'}),
             html.Div([
                 html.H5("DD: "+str(dd),
                 style={'display':'inline-block','margin-left':'30px','margin-right':'30px'}
