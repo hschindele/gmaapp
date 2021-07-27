@@ -791,14 +791,14 @@ sidebar = html.Div(
             [
                 dbc.NavLink("Hirschalm 🇦🇹", href="/hirschalm", active="exact"),
                 dbc.NavLink("Waldtal 🇩🇪", href="/waldtal", active="exact"),
-                dbc.NavLink("Elnakka", href="/elnakka", active="exact"),
-                dbc.NavLink("Dalarna", href="/dalarna", active="exact"),
-                dbc.NavLink("Rotkamm", href="rotkamm", active="exact"),
-                dbc.NavLink("Saint Luvette", href="/saintluvette", active="exact"),
-                dbc.NavLink("Passo Grolla", href="/passogrolla", active="exact"),
-                dbc.NavLink("Ben Ailig", href="/benailig", active="exact"),
-                dbc.NavLink("Mount Fairview", href="/mountfairview", active="exact"),
-                dbc.NavLink("Pinecone Peaks", href="/pineconepeaks", active="exact")
+                dbc.NavLink("Elnakka 🇫🇮", href="/elnakka", active="exact"),
+                dbc.NavLink("Dalarna 🇸🇪", href="/dalarna", active="exact"),
+                dbc.NavLink("Rotkamm 🇨🇭", href="rotkamm", active="exact"),
+                dbc.NavLink("Saint Luvette 🇫🇷", href="/saintluvette", active="exact"),
+                dbc.NavLink("Passo Grolla 🇮🇹", href="/passogrolla", active="exact"),
+                dbc.NavLink("Ben Ailig 🏴󠁧󠁢󠁳󠁣󠁴󠁿", href="/benailig", active="exact"),
+                dbc.NavLink("Mount Fairview 🇨🇦", href="/mountfairview", active="exact"),
+                dbc.NavLink("Pinecone Peaks 🇺🇸", href="/pineconepeaks", active="exact")
             ],
             vertical=True,
             pills=True,
@@ -929,12 +929,9 @@ player_layout = html.Div([
                 ),
                 html.Button('Toggle Comparison Mode', id='playercompbutton', n_clicks=0),
                 html.Hr(),
-            ],
-            style = {'margin-right':'200px'}),
+            ]),
             html.Br(),
-            dbc.Row([
-                html.Div(id = 'page-select-content')
-            ])
+            html.Div(id = 'page-select-content')
         ],
         style = {'padding-left':60}
         )
@@ -962,10 +959,7 @@ records_layout = html.Div([
                             {'label': 'Mountain Pt Ranking', 'value': 'mountain'}
                         ],
                         value='all',
-                        searchable=False,
-                        style={
-                            'width':'70%'
-                        }
+                        searchable=False
                     ),
                 ]),
                 dbc.Col([
@@ -980,10 +974,7 @@ records_layout = html.Div([
                             {'label': 'Player', 'value': 'player'},
                         ],
                         value='def',
-                        searchable=False,
-                        style={
-                            'width':'70%'
-                        }
+                        searchable=False
                     ),
                 ]),
                 dbc.Col([
@@ -1100,49 +1091,50 @@ def update_player_page(playername, n_clicks):
         
         if n_clicks % 2 == 0:
             return dbc.Col([
-                html.H5(playername+"'s Personal Bests",
-                ),
+                html.H3(playername+"'s Personal Bests"),
+                html.Br(),
                 dbc.Row([
                     dbc.Col([
-                        html.H5('Hirschalm'),
+                        html.H4('Hirschalm 🇦🇹'),
+                        html.Hr(),
                         mountainpbs[0],
-                        html.H5('Hirschalm Sum of Best: '+pbsumofbests[0]),
+                        html.H4('Hirschalm Sum of Best: '+pbsumofbests[0]),
                         html.Br(),
-                        html.H5('Waldtal'),
+                        html.H4('Waldtal 🇩🇪'),
                         mountainpbs[1],
-                        html.H5('Waldtal Sum of Best: '+pbsumofbests[1]),
+                        html.H4('Waldtal Sum of Best: '+pbsumofbests[1]),
                         html.Br(),
-                        html.H5('Elnakka'),
+                        html.H4('Elnakka 🇫🇮'),
                         mountainpbs[2],
-                        html.H5('Elnakka Sum of Best: '+pbsumofbests[2]),
+                        html.H4('Elnakka Sum of Best: '+pbsumofbests[2]),
                         html.Br(),
-                        html.H5('Dalarna'),
+                        html.H4('Dalarna 🇸🇪'),
                         mountainpbs[3],
-                        html.H5('Dalarna Sum of Best: '+pbsumofbests[3]),
+                        html.H4('Dalarna Sum of Best: '+pbsumofbests[3]),
                         html.Br(),
-                        html.H5('Rotkamm'),
+                        html.H4('Rotkamm 🇨🇭'),
                         mountainpbs[4],
-                        html.H5('Rotkamm Sum of Best: '+pbsumofbests[4]),
+                        html.H4('Rotkamm Sum of Best: '+pbsumofbests[4]),
                         html.Br(),
-                        html.H5('Saint Luvette'),
+                        html.H4('Saint Luvette 🇫🇷'),
                         mountainpbs[5],
-                        html.H5('Saint Luvette Sum of Best: '+pbsumofbests[5]),
+                        html.H4('Saint Luvette Sum of Best: '+pbsumofbests[5]),
                         html.Br(),
-                        html.H5('Passo Grolla'),
+                        html.H4('Passo Grolla 🇮🇹'),
                         mountainpbs[6],
-                        html.H5('Passo Grolla Sum of Best: '+pbsumofbests[6]),
+                        html.H4('Passo Grolla Sum of Best: '+pbsumofbests[6]),
                         html.Br(),
-                        html.H5('Ben Ailig'),
+                        html.H4('Ben Ailig 🏴󠁧󠁢󠁳󠁣󠁴󠁿'),
                         mountainpbs[7],
-                        html.H5('Ben Ailig Sum of Best: '+pbsumofbests[7]),
+                        html.H4('Ben Ailig Sum of Best: '+pbsumofbests[7]),
                         html.Br(),
-                        html.H5('Mount Fairview'),
+                        html.H4('Mount Fairview 🇨🇦'),
                         mountainpbs[8],
-                        html.H5('Mount Fairview Sum of Best: '+pbsumofbests[8]),
+                        html.H4('Mount Fairview Sum of Best: '+pbsumofbests[8]),
                         html.Br(),
-                        html.H5('Pinecone Peaks'),
+                        html.H4('Pinecone Peaks 🇺🇸'),
                         mountainpbs[9],
-                        html.H5('Pinecone Peaks Sum of Best: '+pbsumofbests[9]),
+                        html.H4('Pinecone Peaks Sum of Best: '+pbsumofbests[9]),
                         html.Br(),
                     ]),
                     dbc.Col([
@@ -1249,6 +1241,7 @@ def update_player_page(playername, n_clicks):
                     )
                 ])
             ])
+            
 @app.callback(Output('player-comp-cont', 'children'), [Input('Player-Select', 'value'),Input('Player-Compare-Select', 'value')])
 def player_compare(orgplayer, playertocomp):
     playerinfo = makePBdf(orgplayer)
@@ -1302,52 +1295,52 @@ def player_compare(orgplayer, playertocomp):
                     dbc.Col([
                         html.H3("Comparing against "+str(playertocomp)),
                         html.Hr(),
-                        html.H5('Hirschalm 🇦🇹'),
+                        html.H4('Hirschalm 🇦🇹'),
                         pblist[0],
                         html.H5(orgplayer+' Sum of Bests: '+orgsum[0]),
                         html.H5(playertocomp+' Sum of Bests: '+compsum[0]),
                         html.Br(),
-                        html.H5('Waldtal 🇩🇪'),
+                        html.H4('Waldtal 🇩🇪'),
                         pblist[1],
                         html.H5(orgplayer+' Sum of Bests: '+orgsum[1]),
                         html.H5(playertocomp+' Sum of Bests: '+compsum[1]),
                         html.Br(),
-                        html.H5('Elnakka 🇫🇮'),
+                        html.H4('Elnakka 🇫🇮'),
                         pblist[2],
                         html.H5(orgplayer+' Sum of Bests: '+orgsum[2]),
                         html.H5(playertocomp+' Sum of Bests: '+compsum[2]),
                         html.Br(),
-                        html.H5('Dalarna 🇸🇪'),
+                        html.H4('Dalarna 🇸🇪'),
                         pblist[3],
                         html.H5(orgplayer+' Sum of Bests: '+orgsum[3]),
                         html.H5(playertocomp+' Sum of Bests: '+compsum[3]),
                         html.Br(),
-                        html.H5('Rotkamm 🇨🇭'),
+                        html.H4('Rotkamm 🇨🇭'),
                         pblist[4],
                         html.H5(orgplayer+' Sum of Bests: '+orgsum[4]),
                         html.H5(playertocomp+' Sum of Bests: '+compsum[4]),
                         html.Br(),
-                        html.H5('Saint Luvette 🇫🇷'),
+                        html.H4('Saint Luvette 🇫🇷'),
                         pblist[5],
                         html.H5(orgplayer+' Sum of Bests: '+orgsum[5]),
                         html.H5(playertocomp+' Sum of Bests: '+compsum[5]),
                         html.Br(),
-                        html.H5('Passo Grolla 🇮🇹'),
+                        html.H4('Passo Grolla 🇮🇹'),
                         pblist[6],
                         html.H5(orgplayer+' Sum of Bests: '+orgsum[6]),
                         html.H5(playertocomp+' Sum of Bests: '+compsum[6]),
                         html.Br(),
-                        html.H5('Ben Ailig 🏴󠁧󠁢󠁳󠁣󠁴󠁿'),
+                        html.H4('Ben Ailig 🏴󠁧󠁢󠁳󠁣󠁴󠁿'),
                         pblist[7],
                         html.H5(orgplayer+' Sum of Bests: '+orgsum[7]),
                         html.H5(playertocomp+' Sum of Bests: '+compsum[7]),
                         html.Br(),
-                        html.H5('Mount Fairview 🇨🇦'),
+                        html.H4('Mount Fairview 🇨🇦'),
                         pblist[8],
                         html.H5(orgplayer+' Sum of Bests: '+orgsum[8]),
                         html.H5(playertocomp+' Sum of Bests: '+compsum[8]),
                         html.Br(),
-                        html.H5('Pinecone Peaks 🇺🇸'),
+                        html.H4('Pinecone Peaks 🇺🇸'),
                         pblist[9],
                         html.H5(orgplayer+' Sum of Bests: '+orgsum[9]),
                         html.H5(playertocomp+' Sum of Bests: '+compsum[9]),
@@ -1362,11 +1355,13 @@ def player_compare(orgplayer, playertocomp):
                             dbc.Row([
                                 dbc.Col([
                                     html.H4('TT Comparison',style={'textAlign':'center'}),
-                                    html.H6(orgplayer+": "+str(orgtt)+" - "+playertocomp+": "+str(comptt)+" - ("+str(drawtt)+" draws)",style={'textAlign':'center'})
+                                    html.H6(orgplayer+": "+str(orgtt)+" - "+playertocomp+": "+str(comptt),style={'textAlign':'center'}),
+                                    html.H6("("+str(drawtt)+" draws)",style={'textAlign':'center'})
                                 ]),
                                 dbc.Col([
                                     html.H4('HS Comparison',style={'textAlign':'center'}),
-                                    html.H6(orgplayer+": "+str(orghs)+" - "+playertocomp+": "+str(comphs)+" - ("+str(drawhs)+" draws)",style={'textAlign':'center'})
+                                    html.H6(orgplayer+": "+str(orghs)+" - "+playertocomp+": "+str(comphs),style={'textAlign':'center'}),
+                                    html.H6("("+str(drawhs)+" draws)",style={'textAlign':'center'})
                                 ])
                             ]),
                             html.Hr(),
@@ -1536,7 +1531,8 @@ def update_record(chaltypedrop, sorttype):
                 dbc.Row([
                     dbc.Col([
                         html.Br(),
-                        html.H5(returnstring+" World Records"),
+                        html.H3(returnstring+" World Records"),
+                        html.Hr(),
                         html.Br(),
                         wrdt,
                         html.Br(),
@@ -1563,7 +1559,7 @@ def update_record(chaltypedrop, sorttype):
             return html.Div([
                 dbc.Row([
                     dbc.Col([
-                        html.H4(returnstring+" World Records"),
+                        html.H3(returnstring+" World Records"),
                         html.Br(),
                         html.H4('Hirschalm 🇦🇹', className='title'),
                         html.Hr(),
