@@ -15,13 +15,17 @@ import dash_html_components as html
 import pathlib
 from dash.dependencies import Input, Output
 from utils import Header
+import pathlib
+
+PATH = pathlib.Path(__file__).parent
+DATA_PATH = PATH.joinpath("../gmaapp/data").resolve()
 
 external_stylesheets = [dbc.themes.BOOTSTRAP]
 numchallenges = 260
 
-app = dash.Dash(__name__, suppress_callback_exceptions=True, external_stylesheets=external_stylesheets)
+app = dash.Dash(__name__, meta_tags=[{"name": "viewport", "content": "width=device-width"}],suppress_callback_exceptions=True, external_stylesheets=external_stylesheets)
 
-df = pd.read_csv("/Users/hschindele/Desktop/gmaapp/data/out.csv")
+df = pd.read_csv(DATA_PATH.joinpath("out.csv"))
 hirdf = pd.read_csv("/Users/hschindele/Desktop/gmaapp/data/hirschalm.csv")
 waldf = pd.read_csv("/Users/hschindele/Desktop/gmaapp/data/waldtal.csv")
 elndf = pd.read_csv("/Users/hschindele/Desktop/gmaapp/data/elnakka.csv")
@@ -2050,4 +2054,4 @@ def update_graph_pin(challenge_selected, player_selected):
     return graphinfo(challenge_selected, player_selected, pindf)
     
 if __name__ == '__main__':
-	app.run_server(debug=True)
+	app.run_server(host= '0.0.0.0',debug=False)
