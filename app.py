@@ -21,8 +21,8 @@ from Mountains import mountain_layout, mountaincontent, graphinfo, challengeinfo
 from recordsandrankings import makemountainWRs, makemountainrankings, mountainrankpage, records_layout
 from playerpage import makecomparisonPB, makemountainPBs, makePBdf, player_layout, update_player_page, player_compare
 
-PATH = pathlib.Path(__file__).parent
-DATA_PATH = PATH.joinpath("../gmaapp/data").resolve()
+PATH = pathlib.Path(__file__)
+DATA_PATH = PATH.joinpath("../data").resolve()
 
 external_stylesheets = [dbc.themes.BOOTSTRAP]
 numchallenges = 260

@@ -8,8 +8,8 @@ import dash_core_components as dcc
 import dash_html_components as html
 import pathlib
 
-PATH = pathlib.Path(__file__).parent
-DATA_PATH = PATH.joinpath("../gmaapp/data").resolve()
+PATH = pathlib.Path(__file__)
+DATA_PATH = PATH.joinpath("../data").resolve()
 challenges = pd.read_csv(DATA_PATH.joinpath("gmachallenges.csv"))
 TDdf = pd.read_csv(DATA_PATH.joinpath("TDDF.csv"))
 allwrs = pd.read_csv(DATA_PATH.joinpath("allwrs.csv"))

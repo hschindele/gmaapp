@@ -17,8 +17,8 @@ from dash.dependencies import Input, Output
 from utils import Header, sidebar
 from helpers import recentPBs, calcHSpoints, convertMillisNoHours, getTDcount
 
-PATH = pathlib.Path(__file__).parent
-DATA_PATH = PATH.joinpath("../gmaapp/data").resolve()
+PATH = pathlib.Path(__file__)
+DATA_PATH = PATH.joinpath("../data").resolve()
 
 df = pd.read_csv(DATA_PATH.joinpath("out.csv"))
 overallrankdf = pd.read_csv(DATA_PATH.joinpath("totalrank.csv"))

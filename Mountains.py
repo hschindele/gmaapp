@@ -15,8 +15,8 @@ external_stylesheets = [dbc.themes.BOOTSTRAP]
 
 app = dash.Dash(__name__, meta_tags=[{"name": "viewport", "content": "width=device-width"}],suppress_callback_exceptions=True, external_stylesheets=external_stylesheets)
 
-PATH = pathlib.Path(__file__).parent
-DATA_PATH = PATH.joinpath("../gmaapp/data").resolve()
+PATH = pathlib.Path(__file__)
+DATA_PATH = PATH.joinpath("../data").resolve()
 df = pd.read_csv(DATA_PATH.joinpath("out.csv"))
 allwrs = pd.read_csv(DATA_PATH.joinpath("allwrs.csv"))
 sortedwrs = pd.read_csv(DATA_PATH.joinpath("sortedwrs.csv"))

@@ -8,8 +8,8 @@ import pathlib
 from utils import Header, sidebar
 from helpers import convertMillis
 
-PATH = pathlib.Path(__file__).parent
-DATA_PATH = PATH.joinpath("../gmaapp/data").resolve()
+PATH = pathlib.Path(__file__)
+DATA_PATH = PATH.joinpath("../data").resolve()
 sortedwrs = pd.read_csv(DATA_PATH.joinpath("sortedwrs.csv"))
 
 external_stylesheets = [dbc.themes.BOOTSTRAP]
