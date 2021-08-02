@@ -20,6 +20,7 @@ distlib==0.3.2
 filelock==3.0.12
 Flask==2.0.1
 Flask-Compress==1.9.0
+gunicorn==19.0.0
 idna==2.9
 itsdangerous==2.0.1
 Jinja2==3.0.1
