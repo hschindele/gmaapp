@@ -556,3 +556,138 @@ def update_player_page(playername, n_clicks):
                     )
                 ])
             ])
+
+def player_compare(orgplayer, playertocomp):
+    playerinfo = makePBdf(orgplayer)
+    playerdf = playerinfo[7]
+    playerdf = playerdf.rename(columns={'Time / Score':orgplayer})
+    playerdf = playerdf.drop(columns=['DD','TD','Points','Rank'])
+    if playertocomp != '':
+        compinfo = makePBdf(playertocomp)
+        compdf = compinfo[7]
+        compdf = compdf.rename(columns={'Time / Score':playertocomp})
+        compdf = compdf.drop(columns=['DD','TD','Points'])
+        playerdf[playertocomp] = compdf[playertocomp]
+        playerdf['Better'] = 0
+        ind = 0
+        while ind < len(playerdf.index):
+            if (playerdf[orgplayer].iloc[ind] == 'No Score') and (playerdf[playertocomp].iloc[ind] == 'No Score'):
+                playerdf['Better'].iloc[ind] = 2
+            elif playerdf[orgplayer].iloc[ind] == 'No Score':
+                playerdf['Better'].iloc[ind] = 0
+            elif playerdf[playertocomp].iloc[ind] == 'No Score':
+                playerdf['Better'].iloc[ind] = 1
+            elif playerdf['type'].iloc[ind] == 'Time Trial':
+                if playerdf[orgplayer].iloc[ind] < playerdf[playertocomp].iloc[ind]:
+                    playerdf['Better'].iloc[ind] = 1
+                elif playerdf[orgplayer].iloc[ind] > playerdf[playertocomp].iloc[ind]:
+                    playerdf['Better'].iloc[ind] = 0
+                else:
+                    playerdf['Better'].iloc[ind] = 2
+            else:
+                if playerdf[orgplayer].iloc[ind] > playerdf[playertocomp].iloc[ind]:
+                    playerdf['Better'].iloc[ind] = 1
+                elif playerdf[orgplayer].iloc[ind] < playerdf[playertocomp].iloc[ind]:
+                    playerdf['Better'].iloc[ind] = 0
+                else:
+                    playerdf['Better'].iloc[ind] = 2
+            ind += 1
+        tts = playerdf[playerdf['type'] == 'Time Trial']
+        hs = playerdf[playerdf['type'] == 'High Score']
+        orgtt = len(tts[tts['Better'] == 1])
+        comptt = len(tts[tts['Better'] == 0])
+        drawtt = len(tts[tts['Better'] == 2])
+        orghs = len(hs[hs['Better'] == 1])
+        comphs = len(hs[hs['Better'] == 0])
+        drawhs = len(hs[hs['Better'] == 2])
+        compinfo = makecomparisonPB(playerdf, orgplayer, playertocomp)
+        pblist = compinfo[0]
+        orgsum = compinfo[1]
+        compsum = compinfo[2]
+        return html.Div([
+                dbc.Row([
+                    dbc.Col([
+                        html.H3("Comparing against "+str(playertocomp)),
+                        html.Hr(),
+                        html.H4('Hirschalm 🇦🇹'),
+                        pblist[0],
+                        html.H5(orgplayer+' Sum of Bests: '+orgsum[0]),
+                        html.H5(playertocomp+' Sum of Bests: '+compsum[0]),
+                        html.Br(),
+                        html.H4('Waldtal 🇩🇪'),
+                        pblist[1],
+                        html.H5(orgplayer+' Sum of Bests: '+orgsum[1]),
+                        html.H5(playertocomp+' Sum of Bests: '+compsum[1]),
+                        html.Br(),
+                        html.H4('Elnakka 🇫🇮'),
+                        pblist[2],
+                        html.H5(orgplayer+' Sum of Bests: '+orgsum[2]),
+                        html.H5(playertocomp+' Sum of Bests: '+compsum[2]),
+                        html.Br(),
+                        html.H4('Dalarna 🇸🇪'),
+                        pblist[3],
+                        html.H5(orgplayer+' Sum of Bests: '+orgsum[3]),
+                        html.H5(playertocomp+' Sum of Bests: '+compsum[3]),
+                        html.Br(),
+                        html.H4('Rotkamm 🇨🇭'),
+                        pblist[4],
+                        html.H5(orgplayer+' Sum of Bests: '+orgsum[4]),
+                        html.H5(playertocomp+' Sum of Bests: '+compsum[4]),
+                        html.Br(),
+                        html.H4('Saint Luvette 🇫🇷'),
+                        pblist[5],
+                        html.H5(orgplayer+' Sum of Bests: '+orgsum[5]),
+                        html.H5(playertocomp+' Sum of Bests: '+compsum[5]),
+                        html.Br(),
+                        html.H4('Passo Grolla 🇮🇹'),
+                        pblist[6],
+                        html.H5(orgplayer+' Sum of Bests: '+orgsum[6]),
+                        html.H5(playertocomp+' Sum of Bests: '+compsum[6]),
+                        html.Br(),
+                        html.H4('Ben Ailig 🏴󠁧󠁢󠁳󠁣󠁴󠁿'),
+                        pblist[7],
+                        html.H5(orgplayer+' Sum of Bests: '+orgsum[7]),
+                        html.H5(playertocomp+' Sum of Bests: '+compsum[7]),
+                        html.Br(),
+                        html.H4('Mount Fairview 🇨🇦'),
+                        pblist[8],
+                        html.H5(orgplayer+' Sum of Bests: '+orgsum[8]),
+                        html.H5(playertocomp+' Sum of Bests: '+compsum[8]),
+                        html.Br(),
+                        html.H4('Pinecone Peaks 🇺🇸'),
+                        pblist[9],
+                        html.H5(orgplayer+' Sum of Bests: '+orgsum[9]),
+                        html.H5(playertocomp+' Sum of Bests: '+compsum[9]),
+                        html.Br(),
+                    ],
+                    style={'margin-top':26}),
+                    dbc.Col([
+                        html.Div([
+                            html.Br(),
+                            html.H3(orgplayer+" VS "+playertocomp,style={'textAlign':'center'}),
+                            html.Hr(),
+                            dbc.Row([
+                                dbc.Col([
+                                    html.H4('TT Comparison',style={'textAlign':'center'}),
+                                    html.H6(orgplayer+": "+str(orgtt)+" - "+playertocomp+": "+str(comptt),style={'textAlign':'center'}),
+                                    html.H6("("+str(drawtt)+" draws)",style={'textAlign':'center'})
+                                ]),
+                                dbc.Col([
+                                    html.H4('HS Comparison',style={'textAlign':'center'}),
+                                    html.H6(orgplayer+": "+str(orghs)+" - "+playertocomp+": "+str(comphs),style={'textAlign':'center'}),
+                                    html.H6("("+str(drawhs)+" draws)",style={'textAlign':'center'})
+                                ])
+                            ]),
+                            html.Hr(),
+                            dbc.Col([
+                                html.H4('Overall Comparison',style={'textAlign':'center'}),
+                                html.H5(orgplayer+": "+str(orghs+orgtt)+" - "+playertocomp+": "+str(comphs+comptt)+" - ("+str(drawhs+drawtt)+" draws)",style={'textAlign':'center'})
+                            ])
+                        ],
+                        style={'margin-right':20,"border":"2px black solid"}
+                        )
+                    ])
+                ])
+            ])
+    else:
+        return

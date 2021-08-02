@@ -14,12 +14,12 @@ import dash_core_components as dcc
 import dash_html_components as html
 import pathlib
 from dash.dependencies import Input, Output
-from utils import Header
+from utils import Header, sidebar
 
 from helpers import calcHSpoints, get_challenge_names, getTDcount, recentWRs, recentPBs, getchallengeImage, sortwrdata, convertMillis, convertMillisNoHours, calcSumofBests
 from Mountains import mountain_layout, mountaincontent, graphinfo, challengeinfo
 from recordsandrankings import makemountainWRs, makemountainrankings, mountainrankpage, records_layout
-from playerpage import makecomparisonPB, makemountainPBs, makePBdf, player_layout, update_player_page
+from playerpage import makecomparisonPB, makemountainPBs, makePBdf, player_layout, update_player_page, player_compare
 
 PATH = pathlib.Path(__file__).parent
 DATA_PATH = PATH.joinpath("../gmaapp/data").resolve()
@@ -56,55 +56,6 @@ mountains_list = ['Hirschalm', 'Waldtal', 'Elnakka', 'Dalarna', 'Rotkamm', 'Sain
 
 sum_of_bests = calcSumofBests()
 tenrecent = recentWRs()
-
-SIDEBAR_STYLE = {
-    "top": 0,
-    "left": 0,
-    "bottom": 0,
-    "width": "10rem",
-    "padding": "2rem 1rem",
-    "background-color": "#f8f9fa",
-}
-CONTENT_STYLE = {
-    
-    "padding": "2rem 1rem",
-}
-
-sidebar = html.Div(
-    [
-        html.H5("Page Select"),
-        html.Hr(),
-        dbc.Nav(
-            [
-                dbc.NavLink("Home", href="/home", active="exact"),
-                dbc.NavLink("Records and Rankings", href="/records-and-rankings", active="exact"),
-                dbc.NavLink("Player Search", href="/player-search", active="exact")
-            ],
-            vertical=True,
-            pills=True
-        ),
-        html.Hr(),
-        html.H5("Mountain Pages"),
-        html.Hr(),
-        dbc.Nav(
-            [
-                dbc.NavLink("Hirschalm 🇦🇹", href="/hirschalm", active="exact"),
-                dbc.NavLink("Waldtal 🇩🇪", href="/waldtal", active="exact"),
-                dbc.NavLink("Elnakka 🇫🇮", href="/elnakka", active="exact"),
-                dbc.NavLink("Dalarna 🇸🇪", href="/dalarna", active="exact"),
-                dbc.NavLink("Rotkamm 🇨🇭", href="rotkamm", active="exact"),
-                dbc.NavLink("Saint Luvette 🇫🇷", href="/saintluvette", active="exact"),
-                dbc.NavLink("Passo Grolla 🇮🇹", href="/passogrolla", active="exact"),
-                dbc.NavLink("Ben Ailig 🏴󠁧󠁢󠁳󠁣󠁴󠁿", href="/benailig", active="exact"),
-                dbc.NavLink("Mount Fairview 🇨🇦", href="/mountfairview", active="exact"),
-                dbc.NavLink("Pinecone Peaks 🇺🇸", href="/pineconepeaks", active="exact")
-            ],
-            vertical=True,
-            pills=True,
-        ),
-    ],
-    style=SIDEBAR_STYLE,
-)
 
 #Home page graphs set up
 uniqnames = pd.DataFrame(allwrs['Name'].value_counts().reset_index().values, columns=['Name','Num WRs'])
@@ -246,141 +197,8 @@ def update_player_layout(playername, n_clicks):
     return update_player_page(playername, n_clicks)
             
 @app.callback(Output('player-comp-cont', 'children'), [Input('Player-Select', 'value'),Input('Player-Compare-Select', 'value')])
-def player_compare(orgplayer, playertocomp):
-    playerinfo = makePBdf(orgplayer)
-    playerdf = playerinfo[7]
-    playerdf = playerdf.rename(columns={'Time / Score':orgplayer})
-    playerdf = playerdf.drop(columns=['DD','TD','Points','Rank'])
-    if playertocomp != '':
-        compinfo = makePBdf(playertocomp)
-        compdf = compinfo[7]
-        compdf = compdf.rename(columns={'Time / Score':playertocomp})
-        compdf = compdf.drop(columns=['DD','TD','Points'])
-        playerdf[playertocomp] = compdf[playertocomp]
-        playerdf['Better'] = 0
-        ind = 0
-        while ind < len(playerdf.index):
-            if (playerdf[orgplayer].iloc[ind] == 'No Score') and (playerdf[playertocomp].iloc[ind] == 'No Score'):
-                playerdf['Better'].iloc[ind] = 2
-            elif playerdf[orgplayer].iloc[ind] == 'No Score':
-                playerdf['Better'].iloc[ind] = 0
-            elif playerdf[playertocomp].iloc[ind] == 'No Score':
-                playerdf['Better'].iloc[ind] = 1
-            elif playerdf['type'].iloc[ind] == 'Time Trial':
-                if playerdf[orgplayer].iloc[ind] < playerdf[playertocomp].iloc[ind]:
-                    playerdf['Better'].iloc[ind] = 1
-                elif playerdf[orgplayer].iloc[ind] > playerdf[playertocomp].iloc[ind]:
-                    playerdf['Better'].iloc[ind] = 0
-                else:
-                    playerdf['Better'].iloc[ind] = 2
-            else:
-                if playerdf[orgplayer].iloc[ind] > playerdf[playertocomp].iloc[ind]:
-                    playerdf['Better'].iloc[ind] = 1
-                elif playerdf[orgplayer].iloc[ind] < playerdf[playertocomp].iloc[ind]:
-                    playerdf['Better'].iloc[ind] = 0
-                else:
-                    playerdf['Better'].iloc[ind] = 2
-            ind += 1
-        tts = playerdf[playerdf['type'] == 'Time Trial']
-        hs = playerdf[playerdf['type'] == 'High Score']
-        orgtt = len(tts[tts['Better'] == 1])
-        comptt = len(tts[tts['Better'] == 0])
-        drawtt = len(tts[tts['Better'] == 2])
-        orghs = len(hs[hs['Better'] == 1])
-        comphs = len(hs[hs['Better'] == 0])
-        drawhs = len(hs[hs['Better'] == 2])
-        compinfo = makecomparisonPB(playerdf, orgplayer, playertocomp)
-        pblist = compinfo[0]
-        orgsum = compinfo[1]
-        compsum = compinfo[2]
-        return html.Div([
-                dbc.Row([
-                    dbc.Col([
-                        html.H3("Comparing against "+str(playertocomp)),
-                        html.Hr(),
-                        html.H4('Hirschalm 🇦🇹'),
-                        pblist[0],
-                        html.H5(orgplayer+' Sum of Bests: '+orgsum[0]),
-                        html.H5(playertocomp+' Sum of Bests: '+compsum[0]),
-                        html.Br(),
-                        html.H4('Waldtal 🇩🇪'),
-                        pblist[1],
-                        html.H5(orgplayer+' Sum of Bests: '+orgsum[1]),
-                        html.H5(playertocomp+' Sum of Bests: '+compsum[1]),
-                        html.Br(),
-                        html.H4('Elnakka 🇫🇮'),
-                        pblist[2],
-                        html.H5(orgplayer+' Sum of Bests: '+orgsum[2]),
-                        html.H5(playertocomp+' Sum of Bests: '+compsum[2]),
-                        html.Br(),
-                        html.H4('Dalarna 🇸🇪'),
-                        pblist[3],
-                        html.H5(orgplayer+' Sum of Bests: '+orgsum[3]),
-                        html.H5(playertocomp+' Sum of Bests: '+compsum[3]),
-                        html.Br(),
-                        html.H4('Rotkamm 🇨🇭'),
-                        pblist[4],
-                        html.H5(orgplayer+' Sum of Bests: '+orgsum[4]),
-                        html.H5(playertocomp+' Sum of Bests: '+compsum[4]),
-                        html.Br(),
-                        html.H4('Saint Luvette 🇫🇷'),
-                        pblist[5],
-                        html.H5(orgplayer+' Sum of Bests: '+orgsum[5]),
-                        html.H5(playertocomp+' Sum of Bests: '+compsum[5]),
-                        html.Br(),
-                        html.H4('Passo Grolla 🇮🇹'),
-                        pblist[6],
-                        html.H5(orgplayer+' Sum of Bests: '+orgsum[6]),
-                        html.H5(playertocomp+' Sum of Bests: '+compsum[6]),
-                        html.Br(),
-                        html.H4('Ben Ailig 🏴󠁧󠁢󠁳󠁣󠁴󠁿'),
-                        pblist[7],
-                        html.H5(orgplayer+' Sum of Bests: '+orgsum[7]),
-                        html.H5(playertocomp+' Sum of Bests: '+compsum[7]),
-                        html.Br(),
-                        html.H4('Mount Fairview 🇨🇦'),
-                        pblist[8],
-                        html.H5(orgplayer+' Sum of Bests: '+orgsum[8]),
-                        html.H5(playertocomp+' Sum of Bests: '+compsum[8]),
-                        html.Br(),
-                        html.H4('Pinecone Peaks 🇺🇸'),
-                        pblist[9],
-                        html.H5(orgplayer+' Sum of Bests: '+orgsum[9]),
-                        html.H5(playertocomp+' Sum of Bests: '+compsum[9]),
-                        html.Br(),
-                    ],
-                    style={'margin-top':26}),
-                    dbc.Col([
-                        html.Div([
-                            html.Br(),
-                            html.H3(orgplayer+" VS "+playertocomp,style={'textAlign':'center'}),
-                            html.Hr(),
-                            dbc.Row([
-                                dbc.Col([
-                                    html.H4('TT Comparison',style={'textAlign':'center'}),
-                                    html.H6(orgplayer+": "+str(orgtt)+" - "+playertocomp+": "+str(comptt),style={'textAlign':'center'}),
-                                    html.H6("("+str(drawtt)+" draws)",style={'textAlign':'center'})
-                                ]),
-                                dbc.Col([
-                                    html.H4('HS Comparison',style={'textAlign':'center'}),
-                                    html.H6(orgplayer+": "+str(orghs)+" - "+playertocomp+": "+str(comphs),style={'textAlign':'center'}),
-                                    html.H6("("+str(drawhs)+" draws)",style={'textAlign':'center'})
-                                ])
-                            ]),
-                            html.Hr(),
-                            dbc.Col([
-                                html.H4('Overall Comparison',style={'textAlign':'center'}),
-                                html.H5(orgplayer+": "+str(orghs+orgtt)+" - "+playertocomp+": "+str(comphs+comptt)+" - ("+str(drawhs+drawtt)+" draws)",style={'textAlign':'center'})
-                            ])
-                        ],
-                        style={'margin-right':20,"border":"2px black solid"}
-                        )
-                    ])
-                ])
-            ])
-    else:
-        return
-
+def player_comparison(orgplayer, playertocomp):
+    return player_compare(orgplayer, playertocomp)
 @app.callback(Output('record-content', 'children'), [Input('recordselect', 'value'),Input('sortselect','value')])
 def update_record(chaltypedrop, sorttype):
     if chaltypedrop != 'mountain':
