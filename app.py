@@ -29,6 +29,8 @@ numchallenges = 260
 
 app = dash.Dash(__name__, meta_tags=[{"name": "viewport", "content": "width=device-width"}],suppress_callback_exceptions=True, external_stylesheets=external_stylesheets)
 
+server = app.server
+
 df = pd.read_csv(DATA_PATH.joinpath("out.csv"))
 hirdf = pd.read_csv(DATA_PATH.joinpath("hirschalm.csv"))
 waldf = pd.read_csv(DATA_PATH.joinpath("waldtal.csv"))
@@ -603,4 +605,4 @@ def update_graph_pin(challenge_selected, player_selected):
     return graphinfo(challenge_selected, player_selected, pindf)
     
 if __name__ == '__main__':
-	app.run_server(debug=False)
+    app.run_server(debug=True)
