@@ -14,5 +14,7 @@ Additional features include leaderboard achievments, custom point rating systems
 ## Links
 
 [Score Submission Form](https://docs.google.com/forms/d/1n3DL3h3NYxhWCBG0NSrtM48uIE3OGvMfL2MVKdBU_kA/edit#responses)
+
 [Toppluva Website](https://www.toppluva.com/press/index.php)
+
 [Community Discord](https://discord.com/invite/SA4F5WN)
