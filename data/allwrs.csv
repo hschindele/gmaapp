@@ -11,7 +11,7 @@ Timestamp,Verified?,Link,Name,OS,Mountain,Was WR,Unnamed: 64,challenge name,type
 2020-11-14 21:06:12,Yes,https://drive.google.com/open?id=1t67yWoOnQmSqYBhbwj5CX1VJpXjGQv5W,hschindele,iOS,Waldtal,True,Race,Gemsgully Whites,Time trial,30.96,Race
 2021-07-06 14:41:39,Yes,https://drive.google.com/open?id=1MlTrdotAyNfxBoqUyeXPpHLUwGodbjGD,Mountain_Greg,Android,Waldtal,True,TTB,Waldhorn Voyage,Time trial,54.41,TTB
 2021-03-12 12:43:30,Yes,https://drive.google.com/open?id=1Km9LjgE6gPkT2VycRQTcfUH2xsM-n4RN,hschindele,iOS,Ben Ailig,True,Race,The Swindler,Time Trial,23.15,Race
-7/24/2021 10:03:36,Yes,https://drive.google.com/open?id=1sJ5vRRtaYRRiAAplBAUpREw97TAvcpNv,Avel,iOS,Hirschalm,,Race,The Offpist Trail,Time trial,30.25,Race
+2021-02-04 21:53:21,Yes,https://drive.google.com/open?id=16fgYabBTE88yEvV5nmj4fYAdW0Rw4cs2,hschindele,iOS,Hirschalm,True,Race,The Offpist Trail,Time trial,30.73,Race
 2020-11-14 21:04:49,Yes,https://drive.google.com/open?id=15XciavUAfZooQEHHcJdRnThQ3rekHhYQ,hschindele,iOS,Waldtal,True,Race,The Woodland Track,Time trial,20.89,Race
 2020-12-20 12:02:01,Yes,https://drive.google.com/open?id=13yvrpeyz88yB_KrahN04crgSmZvGCtGR,hschindele,iOS,Elnakka,True,Race,The Path Finder,Time trial,33.58,Race
 2020-11-15 21:04:16,Yes,https://drive.google.com/open?id=1pdzZw9NHyZnAyItPlRNCuXBrZzZq2a3-,hschindele,iOS,Elnakka,True,Race,Super G,Time trial,36.51,Race
@@ -61,7 +61,7 @@ Timestamp,Verified?,Link,Name,OS,Mountain,Was WR,Unnamed: 64,challenge name,type
 2021-03-22 17:08:37,Yes,https://drive.google.com/open?id=1BCcXZrdniUz0eAt7NX1fjXPW36nHQaX8,hschindele,iOS,Ben Ailig,True,TTB,The Freedom Run,Time Trial,39.62,TTB
 2021-05-05 0:48:21,Yes,https://drive.google.com/open?id=1y0vLdUw1mbC7CaeR7YdpKnCKD2LJvv7t,Ryan Monty,Android,Ben Ailig,True,TTB,Aileigs Adventure,Time Trial,52.83,TTB
 2020-12-20 17:15:03,Yes,https://drive.google.com/open?id=1N273dWFkbGKctku8LV5-VIZ62RpQ-gxX,hschindele,iOS,Elnakka,True,Trail,Ellnau River Rush,Time trial,21.31,Trail
-7/24/2021 4:07:25,Yes,https://drive.google.com/open?id=1RN8jzFA_cLyFsXQLH3t3vZX_Tk2a8zW6,Avel,iOS,Waldtal,,Race,Peak To Valley Run,Time trial,49.22,Race
+2020-12-19 12:31:58,Yes,https://drive.google.com/open?id=1LSA6umZotsEC-Lfda_tukJS4Z6_8a_SP,hschindele,iOS,Waldtal,True,Race,Peak To Valley Run,Time trial,49.3,Race
 2020-12-25 16:13:08,Yes,https://drive.google.com/open?id=1ZGIhyDZ3Fldp141jIHWMoWHSoy3MfPlq,hschindele,iOS,Passo Grolla,True,Race,The Wanderer,Time trial,12.71,Race
 2021-06-16 19:46:09,Yes,https://drive.google.com/open?id=1svwZCXVe8VIvIPPLdMVKyEObcIjZV70M,hschindele,iOS,Passo Grolla,True,Trail,Rockerfeller,Time trial,12.75,Trail
 2020-12-18 22:38:29,Yes,https://drive.google.com/open?id=1R7nrA3dfyeGyMtZvOlBY9vPStgvSyUdk,hschindele,iOS,Waldtal,True,Race,The Woodland Slalom,Time trial,23.76,Race
@@ -85,7 +85,7 @@ Timestamp,Verified?,Link,Name,OS,Mountain,Was WR,Unnamed: 64,challenge name,type
 2021-03-04 19:40:38,Yes,https://drive.google.com/open?id=1hRPQJkeLd0RZKOUFuoP8Nr9YoZ93tdNT,BouncyJello,Android,Hirschalm,True,Trail,Jumping the Cracks,Time trial,23.29,Trail
 2021-01-07 15:48:11,Yes,https://drive.google.com/open?id=1F9vj62YWQCQjd4z2xSwU1smxSbtcwX9-,hschindele,iOS,Elnakka,True,Trail,The Boulder Valley Pass,Time trial,20.96,Trail
 2021-06-21 10:01:43,Yes,https://drive.google.com/open?id=1orPcqY07ClliirAtr6SNb3kAXxgp1cm1,hschindele,iOS,Elnakka,True,Trail,Clover Road Trail,Time trial,16.34,Trail
-7/23/2021 14:07:38,Yes,https://drive.google.com/open?id=1HUQHJeg_blU1dom0miI2T9HGGC0e5MuH,Avel,iOS,Elnakka,,Trail,The Pillow Pass,Time trial,15.61,Trail
+2020-12-20 19:23:30,Yes,https://drive.google.com/open?id=1aPc-prglji5b8MPUPayfa02ozltNpcPv,hschindele,iOS,Elnakka,True,Trail,The Pillow Pass,Time trial,15.85,Trail
 2020-12-19 17:20:00,Yes,https://drive.google.com/open?id=1cmGy1CP1PabARs63Uvpvb9gke3RN-Ahf,hschindele,iOS,Elnakka,True,Race,The Elements,Time trial,26.28,Race
 2020-12-17 22:26:42,Yes,https://drive.google.com/open?id=1X7JWojCo9G5nXgzvmNwy0rXUNfMmVAG1,hschindele,iOS,Waldtal,True,Trail,The Fatal Drops,Time trial,11.44,Trail
 2020-11-24 12:37:27,Yes,https://drive.google.com/open?id=1JUhINbGrXWBeMlKgdc-H-UmZcIgZtjNw,hschindele,iOS,Waldtal,True,Trail,The Crowd Pleaser,Time trial,13.31,Trail
@@ -152,7 +152,7 @@ Timestamp,Verified?,Link,Name,OS,Mountain,Was WR,Unnamed: 64,challenge name,type
 2021-04-17 1:32:44,Yes,https://drive.google.com/open?id=1egtjYu5RJ9dX3M6wm1ZQtQJpKhE5LeZ5,Mountain_Greg,Android,Pinecone Peaks,True,TTB,Make Haste,Time Trial,62.61,TTB
 2021-05-25 9:39:58,Yes,https://drive.google.com/open?id=15TdARrSppGf7dWAesCnJN65Yy57r1jWJ,Mountain_Greg,Android,Pinecone Peaks,True,TTB,Pinecone Force,Time Trial,48.98,TTB
 2021-06-21 9:32:53,Yes,https://drive.google.com/open?id=1NffEKQYgsnY_DqwqfYGktACYfFI0TFZ0,hschindele,iOS,Hirschalm,True,Trail,The Descent,Time trial,28.05,Trail
-7/24/2021 5:40:23,Yes,https://drive.google.com/open?id=15TTMD7CnPBshqXa-pnnWe0ThRT_MJK2z,Avel,iOS,Waldtal,,Race,The Swing Passage,Time trial,17.71,Race
+2021-06-21 9:33:46,Yes,https://drive.google.com/open?id=1FazupHztZMD6C2PbwGmXP62PVvkWWla1,hschindele,iOS,Waldtal,True,Race,The Swing Passage,Time trial,17.81,Race
 9/19/2021 8:43:42,Yes,https://drive.google.com/open?id=1KBtSA3Fh7jfwNgN2jl5opTr8KBCV14ny,Avel,iOS,Elnakka,,Race,Swivel Loop,Time trial,10.9,Race
 2021-06-21 9:35:17,Yes,https://drive.google.com/open?id=1J_G-B211Jx_bnKTxtH2IDUtghsf8doRi,hschindele,iOS,Elnakka,True,Race,Pristine Rush,Time trial,22.12,Race
 2021-07-14 9:49:52,Yes,https://drive.google.com/open?id=1yYN4DVq3AqIGBzteFfthi_b4MKIILZov,Jamiemac,Android,Elnakka,True,Trail,High Jump,Time trial,8.1,Trail
