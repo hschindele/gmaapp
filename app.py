@@ -191,6 +191,8 @@ def display_page(pathname):
         return player_layout
     elif pathname == '/records-and-rankings':
         return records_layout
+    elif pathname == '/archive':
+        return archive_layout
     else:
         return home_layout
 
