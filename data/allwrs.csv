@@ -68,7 +68,7 @@ Timestamp,Verified?,Link,Name,OS,Mountain,Was WR,Unnamed: 64,challenge name,type
 2021-05-22 9:54:35,Yes,https://drive.google.com/open?id=1XeH68T6nl2nynMKp6kWAxxoo9z3WHGUU,hschindele,iOS,Passo Grolla,True,Race,Peak avalanche escape,Time trial,30.71,Race
 2021-06-04 11:41:40,Yes,https://drive.google.com/open?id=185v67ATKPW18iN0pOoSj4c0uObwO65On,hschindele,iOS,Passo Grolla,True,Race,Tombola,Time trial,20.15,Race
 2021-06-16 17:53:31,Yes,https://drive.google.com/open?id=1ZXWwAO7tOHkDRVUXIMNnoFUYJ0ya48bw,hschindele,iOS,Passo Grolla,True,Race,Shards,Time trial,25.39,Race
-7/26/2021 12:46:30,Yes,https://drive.google.com/open?id=1p-SmjmLj4kGa2pnVAOoD23zeFHRd7n5v,Mountain_Greg,Android,Saint Luvette,,TTB,Full Luvette,Time trial,46.8,TTB
+7/26/2021 12:46:30,Yes,https://drive.google.com/open?id=1p-SmjmLj4kGa2pnVAOoD23zeFHRd7n5v,Mountain_Greg,Android,Saint Luvette,True,TTB,Full Luvette,Time trial,46.8,TTB
 2021-02-24 13:33:03,Yes,https://drive.google.com/open?id=1wfMsViCrOEAq3octxJke7VB136hBCyyU,hschindele,iOS,Saint Luvette,True,Trail,Route Extreme,Time trial,37.52,Trail
 2020-11-19 20:44:49,Yes,https://drive.google.com/open?id=157eqotviNeCTyinYiNmZW-d86N9CtNFE,BouncyJello,Android,Passo Grolla,True,Race,La Bomba,Time trial,9.1,Race
 2021-03-05 14:58:07,Yes,https://drive.google.com/open?id=1s8M9LUMKK3K-ba_1zY0Q_ftyW0TQqirK,hschindele,iOS,Saint Luvette,True,Trail,Le Coq,Time trial,31.73,Trail
@@ -96,8 +96,8 @@ Timestamp,Verified?,Link,Name,OS,Mountain,Was WR,Unnamed: 64,challenge name,type
 2021-04-17 16:07:30,Yes,https://drive.google.com/open?id=1Ytw7jU_niYj2_q_LB5DBXcRcRsuBGJRM,massiv97,Android,Passo Grolla,True,Race,Loggers Groove,Time trial,12.16,Race
 2021-07-15 11:54:37,Yes,https://drive.google.com/open?id=17jvV26tSH7O8FrI4kAC8Zt2IPGO1vdAe,hschindele,iOS,Hirschalm,True,Trail,Over The Fence,Time trial,18.17,Trail
 2020-11-24 15:07:16,Yes,https://drive.google.com/open?id=1blKbFhm9fyBM3DZWfTurcqMLZ0vQBBzt,hschindele,iOS,Waldtal,True,Trail,The Big Kicker,Time trial,17.54,Trail
-9/19/2021 8:41:22,Yes,https://drive.google.com/open?id=1ROeRzO2aen6fqw1MBxRf4d4cOB67HzJ3,Avel,iOS,Saint Luvette,,Race,Tour De Moyen,Time trial,21.4,Race
-9/19/2021 8:45:29,Yes,https://drive.google.com/open?id=1lFdb7bTMsRPHGv85Sdfg3doztISCq-nW,Avel,iOS,Saint Luvette,,Race,Pic Moyen,Time trial,37.15,Race
+9/19/2021 8:41:22,Yes,https://drive.google.com/open?id=1ROeRzO2aen6fqw1MBxRf4d4cOB67HzJ3,Avel,iOS,Saint Luvette,True,Race,Tour De Moyen,Time trial,21.4,Race
+9/19/2021 8:45:29,Yes,https://drive.google.com/open?id=1lFdb7bTMsRPHGv85Sdfg3doztISCq-nW,Avel,iOS,Saint Luvette,True,Race,Pic Moyen,Time trial,37.15,Race
 2021-01-03 9:05:09,Yes,https://drive.google.com/open?id=1vCa_RpKziC4idazbcLvBW0scR-2ZaiUl,hschindele,iOS,Waldtal,True,Trail,The Three Trees,Time trial,10.61,Trail
 2021-03-11 15:00:01,Yes,https://drive.google.com/open?id=1_Eshk9gIiqh_nt9zv5CMUMvfA0ZK2k_-,hschindele,iOS,Waldtal,True,Trail,A Balancing Act,Time trial,23.88,Trail
 2021-03-11 15:01:14,Yes,https://drive.google.com/open?id=1djmoa38-Lwma-nDPD2qcZn9Dr3iYx-FJ,hschindele,iOS,Dalarna,True,Race,Skogsloppet,Time trial,35.64,Race
@@ -153,7 +153,7 @@ Timestamp,Verified?,Link,Name,OS,Mountain,Was WR,Unnamed: 64,challenge name,type
 2021-05-25 9:39:58,Yes,https://drive.google.com/open?id=15TdARrSppGf7dWAesCnJN65Yy57r1jWJ,Mountain_Greg,Android,Pinecone Peaks,True,TTB,Pinecone Force,Time Trial,48.98,TTB
 2021-06-21 9:32:53,Yes,https://drive.google.com/open?id=1NffEKQYgsnY_DqwqfYGktACYfFI0TFZ0,hschindele,iOS,Hirschalm,True,Trail,The Descent,Time trial,28.05,Trail
 2021-06-21 9:33:46,Yes,https://drive.google.com/open?id=1FazupHztZMD6C2PbwGmXP62PVvkWWla1,hschindele,iOS,Waldtal,True,Race,The Swing Passage,Time trial,17.81,Race
-9/19/2021 8:43:42,Yes,https://drive.google.com/open?id=1KBtSA3Fh7jfwNgN2jl5opTr8KBCV14ny,Avel,iOS,Elnakka,,Race,Swivel Loop,Time trial,10.9,Race
+9/19/2021 8:43:42,Yes,https://drive.google.com/open?id=1KBtSA3Fh7jfwNgN2jl5opTr8KBCV14ny,Avel,iOS,Elnakka,True,Race,Swivel Loop,Time trial,10.9,Race
 2021-06-21 9:35:17,Yes,https://drive.google.com/open?id=1J_G-B211Jx_bnKTxtH2IDUtghsf8doRi,hschindele,iOS,Elnakka,True,Race,Pristine Rush,Time trial,22.12,Race
 2021-07-14 9:49:52,Yes,https://drive.google.com/open?id=1yYN4DVq3AqIGBzteFfthi_b4MKIILZov,Jamiemac,Android,Elnakka,True,Trail,High Jump,Time trial,8.1,Trail
 2021-06-21 9:38:50,Yes,https://drive.google.com/open?id=1YjkRN1hCiwc48HtN2l-wR7nP1MQ1iShV,hschindele,iOS,Elnakka,True,Trail,Around Clover Falls,Time trial,16.72,Trail

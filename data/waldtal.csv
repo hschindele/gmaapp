@@ -340,10 +340,10 @@ Timestamp,Link,Name,OS,Mountain,Was WR,Unnamed: 64,challenge name,type,score,cha
 2021-06-30 18:54:31,https://drive.google.com/open?id=12NJUk0L2-hVumOvHWilnhmncULEd5oIx,Skier50,iOS,Waldtal,False,Race,The Swing Passage,Time trial,17.86,Race
 2021-07-04 5:06:05,https://drive.google.com/open?id=1tQrD9LmcjQRuxOSwxekT0UzeK0bW38N2,Jamiemac,Android,Waldtal,False,Race,The Swing Passage,Time trial,17.98,Race
 2021-07-06 14:41:39,https://drive.google.com/open?id=1MlTrdotAyNfxBoqUyeXPpHLUwGodbjGD,Mountain_Greg,Android,Waldtal,True,TTB,Waldhorn Voyage,Time trial,54.41,TTB
-9/19/2021 8:31:24,https://drive.google.com/open?id=10VHqi5-Eucpa-vfLZVPY6Ms7OpflWNZo,Avel,iOS,Waldtal,,Trail,Little Drops,Time trial,10.53,Trail
-9/19/2021 8:33:24,https://drive.google.com/open?id=1mLolbk4icMNKAlgmIPrkArr_Zc6jmAPi,Avel,iOS,Waldtal,,Trail,The Big Kicker,Time trial,18.01,Trail
-9/19/2021 8:35:38,https://drive.google.com/open?id=1C4H4LWUk-OgxHsjNFV6jICzc1EJG3jBf,Avel,iOS,Waldtal,,Trail,Over The Pist,Time trial,8.66,Trail
-9/19/2021 8:38:08,https://drive.google.com/open?id=1BzbRUMnbKaG9wRvo5070aNHfF6nQzYhV,Avel,iOS,Waldtal,,Trail,The Fatal Drops,Time trial,12.68,Trail
+9/19/2021 8:31:24,https://drive.google.com/open?id=10VHqi5-Eucpa-vfLZVPY6Ms7OpflWNZo,Avel,iOS,Waldtal,False,Trail,Little Drops,Time trial,10.53,Trail
+9/19/2021 8:33:24,https://drive.google.com/open?id=1mLolbk4icMNKAlgmIPrkArr_Zc6jmAPi,Avel,iOS,Waldtal,False,Trail,The Big Kicker,Time trial,18.01,Trail
+9/19/2021 8:35:38,https://drive.google.com/open?id=1C4H4LWUk-OgxHsjNFV6jICzc1EJG3jBf,Avel,iOS,Waldtal,False,Trail,Over The Pist,Time trial,8.66,Trail
+9/19/2021 8:38:08,https://drive.google.com/open?id=1BzbRUMnbKaG9wRvo5070aNHfF6nQzYhV,Avel,iOS,Waldtal,False,Trail,The Fatal Drops,Time trial,12.68,Trail
 2020-02-01 17:13:00,https://drive.google.com/open?id=1klR5aHaSMgAJEdcNJ7LOK3kEa_KMk8U4,hschindele,iOS,Waldtal,True,Race,Selme Valley Race,Time trial,50.68,Race
 2020-02-02 14:17:38,https://drive.google.com/open?id=1BG4Kkjd8n6_NKJuzGXYC2UUTLYQFrxBH,Bramspr,iOS,Waldtal,True,Distance,The Fork,High score,307.0,Distance
 2020-02-03 19:15:24,https://drive.google.com/open?id=1VmyLrx_08hvvTK0RLOLGykxN70w2jxaY,hschindele,iOS,Waldtal,True,Trail,The Crowd Pleaser,Time trial,14.88,Trail
