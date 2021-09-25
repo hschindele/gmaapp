@@ -153,7 +153,7 @@ Timestamp,Verified?,Link,Name,OS,Mountain,Was WR,Unnamed: 64,challenge name,type
 2021-05-25 9:39:58,Yes,https://drive.google.com/open?id=15TdARrSppGf7dWAesCnJN65Yy57r1jWJ,Mountain_Greg,Android,Pinecone Peaks,True,TTB,Pinecone Force,Time Trial,48.98,TTB
 2021-06-21 9:32:53,Yes,https://drive.google.com/open?id=1NffEKQYgsnY_DqwqfYGktACYfFI0TFZ0,hschindele,iOS,Hirschalm,True,Trail,The Descent,Time trial,28.05,Trail
 2021-06-21 9:33:46,Yes,https://drive.google.com/open?id=1FazupHztZMD6C2PbwGmXP62PVvkWWla1,hschindele,iOS,Waldtal,True,Race,The Swing Passage,Time trial,17.81,Race
-9/19/2021 8:43:42,Yes,https://drive.google.com/open?id=1KBtSA3Fh7jfwNgN2jl5opTr8KBCV14ny,Avel,iOS,Elnakka,True,Race,Swivel Loop,Time trial,10.9,Race
+9/24/2021 8:52:25,Yes,https://drive.google.com/open?id=1b3Z6R4eNA5RN6_ckydewUusbgpoxCR5t,hschindele,iOS,Elnakka,True,,Swivel Loop,Time trial,10.88,Race
 2021-06-21 9:35:17,Yes,https://drive.google.com/open?id=1J_G-B211Jx_bnKTxtH2IDUtghsf8doRi,hschindele,iOS,Elnakka,True,Race,Pristine Rush,Time trial,22.12,Race
 2021-07-14 9:49:52,Yes,https://drive.google.com/open?id=1yYN4DVq3AqIGBzteFfthi_b4MKIILZov,Jamiemac,Android,Elnakka,True,Trail,High Jump,Time trial,8.1,Trail
 2021-06-21 9:38:50,Yes,https://drive.google.com/open?id=1YjkRN1hCiwc48HtN2l-wR7nP1MQ1iShV,hschindele,iOS,Elnakka,True,Trail,Around Clover Falls,Time trial,16.72,Trail
@@ -170,7 +170,6 @@ Timestamp,Verified?,Link,Name,OS,Mountain,Was WR,Unnamed: 64,challenge name,type
 2021-07-09 12:39:21,Yes,https://drive.google.com/open?id=1VvROp7CX76AAyGsZDTHkX_jnTa8glFN6,hschindele,iOS,Hirschalm,True,TTB,Hirschpeak Voyage,Time trial,33.3,TTB
 2021-06-30 19:12:55,Yes,https://drive.google.com/open?id=1IACnCjFk5fXQM6zEtxxkAGfmoKk3zQH_,Skier50,iOS,Passo Grolla,True,Trail,Carosello Uno,Time trial,33.67,Trail
 2021-07-15 12:44:43,Yes,https://drive.google.com/open?id=1iSNgJZNuPjyj7NbkN1SUqr0JY6gb6nLZ,hschindele,iOS,Passo Grolla,True,Race,Presto,Time trial,19.9,Race
-2021-04-18 16:18:36,Yes,https://drive.google.com/open?id=1oBDjD6LOYfphRXE4YY5ty_JhpOZ4owt1,Skier50,iOS,Ben Ailig,True,Distance,Meall Lines,High score,40619.0,Distance
 2021-02-18 19:38:33,Yes,https://drive.google.com/open?id=1BKEEp1vFLtSMvqaUUNIaG7KZnp4Lmcx6,BouncyJello,Android,Waldtal,True,Distance,The Fork,High score,382.7,Distance
 2021-02-18 19:46:11,Yes,https://drive.google.com/open?id=1DBE2beWjSkKoALzOW5dsBaY_XP5bUX2n,BouncyJello,Android,Rotkamm,True,Distance,Pilgrim Run,High score,406.2,Distance
 2021-02-18 19:44:46,Yes,https://drive.google.com/open?id=1our76mvUTfEupTeMzv71lvsgXSxgSQQo,BouncyJello,Android,Elnakka,True,Distance,Boulder Hill Escape,High score,306.6,Distance
@@ -187,6 +186,17 @@ Timestamp,Verified?,Link,Name,OS,Mountain,Was WR,Unnamed: 64,challenge name,type
 9/20/2021 13:53:10,Yes,https://drive.google.com/open?id=1O7GfEbU2ykZqHhu1_BvOZKLi1Y5wr3-u,Avel,iOS,Waldtal,True,,The Waldhorn Falls,High score,130.0,Triple Drop
 9/20/2021 13:55:02,Yes,https://drive.google.com/open?id=154Enzzm2fo4eQ5etGPf5m-wHsHmqMttP,Avel,iOS,Elnakka,True,,Elnakka Freedom,High score,425.0,Open Trick
 9/20/2021 13:57:06,Yes,https://drive.google.com/open?id=1763M_pVzPzCP8qt0aWo17mwfawm_E9R9,Avel,iOS,Dalarna,True,,Orsa Animal Park,High score,48133.0,Gated Trick
-9/22/2021 8:43:50,Yes,https://drive.google.com/open?id=11hYeX-FMBAcluGgfxlITYwT8NmOwOYS1,hschindele,iOS,Elnakka,True,,The Yards,High score,44.4,Long Jump
-9/21/2021 14:08:11,Yes,https://drive.google.com/open?id=1hpbUX_e5hFJUgPOOiH0jWtaU4FxCEFFG,Avel,iOS,Passo Grolla,True,,Caso Della Stella,High score,89.7,Single Drop
+9/25/2021 6:50:37,Yes,https://drive.google.com/open?id=1KuE3g_CzLwulyoSe4eG6ygnzt0bNvfQX,Avel,iOS,Elnakka,True,,The Yards,High score,48.4,Long Jump
+9/25/2021 3:17:21,Yes,https://drive.google.com/open?id=16eS2CnrGKWezOFWfcbqNQmtGzSHLrn47,Avel,iOS,Passo Grolla,True,,Caso Della Stella,High score,89.8,Single Drop
 9/21/2021 14:13:20,Yes,https://drive.google.com/open?id=1ncGFTF-fQn-SlzxaW4r1gtd_V9vpVKwS,Avel,iOS,Saint Luvette,True,,Trix De Ville,High score,34954.0,Gated Trick
+9/24/2021 8:27:16,Yes,https://drive.google.com/open?id=162frj19tREQrFqrGMGPGiC_TdLO01H6G,hschindele,iOS,Hirschalm,True,,The Glacier Kicker,High score,55.5,Long Jump
+9/24/2021 13:59:26,Yes,https://drive.google.com/open?id=1zb9Mv0rd1ZJFDzz1hWjV2BeY2-Lb2ylR,PelagusPlays,iOS,Ben Ailig,True,,The Delucia Transfers,High score,13854.0,Open Trick
+9/25/2021 3:21:32,Yes,https://drive.google.com/open?id=1UheAD0XuQi2KcCRd-zDcB5srfxPCvllv,Avel,iOS,Ben Ailig,True,,MacAskill Riding,High score,31039.0,Gated Trick
+9/25/2021 3:38:18,Yes,https://drive.google.com/open?id=1BPFoM0sMWPErAmfTPKnZQJK7SAlTsd4C,Avel,iOS,Elnakka,True,,The Boulder Hill Descent,High score,35297.0,Gated Trick
+9/25/2021 3:41:58,Yes,https://drive.google.com/open?id=1_rhQ7Ac25m5pSVhijoWiHOf0p9C5n1ax,Avel,iOS,Elnakka,True,,The Road Gaps,High score,112.0,Triple Drop
+9/25/2021 3:43:45,Yes,https://drive.google.com/open?id=1IY0i4ZqFs_knwukU1o4hgeyEP5cF6ESX,Avel,iOS,Elnakka,True,,Terve Jumping,High score,26963.0,Gated Trick
+9/25/2021 6:52:52,Yes,https://drive.google.com/open?id=1mEAeOBIswLCae511MDaav5KMDk8UByOy,Avel ,iOS,Mount Fairview,True,,Best Eagle Cookie Park,High score,24050.0,Gated Trick
+9/25/2021 6:54:46,Yes,https://drive.google.com/open?id=1vsj-ujQ_aQ4V8b4RoKLfi_gq1nm8_aGB,Avel,iOS,Mount Fairview,True,,Ollies Invite Only,High score,47624.0,Gated Trick
+9/25/2021 6:56:36,Yes,https://drive.google.com/open?id=1RiqdzTQfdHInqi1LVsvHpYnEaPF6w5Mw,Avel,iOS,Mount Fairview,True,,Freeride Scout,High score,32820.0,Open Trick
+9/25/2021 6:59:10,Yes,https://drive.google.com/open?id=1RVNzXQeswCMF4TigcuGKfRudUBBtRKqy,Avel,iOS,Mount Fairview,True,,Booster Berries,High score,32744.0,Open Trick
+9/25/2021 7:02:30,Yes,https://drive.google.com/open?id=1AwZ0ry7_yJMmS3DsCB21-kVL_tOo86Z4,Avel,iOS,Mount Fairview,True,,The Sidehit Road,High score,28542.0,Gated Trick
