@@ -244,8 +244,8 @@ Timestamp,Link,Name,OS,Mountain,Was WR,Unnamed: 64,challenge name,type,score,cha
 2021-07-15 3:58:57,https://drive.google.com/open?id=1G4SA1-0BtAtw_QOmEf7MUHsox3TFFwUs,massiv97,Android,Hirschalm,FALSE,Race,The Little Adventure,Time trial,26.32,Race
 2021-07-15 3:59:32,https://drive.google.com/open?id=1VYoUrV9qxemano3Tji6YzTarB0tcJEDB,massiv97,Android,Hirschalm,FALSE,Race,The Offpist Trail,Time trial,31.6,Race
 2021-07-15 11:54:37,https://drive.google.com/open?id=17jvV26tSH7O8FrI4kAC8Zt2IPGO1vdAe,hschindele,iOS,Hirschalm,TRUE,Trail,Over The Fence,Time trial,18.17,Trail
-7/18/2021 2:05:12,https://drive.google.com/open?id=1S2xvCMNsps7cT0ziWR5JHlnlYCsNdsH7,Mountain_Greg,Android,Hirschalm,FALSE,Trail,Over The Fence,Time trial,19.27,Trail
-7/18/2021 2:05:52,https://drive.google.com/open?id=1J_HhGGah0348JwYcDYSKwB6_QPThJ_Lx,Mountain_Greg,Android,Hirschalm,FALSE,Race,The Offpist Trail,Time trial,31.3,Race
+2021-07-18 2:05:12,https://drive.google.com/open?id=1S2xvCMNsps7cT0ziWR5JHlnlYCsNdsH7,Mountain_Greg,Android,Hirschalm,FALSE,Trail,Over The Fence,Time trial,19.27,Trail
+2021-07-18 2:05:52,https://drive.google.com/open?id=1J_HhGGah0348JwYcDYSKwB6_QPThJ_Lx,Mountain_Greg,Android,Hirschalm,FALSE,Race,The Offpist Trail,Time trial,31.3,Race
 2020-02-01 16:14:38,https://drive.google.com/open?id=16l8Jv5EYbOldCg42h5b6lKqF5M37VJ6O,BouncyJello,Android,Hirschalm,TRUE,Race,The Winding Road,Time trial,38.67,Race
 2020-02-01 16:35:09,https://drive.google.com/open?id=1CUD0QkzggZH1v7lTDeJnSYwAjZ1fTrEU,BouncyJello,Android,Hirschalm,TRUE,Race,The First Turns,Time trial,29.37,Race
 2020-02-03 4:41:00,https://drive.google.com/open?id=1xWkpfVJkRkdWe-j7tlLgGcDz4irmSvYY,hschindele,iOS,Hirschalm,TRUE,Trail,Over The Fence,Time trial,21.46,Trail
@@ -289,7 +289,7 @@ Timestamp,Link,Name,OS,Mountain,Was WR,Unnamed: 64,challenge name,type,score,cha
 2020-04-30 22:35:33,https://drive.google.com/open?id=1x68PlwSqFRKGJivfP_5q-VzJzbB9M_9C,hschindele,iOS,Hirschalm,TRUE,Trail,The Shortcut,Time trial,25.36,Trail
 2020-05-01 14:55:04,https://drive.google.com/open?id=17xeNu6r7r1g--ZcgbeFm4h_7G-Wjm3Md,Lars Schrier,iOS,Hirschalm,TRUE,Race,The Offpist Trail,Time trial,33.14,Race
 2020-05-04 17:36:54,https://drive.google.com/open?id=17O2czyRSGN6tKBVawLzbwtFZETGOZ1rS,BouncyJello,Android,Hirschalm,TRUE,Trail,Jumping the Cracks,Time trial,24.18,Trail
-9/20/2021 13:48:56,https://drive.google.com/open?id=1grlq16yfFySM-KtLM__iKWnwDeEt_kj4,Avel,iOS,Hirschalm,TRUE,,Glacier Park,High score,22119.0,Open Trick
-9/24/2021 8:12:31,https://drive.google.com/open?id=1dEElUXmcDUO4PWIReXiQTlyK5LQmfk0p,hschindele,iOS,Hirschalm,TRUE,,The Little Adventure,Time trial,25.6,Race
-9/24/2021 8:27:16,https://drive.google.com/open?id=162frj19tREQrFqrGMGPGiC_TdLO01H6G,hschindele,iOS,Hirschalm,TRUE,,The Glacier Kicker,High score,55.5,Long Jump
-9/25/2021 9:20:23,https://drive.google.com/open?id=1o3bBsRwiZeHc948_dfwB8S9MNPq2F3OP,Susannah,Android,Hirschalm,False ,,The First Turns,Time trial,28.77,Race
+2021-09-20 13:48:56,https://drive.google.com/open?id=1grlq16yfFySM-KtLM__iKWnwDeEt_kj4,Avel,iOS,Hirschalm,TRUE,,Glacier Park,High score,22119.0,Open Trick
+2021-09-24 8:12:31,https://drive.google.com/open?id=1dEElUXmcDUO4PWIReXiQTlyK5LQmfk0p,hschindele,iOS,Hirschalm,TRUE,,The Little Adventure,Time trial,25.6,Race
+2021-09-24 8:27:16,https://drive.google.com/open?id=162frj19tREQrFqrGMGPGiC_TdLO01H6G,hschindele,iOS,Hirschalm,TRUE,,The Glacier Kicker,High score,55.5,Long Jump
+2021-09-25 9:20:23,https://drive.google.com/open?id=1o3bBsRwiZeHc948_dfwB8S9MNPq2F3OP,Susannah,Android,Hirschalm,False ,,The First Turns,Time trial,28.77,Race
