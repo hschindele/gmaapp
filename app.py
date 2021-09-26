@@ -30,6 +30,7 @@ external_stylesheets = [dbc.themes.BOOTSTRAP]
 numchallenges = 260
 
 app = dash.Dash(__name__, meta_tags=[{"name": "viewport", "content": "width=device-width"}],suppress_callback_exceptions=True, external_stylesheets=external_stylesheets)
+app.title = "GMA Leaderboards"
 
 server = app.server
 

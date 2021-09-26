@@ -102,7 +102,7 @@ archive_layout = html.Div([
                     html.H4('Archive Info',
                         style={'text-decoration':'underline'}
                     ),
-                    html.Div("Version 191 introduced balance changes that significantly nerfed certian competative exploits. Notably, hop extends, combo multipliers on rails, and drift boosts. These changes resulted in a complete wipe of all trick, drop, and airtime challenges. Here you can view the pre-190 world records and scores for the tracks affected. Many of these scores are much higher than what would be possible today.")
+                    html.Div("Version 191 introduced balance changes that significantly nerfed certain competitive exploits. Notably, hop extends, combo multipliers on rails, and drift boosts. These changes resulted in a complete wipe of all trick, drop, and airtime challenges. Here you can view the pre-190 world records and scores for the tracks affected. Many of these scores are much higher than what would be possible today.")
                 ]),
                 dbc.Col([
                     html.H4('Select View Type',
