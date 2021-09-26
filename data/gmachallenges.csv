@@ -53,6 +53,7 @@ DD,TD,Challenge Name,Mountain,type,chaltype
 28.50,25.50,Mora Barnyards,Dalarna,Time Trial,Trail
 20.00,19.00,Leksand Rail,Dalarna,Time Trial,Trail
 21.00,20.00,Thru Alvdalen,Dalarna,Time Trial,Trail
+23.00,21.00,Ice Slalom,Dalarna,High Score,Trail
 10.50,9.70,Drifting The Frozen Lake,Dalarna,Time Trial,Trail
 46.00,44.00,Dalarna Voyage,Dalarna,Time Trial,TTB
 50.00,44.00,Sarnaheden Sightseeing,Dalarna,Time Trial,TTB
@@ -178,7 +179,7 @@ DD,TD,Challenge Name,Mountain,type,chaltype
 295.00,350.00,The Fork,Waldtal,High Score,Distance
 9.00,12.00,Bear Cub Run,Elnakka,High Score,Slap
 40.00,60.00,Overshooting,Elnakka,High Score,Single Drop
-35.00,50.00,The Yards,Elnakka,High Score,Long Jump
+35.00,45.00,The Yards,Elnakka,High Score,Long Jump
 16.00,24.00,The Pist Bully,Elnakka,High Score,Slap
 12000.00,30000.00,The Boulder Hill Descent,Elnakka,High Score,Gated Trick
 14000.00,30000.00,XL Park World,Elnakka,High Score,Gated Trick
@@ -187,7 +188,6 @@ DD,TD,Challenge Name,Mountain,type,chaltype
 95.00,105.00,The Road Gaps,Elnakka,High Score,Triple Drop
 240.00,280.00,Boulder Hill Escape,Elnakka,High Score,Distance
 5000.00,10000.00,Fulu Air,Dalarna,High Score,Single Trick
-,,Ice Slalom Trial,Dalarna,High Score,Gated Trick
 40.00,42.00,Ski Jumping,Dalarna,High Score,Long Jump
 11000.00,28000.00,Orsa Animal Park,Dalarna,High Score,Gated Trick
 4.50,6.25,Corner Flight,Rotkamm,High Score,Airtime
@@ -228,26 +228,26 @@ DD,TD,Challenge Name,Mountain,type,chaltype
 14000.00,,Boyne trickster,Ben Ailig,High Score,Open Trick
 12000.00,30000.00,Meall Lines,Ben Ailig,High Score,Distance
 4.20,6.00,Flutters,Mount Fairview,High Score,Airtime
-35.00,0.00,The Timber Road Gap,Mount Fairview,High Score,Single Drop
-50.00,0.00,Shoot Out,Mount Fairview,High Score,Single Drop
-100.00,0.00,The Three Diamonds,Mount Fairview,High Score,Triple Drop
+35.00,45.00,The Timber Road Gap,Mount Fairview,High Score,Single Drop
+50.00,70.00,Shoot Out,Mount Fairview,High Score,Single Drop
+100.00,135.00,The Three Diamonds,Mount Fairview,High Score,Triple Drop
 22000.00,0.00,Ollies Invite Only,Mount Fairview,High Score,Gated Trick
 13000.00,25000.00,The Sidehit Road,Mount Fairview,High Score,Gated Trick
 12500.00,0.00,Best Eagle Cookie Park,Mount Fairview,High Score,Gated Trick
 20000.00,0.00,The Woodland Jam,Mount Fairview,High Score,Open Trick
 15000.00,0.00,Booster Berries,Mount Fairview,High Score,Open Trick
-,0.00,Freeride Scout,Mount Fairview,High Score,Open Trick
-4.30,0.00,Desolate Drops,Pinecone Peaks,High Score,Airtime
-4.50,0.00,Pinecone Dropper,Pinecone Peaks,High Score,Airtime
-75.00,0.00,Send It Dropping,Pinecone Peaks,High Score,Triple Drop
-60.00,0.00,Flight Of The Labyrinth,Pinecone Peaks,High Score,Triple Drop
-110.00,0.00,Cone Drops,Pinecone Peaks,High Score,Triple Drop
-110.00,0.00,Gap Of Ages,Pinecone Peaks,High Score,Triple Drop
-7500.00,0.00,One Trick Pony,Pinecone Peaks,High Score,Single Trick
-18000.00,0.00,Rail Jam,Pinecone Peaks,High Score,Gated Trick
-20000.00,0.00,Pinecone Jibber,Pinecone Peaks,High Score,Open Trick
-11000.00,0.00,Send It Tricky,Pinecone Peaks,High Score,Open Trick
-21000.00,0.00,Multiple Park,Pinecone Peaks,High Score,Open Trick
-20000.00,0.00,Desolate Hills Natural,Pinecone Peaks,High Score,Open Trick
-20000.00,0.00,Pine Trickster,Pinecone Peaks,High Score,Open Trick
-240.00,0.00,Find Your Way,Pinecone Peaks,High Score,Distance
+12000.00,35000.00,Freeride Scout,Mount Fairview,High Score,Open Trick
+4.30,10.00,Desolate Drops,Pinecone Peaks,High Score,Airtime
+4.50,7.00,Pinecone Dropper,Pinecone Peaks,High Score,Airtime
+75.00,85.00,Send It Dropping,Pinecone Peaks,High Score,Triple Drop
+60.00,85.00,Flight Of The Labyrinth,Pinecone Peaks,High Score,Triple Drop
+110.00,135.00,Cone Drops,Pinecone Peaks,High Score,Triple Drop
+110.00,135.00,Gap Of Ages,Pinecone Peaks,High Score,Triple Drop
+7500.00,14000.00,One Trick Pony,Pinecone Peaks,High Score,Single Trick
+18000.00,35000.00,Rail Jam,Pinecone Peaks,High Score,Gated Trick
+20000.00,30000.00,Pinecone Jibber,Pinecone Peaks,High Score,Open Trick
+11000.00,20000.00,Send It Tricky,Pinecone Peaks,High Score,Open Trick
+21000.00,40000.00,Multiple Park,Pinecone Peaks,High Score,Open Trick
+20000.00,32000.00,Desolate Hills Natural,Pinecone Peaks,High Score,Open Trick
+20000.00,32000.00,Pine Trickster,Pinecone Peaks,High Score,Open Trick
+240.00,280.00,Find Your Way,Pinecone Peaks,High Score,Distance

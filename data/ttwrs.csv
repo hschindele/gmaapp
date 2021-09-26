@@ -160,8 +160,8 @@ Timestamp,Verified?,Link,Name,OS,Mountain,Was WR,Unnamed: 64,challenge name,type
 2021-06-21 9:39:34,Yes,https://drive.google.com/open?id=1coomKFYHsAXdGCzdnRf7xYYPlkW8STjU,hschindele,iOS,Rotkamm,TRUE,Trail,The Pockets,Time trial,40.32,Trail
 2021-07-06 8:43:15,Yes,https://drive.google.com/open?id=1dlEFh6fCGgPtlsRO0YXQhweAoHKLtyCv,hschindele,iOS,Passo Grolla,TRUE,Race,The Bowls,Time trial,28.19,Race
 2021-06-30 19:10:49,Yes,https://drive.google.com/open?id=1AQTzNQqD5gVHd4XiFzuUc3WDCdJK3Od_,Skier50,iOS,Passo Grolla,TRUE,Race,Tutti Frutti,Time trial,13.76,Race
-2021-07-11 12:14:10,Yes,https://drive.google.com/open?id=1jofkFi9fIv__KO5wYk6eU7_8fCLr031q,Skier50,iOS,Passo Grolla,TRUE,TTB,Autostrada,Time trial,22.93,TTB
-2021-06-26 13:30:55,Yes,https://drive.google.com/open?id=1UPbs73PNr1hN9l-VP1dz9hOUniYGh4Sv,hschindele,iOS,Ben Ailig,TRUE,Race,Downhill Void,Time Trial,19.4,Race
+9/25/2021 15:31:47,Yes,https://drive.google.com/open?id=1_iYf-713HoctGXIxAOHXav7c-oRGhAqp,hschindele,iOS,Passo Grolla,TRUE,,Autostrada,Time trial,22.83,TTB
+9/25/2021 14:11:29,Yes,https://drive.google.com/open?id=10irp13bMDDf9bwyvaDdz8lfZSA2GFpNZ,Avel,iOS,Ben Ailig,TRUE,,Downhill Void,Time Trial,18.58,Race
 2021-06-26 3:48:17,Yes,https://drive.google.com/open?id=1i5QKhCabcD2UeeAYMa_-BCYYfXuy1C1q,Mountain_Greg,Android,Ben Ailig,TRUE,Race,Downhill Skirmish,Time Trial,19.95,Race
 2021-06-25 9:22:31,Yes,https://drive.google.com/open?id=18_Ar7BpEGf7xIiWEJa1r3sZnrV8QXwoO,hschindele,iOS,Pinecone Peaks,TRUE,Race,Mound Racing,Time Trial,32.91,Race
 2021-06-30 6:30:39,Yes,https://drive.google.com/open?id=1vJ8AWhxMci6CKyZJCZXCARXXtFIBXcbY,Mountain_Greg,Android,Dalarna,TRUE,TTB,Sarnaheden Sightseeing,Time trial,41.58,TTB
@@ -170,3 +170,4 @@ Timestamp,Verified?,Link,Name,OS,Mountain,Was WR,Unnamed: 64,challenge name,type
 2021-07-09 12:39:21,Yes,https://drive.google.com/open?id=1VvROp7CX76AAyGsZDTHkX_jnTa8glFN6,hschindele,iOS,Hirschalm,TRUE,TTB,Hirschpeak Voyage,Time trial,33.3,TTB
 2021-06-30 19:12:55,Yes,https://drive.google.com/open?id=1IACnCjFk5fXQM6zEtxxkAGfmoKk3zQH_,Skier50,iOS,Passo Grolla,TRUE,Trail,Carosello Uno,Time trial,33.67,Trail
 2021-07-15 12:44:43,Yes,https://drive.google.com/open?id=1iSNgJZNuPjyj7NbkN1SUqr0JY6gb6nLZ,hschindele,iOS,Passo Grolla,TRUE,Race,Presto,Time trial,19.9,Race
+9/25/2021 22:40:12,Yes,https://drive.google.com/open?id=17iuJcMvV9FJZ9guMBCCIhCfZqBUZ5gNL,hschindele,iOS,Dalarna,TRUE,,Ice Slalom,Time trial,19.62,Trail

@@ -677,6 +677,7 @@ SYNO,2021-01-22 15:59:00,Time trial,iOS,Thru Alvdalen,Dalarna,19.81,11900
 Skier50,2021-03-31 6:18:47,Time trial,iOS,Thru Alvdalen,Dalarna,19.98,10199
 hschindele,2021-04-07 13:55:35,Time trial,iOS,Thru Alvdalen,Dalarna,18.71,22899
 massiv97,2021-01-21 14:41:13,Time trial,Android,Thru Alvdalen,Dalarna,19.94,10599
+hschindele,9/25/2021 22:40:12,Time trial,iOS,Ice Slalom,Dalarna,19.62,20001
 Avel,2021-02-15 10:33:24,Time trial,iOS,Drifting The Frozen Lake,Dalarna,9.63,10699
 BouncyJello,2020-11-19 21:33:37,Time trial,Android,Drifting The Frozen Lake,Dalarna,9.43,12699
 Fenrir,2021-01-13 11:29:28,Time trial,Android,Drifting The Frozen Lake,Dalarna,11.59,1944
@@ -1367,7 +1368,7 @@ massiv97,2021-07-15 4:12:38,Time trial,Android,The Forever Run,Passo Grolla,48.7
 Jamiemac,8/16/2021 4:41:40,Time trial,Android,Autostrada,Passo Grolla,24.66,13399
 Mountain_Greg,2021-06-22 5:04:27,Time trial,Android,Autostrada,Passo Grolla,23.54,24600
 Skier50,2021-07-11 12:14:10,Time trial,iOS,Autostrada,Passo Grolla,22.93,30700
-hschindele,2021-06-21 9:41:32,Time trial,iOS,Autostrada,Passo Grolla,24.76,12399
+hschindele,9/25/2021 15:31:47,Time trial,iOS,Autostrada,Passo Grolla,22.83,31700
 massiv97,2021-06-26 17:11:26,Time trial,Android,Autostrada,Passo Grolla,24.38,16200
 Avel,2021-05-23 14:54:00,Time Trial,iOS,The Swindler,Ben Ailig,25.81,11900
 BouncyJello,2020-11-19 21:04:08,Time Trial,Android,The Swindler,Ben Ailig,23.97,30300
@@ -1447,6 +1448,7 @@ SYNO,2021-01-06 8:21:46,Time Trial,iOS,Straight Lining,Ben Ailig,6.99,10099
 Skier50,2021-05-30 20:39:27,Time Trial,iOS,Straight Lining,Ben Ailig,6.96,10400
 hschindele,2021-06-19 21:45:39,Time Trial,iOS,Straight Lining,Ben Ailig,6.69,13099
 massiv97,2021-01-27 17:46:27,Time Trial,Android,Straight Lining,Ben Ailig,6.95,10499
+Avel,9/25/2021 14:11:29,Time Trial,iOS,Downhill Void,Ben Ailig,18.58,34200
 Jamiemac,8/16/2021 5:54:49,Time Trial,Android,Downhill Void,Ben Ailig,20.02,19800
 Mountain_Greg,2021-06-26 3:49:00,Time Trial,Android,Downhill Void,Ben Ailig,20.74,12600
 Skier50,2021-06-30 19:14:40,Time Trial,iOS,Downhill Void,Ben Ailig,19.96,20399
@@ -1852,8 +1854,8 @@ SYNO,2021-04-05 12:37:05,High score,iOS,Bear Cub Run,Elnakka,15.0,16818
 Skier50,2021-04-09 10:33:27,High score,iOS,Bear Cub Run,Elnakka,13.0,11893
 hschindele,2020-02-03 19:37:41,High score,iOS,Bear Cub Run,Elnakka,14.0,14143
 massiv97,2021-01-07 11:48:09,High score,Android,Bear Cub Run,Elnakka,14.0,14143
-Avel,9/25/2021 6:50:37,High score,iOS,The Yards,Elnakka,48.4,625
-Gucci Garrett,9/22/2021 7:58:48,High score,Android,The Yards,Elnakka,44.1,1
+Avel,9/25/2021 6:50:37,High score,iOS,The Yards,Elnakka,48.4,15472
+Gucci Garrett,9/22/2021 7:58:48,High score,Android,The Yards,Elnakka,44.1,8909
 hschindele,9/25/2021 7:44:52,High score,iOS,The Yards,Elnakka,50.4,20000
 BouncyJello,2021-01-13 17:46:50,High score,iOS,The Pist Bully,Elnakka,25.0,11041
 Bramspr,2020-02-02 14:27:01,High score,iOS,The Pist Bully,Elnakka,16.0,4529
@@ -1871,7 +1873,7 @@ Avel,9/20/2021 13:46:24,High score,iOS,XL Park World,Elnakka,65833.0,20001
 Avel,9/25/2021 3:43:45,High score,iOS,Terve Jumping,Elnakka,26963.0,0
 Avel,9/20/2021 13:55:02,High score,iOS,Elnakka Freedom,Elnakka,425.0,0
 Avel,9/25/2021 3:41:58,High score,iOS,The Road Gaps,Elnakka,112.0,20000
-Avel ,9/25/2021 3:33:45,High score,iOS,Boulder Hill Escape,Elnakka,298.1,16027
+Avel,9/25/2021 3:33:45,High score,iOS,Boulder Hill Escape,Elnakka,298.1,16027
 BouncyJello,2021-02-18 19:44:46,High score,Android,Boulder Hill Escape,Elnakka,306.6,20001
 Bramspr,2020-05-05 13:04:47,High score,iOS,Boulder Hill Escape,Elnakka,243.4,3854
 Fenrir,2021-01-12 18:22:15,High score,Android,Boulder Hill Escape,Elnakka,247.5,4288
@@ -1883,6 +1885,9 @@ Skier50,2021-04-09 10:38:45,High score,iOS,Boulder Hill Escape,Elnakka,284.2,111
 hschindele,2021-01-24 13:34:45,High score,iOS,Boulder Hill Escape,Elnakka,293.2,14106
 massiv97,2021-03-01 7:11:49,High score,Android,Boulder Hill Escape,Elnakka,292.0,13672
 Avel,9/20/2021 13:57:06,High score,iOS,Orsa Animal Park,Dalarna,48133.0,20001
+Avel,9/25/2021 14:32:45,High score,iOS,Rotkamm Style I,Rotkamm,35989.0,20001
+Avel,9/25/2021 14:28:50,High score,iOS,The Descender,Rotkamm,111.0,20000
+Avel,9/25/2021 14:34:41,High score,iOS,Pilgrim Run,Rotkamm,353.7,11543
 BouncyJello,2021-02-18 19:46:11,High score,Android,Pilgrim Run,Rotkamm,406.2,20000
 Chesty,2020-11-20 10:43:03,High score,iOS,Pilgrim Run,Rotkamm,310.0,7305
 Fenrir,2021-02-22 16:47:10,High score,Android,Pilgrim Run,Rotkamm,312.5,7499
@@ -1893,6 +1898,7 @@ SYNO,2021-02-15 20:21:06,High score,iOS,Pilgrim Run,Rotkamm,340.4,10042
 Skier50,2021-04-09 10:46:35,High score,iOS,Pilgrim Run,Rotkamm,341.2,10127
 hschindele,2020-12-25 22:03:13,High score,iOS,Pilgrim Run,Rotkamm,358.1,12087
 massiv97,2021-03-01 7:12:45,High score,Android,Pilgrim Run,Rotkamm,345.7,10615
+Avel,9/25/2021 14:44:13,High score,iOS,Sending It,Rotkamm,31247.0,20001
 massiv97,2021-01-04 17:38:57,High score,Android,Baton Rouge,Saint Luvette,16.0,11487
 Fenrir,2021-01-17 18:33:43,High score,Android,Baton Rouge,Saint Luvette,10.0,5001
 BouncyJello,2021-02-10 18:40:31,High score,Android,Baton Rouge,Saint Luvette,20.0,20000
@@ -1903,6 +1909,8 @@ Mountain_Greg,2021-05-25 15:30:29,High score,Android,Baton Rouge,Saint Luvette,1
 hschindele,2020-03-20 11:19:26,High score,iOS,Baton Rouge,Saint Luvette,16.0,11487
 Lars Schrier,2020-04-23 13:10:06,High score,iOS,Baton Rouge,Saint Luvette,17.0,13196
 Avel,9/21/2021 14:13:20,High score,iOS,Trix De Ville,Saint Luvette,34954.0,20001
+Avel,9/25/2021 14:39:26,High score,iOS,Saut Bizarre,Saint Luvette,14568.0,20000
+Avel,9/25/2021 14:30:50,High score,iOS,Les Troix Drops,Saint Luvette,88.3,20000
 Avel,2021-05-27 14:15:04,High score,iOS,Un Chapeau Courageux,Saint Luvette,387.5,17445
 BouncyJello,2021-04-26 14:36:30,High score,Android,Un Chapeau Courageux,Saint Luvette,388.5,18008
 Fenrir,2021-01-17 18:31:28,High score,Android,Un Chapeau Courageux,Saint Luvette,326.5,2508
@@ -1915,7 +1923,11 @@ Skier50,2021-05-28 10:19:12,High score,iOS,Un Chapeau Courageux,Saint Luvette,39
 SwampfoxAK,2020-04-23 14:44:54,High score,Android,Un Chapeau Courageux,Saint Luvette,345.4,4575
 hschindele,2021-06-14 11:25:50,High score,iOS,Un Chapeau Courageux,Saint Luvette,391.8,20000
 massiv97,2021-03-13 3:46:50,High score,Android,Un Chapeau Courageux,Saint Luvette,374.2,11429
+Avel,9/25/2021 14:41:45,High score,iOS,Le Pipe,Saint Luvette,31397.0,20001
 Avel,9/25/2021 3:17:21,High score,iOS,Caso Della Stella,Passo Grolla,89.8,20000
+Avel,9/25/2021 14:24:07,High score,iOS,Scoiattolo,Passo Grolla,23720.0,20001
+Avel,9/25/2021 14:17:27,High score,iOS,Il Fenomeno,Passo Grolla,32970.0,0
+Avel,9/25/2021 14:27:09,High score,iOS,Down,Passo Grolla,153.1,20000
 BouncyJello,2021-05-25 12:41:05,High score,Android,Il Stupido,Passo Grolla,290.1,20001
 DeathSpawned,2020-05-02 9:15:29,High score,Android,Il Stupido,Passo Grolla,277.2,8252
 Gjeep302,2021-02-05 18:00:36,High score,Android,Il Stupido,Passo Grolla,283.6,12803
@@ -1924,6 +1936,7 @@ Mountain_Greg,2021-03-19 8:36:44,High score,Android,Il Stupido,Passo Grolla,288.
 Skier50,2021-05-24 18:50:56,High score,iOS,Il Stupido,Passo Grolla,280.6,10421
 hschindele,2020-04-27 17:22:00,High score,iOS,Il Stupido,Passo Grolla,276.8,8029
 massiv97,2021-05-25 15:07:24,High score,Android,Il Stupido,Passo Grolla,283.5,12716
+Avel,9/25/2021 14:20:38,High score,iOS,Offpiste Paradise,Passo Grolla,30168.0,20001
 Avel,9/25/2021 3:21:32,High score,iOS,MacAskill Riding,Ben Ailig,31039.0,0
 BouncyJello,2021-05-07 14:45:27,High score,Android,The Meall Exit,Ben Ailig,307.7,20001
 Gjeep302,2021-03-17 8:34:29,High score,Android,The Meall Exit,Ben Ailig,278.8,6450
@@ -1936,11 +1949,11 @@ massiv97,2021-05-25 15:24:55,High score,Android,The Meall Exit,Ben Ailig,294.7,1
 PelagusPlays,9/24/2021 13:59:26,High score,iOS,The Delucia Transfers,Ben Ailig,13854.0,20001
 Avel,9/25/2021 6:54:46,High score,iOS,Ollies Invite Only,Mount Fairview,47624.0,0
 Avel,9/25/2021 7:02:30,High score,iOS,The Sidehit Road,Mount Fairview,28542.0,20001
-Avel ,9/25/2021 6:52:52,High score,iOS,Best Eagle Cookie Park,Mount Fairview,24050.0,0
+Avel,9/25/2021 6:52:52,High score,iOS,Best Eagle Cookie Park,Mount Fairview,24050.0,0
 Avel,9/25/2021 6:59:10,High score,iOS,Booster Berries,Mount Fairview,32744.0,0
-Avel,9/25/2021 6:56:36,High score,iOS,Freeride Scout,Mount Fairview,32820.0,0
-Avel,2021-06-06 6:16:36,High score,iOS,Find Your Way,Pinecone Peaks,283.8,0
-Mountain_Greg,2021-04-08 11:56:57,High score,Android,Find Your Way,Pinecone Peaks,262.3,0
-Skier50,2021-06-08 6:36:54,High score,iOS,Find Your Way,Pinecone Peaks,284.0,0
-massiv97,2021-04-05 18:16:41,High score,Android,Find Your Way,Pinecone Peaks,244.9,0
-┴҉ɥ̶́ɐ̶͞͠ʇ̕͡͝𝓸̡̧͜𝓾̶͘ǝ̶̕פ̨͘𝓷̸̛͘ʎ,2021-04-05 14:37:01,High score,iOS,Find Your Way,Pinecone Peaks,239.3,0
+Avel,9/25/2021 6:56:36,High score,iOS,Freeride Scout,Mount Fairview,32820.0,20001
+Avel,2021-06-06 6:16:36,High score,iOS,Find Your Way,Pinecone Peaks,283.8,19319
+Mountain_Greg,2021-04-08 11:56:57,High score,Android,Find Your Way,Pinecone Peaks,262.3,466
+Skier50,2021-06-08 6:36:54,High score,iOS,Find Your Way,Pinecone Peaks,284.0,20001
+massiv97,2021-04-05 18:16:41,High score,Android,Find Your Way,Pinecone Peaks,244.9,23
+┴҉ɥ̶́ɐ̶͞͠ʇ̕͡͝𝓸̡̧͜𝓾̶͘ǝ̶̕פ̨͘𝓷̸̛͘ʎ,2021-04-05 14:37:01,High score,iOS,Find Your Way,Pinecone Peaks,239.3,9
