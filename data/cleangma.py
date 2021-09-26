@@ -3,7 +3,7 @@ import numpy as np
 from scipy.optimize import curve_fit
 import matplotlib.pyplot as plt
 
-numTTTDs = 171
+numTTTDs = 172
 
 chals = pd.read_csv('gmachallenges.csv')
 df = pd.read_csv('gmaraw.csv')

@@ -28,14 +28,97 @@ archive190 = pd.read_csv(DATA_PATH.joinpath("gma190archive.csv"))
 mountains_list = ['Hirschalm', 'Waldtal', 'Elnakka', 'Dalarna', 'Rotkamm', 'Saint Luvette',
                   'Passo Grolla', 'Ben Ailig', 'Mount Fairview', 'Pinecone Peaks']
                   
-mountainwrlist = [1,2,3,4,5,6,7,8,9,10]
+def makearchiverecords():
+    armountainlist = []
+    for mountain in mountains_list:
+        curdf = archive190.copy()
+        curdf = curdf[curdf['Mountain'] == mountain]
+        curdf = curdf[(curdf['chaltype'] == 'Airtime') | (curdf['chaltype'] == 'Open Trick') | (curdf['chaltype'] == 'Gated Trick') | (curdf['chaltype'] == 'Triple Drop') | (curdf['chaltype'] == 'Long Jump') | (curdf['chaltype'] == 'Single Drop') | (curdf['chaltype'] == 'Single Trick')]
+        curdf = curdf[curdf['Was WR'] == True]
+        curdf = curdf.groupby('challenge name', group_keys=False).apply(lambda x: x.loc[x.score.idxmax()])
+        curdf = curdf.rename(columns={'challenge name':'Challenge Name','Name':'Player','score':'Score','Timestamp':'Date Set'})
+        column_names = ['Challenge Name','Score','Player','Date Set','OS','chaltype','type','Mountain','Was WR','Verified?','Link']
+        curdf = curdf.reindex(columns=column_names)
+        curdt = dt.DataTable(
+            id='archivetable',
+            columns=[{'name':i, 'id':i} for i in curdf],
+            css=[{'selector': ".show-hide", "rule": "display: none"}],
+            data=curdf.to_dict('rows'),
+            style_cell_conditional=[
+                {
+                    'if': {'column_id': 'Challenge Name'},
+                    'textAlign': 'left'
+                },
+                {
+                    'if': {'column_id': 'Score'},
+                    'textAlign': 'center'
+                },
+                {
+                    'if': {'column_id': 'OS'},
+                    'textAlign': 'center'
+                },
+                {
+                    'if': {'column_id': 'Player'},
+                    'textAlign': 'center'
+                }
+            ],
+            style_data_conditional=[
+                {
+                    'if': {
+                        'filter_query': '{chaltype} eq "Single Trick"'
+                    },
+                    'backgroundColor': '#deabd8'
+                },
+                {
+                    'if': {
+                        'filter_query': '{chaltype} eq "Single Drop"'
+                    },
+                    'backgroundColor': '#deabd8'
+                },
+                {
+                    'if': {
+                        'filter_query': '{chaltype} eq "Airtime"'
+                    },
+                    'backgroundColor': '#deabd8'
+                },
+                {
+                    'if': {
+                        'filter_query': '{chaltype} eq "Long Jump"'
+                    },
+                    'backgroundColor': '#deabd8'
+                },
+                {
+                    'if': {
+                        'filter_query': '{chaltype} eq "Gated Trick"'
+                    },
+                    'backgroundColor': '#fe7198'
+                },
+                {
+                    'if': {
+                        'filter_query': '{chaltype} eq "Open Trick"'
+                    },
+                    'backgroundColor': '#ffa162'
+                },
+                {
+                    'if': {
+                        'filter_query': '{chaltype} eq "Triple Drop"'
+                    },
+                    'backgroundColor': '#55c8ba'
+                }
+            ],
+            hidden_columns=['chaltype','type','Mountain','Was WR','Verified?','Link']
+        )
+        armountainlist.append(curdt)
+    return armountainlist
+
+mountainwrlist = makearchiverecords()
 
 def archivepage(outtype):
-    if outtype != 'one':
+    if outtype == 'one':
         return html.Div([
             dbc.Row([
                 dbc.Col([
-                    html.H3(returnstring+" World Records"),
+                    html.H3("v190 World Records"),
                     html.Br(),
                     html.H4('Hirschalm 🇦🇹', className='title'),
                     html.Hr(),
@@ -124,7 +207,10 @@ archive_layout = html.Div([
             ]),
             html.Br(),
             html.Hr(),
-            html.Div(id='archive-content')
+            dbc.Col([
+                html.Div(id='archive-content')
+            ],
+            style={'width': '50%'})
         ])
     ],
     style = {'padding-left':20})

@@ -21,7 +21,7 @@ from helpers import calcHSpoints, get_challenge_names, getTDcount, recentWRs, re
 from Mountains import mountain_layout, mountaincontent, graphinfo, challengeinfo
 from recordsandrankings import makemountainWRs, makemountainrankings, mountainrankpage, records_layout
 from playerpage import makecomparisonPB, makemountainPBs, makePBdf, player_layout, update_player_page, player_compare
-from archive import archive_layout
+from archive import archive_layout, archivepage
 
 PATH = pathlib.Path(__file__)
 DATA_PATH = PATH.joinpath("../data").resolve()
@@ -608,6 +608,10 @@ def update_pin_info(challenge_selected):
 @app.callback(Output('Pinecone Peaks-content2', 'children'), [Input('Pin_dropdown','value'),Input('Players','value')])
 def update_graph_pin(challenge_selected, player_selected):
     return graphinfo(challenge_selected, player_selected, pindf)
+    
+@app.callback(Output('archive-content', 'children'), [Input('archiveselect','value')])
+def update_archive(outtype):
+    return archivepage(outtype)
     
 if __name__ == '__main__':
     app.run_server(debug=True)

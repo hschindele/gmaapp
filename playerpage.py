@@ -62,6 +62,78 @@ def makecomparisonPB(pbdf, orgplayer, playertocomp):
             style_data_conditional=[
                 {
                     'if': {
+                        'filter_query': '{chaltype} eq "Race"'
+                    },
+                    'backgroundColor': '#6abe7c'
+                },
+                {
+                    'if': {
+                        'filter_query': '{chaltype} eq "Trail"'
+                    },
+                    'backgroundColor': '#deabd8'
+                },
+                {
+                    'if': {
+                        'filter_query': '{chaltype} eq "Slap"'
+                    },
+                    'backgroundColor': '#deabd8'
+                },
+                {
+                    'if': {
+                        'filter_query': '{chaltype} eq "Single Trick"'
+                    },
+                    'backgroundColor': '#deabd8'
+                },
+                {
+                    'if': {
+                        'filter_query': '{chaltype} eq "Single Drop"'
+                    },
+                    'backgroundColor': '#deabd8'
+                },
+                {
+                    'if': {
+                        'filter_query': '{chaltype} eq "Airtime"'
+                    },
+                    'backgroundColor': '#deabd8'
+                },
+                {
+                    'if': {
+                        'filter_query': '{chaltype} eq "Long Jump"'
+                    },
+                    'backgroundColor': '#deabd8'
+                },
+                {
+                    'if': {
+                        'filter_query': '{chaltype} eq "TTB"'
+                    },
+                    'backgroundColor': '#9c6ab3'
+                },
+                {
+                    'if': {
+                        'filter_query': '{chaltype} eq "Gated Trick"'
+                    },
+                    'backgroundColor': '#fe7198'
+                },
+                {
+                    'if': {
+                        'filter_query': '{chaltype} eq "Open Trick"'
+                    },
+                    'backgroundColor': '#ffa162'
+                },
+                {
+                    'if': {
+                        'filter_query': '{chaltype} eq "Distance"'
+                    },
+                    'backgroundColor': '#4d9bd8'
+                },
+                {
+                    'if': {
+                        'filter_query': '{chaltype} eq "Triple Drop"'
+                    },
+                    'backgroundColor': '#55c8ba'
+                },
+                {
+                    'if': {
                         'filter_query': '{Better} = 1',
                         'column_id': orgplayer
                     },
@@ -232,7 +304,7 @@ def makePBdf(playername):
         allcopy = allcopy[allcopy['Name'] == playername]
         playerwrs = allwrs[allwrs['Name'] == playername]
         numcurwr = len(playerwrs.index)
-        prevplayerwrs = allcopy[allcopy['Was WR'] == True]
+        prevplayerwrs = allcopy[allcopy['Was WR'] == 'TRUE']
         prevwrcount = len(prevplayerwrs.index)
         chaldf = challenges.copy()
         chaldf.reset_index(drop=True)
@@ -454,7 +526,7 @@ def update_player_page(playername, n_clicks):
                     ]),
                     dbc.Col([
                         html.Div([
-                            html.H3(playername+"'s Info TDs: "+str(getTDcount(playername))+" / 171",
+                            html.H3(playername+"'s Info TDs: "+str(getTDcount(playername))+" / 172",
                                 style={'text-align': 'Center'}
                             ),
                             html.Hr(),
