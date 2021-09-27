@@ -47,6 +47,7 @@ Pinsek,2021-03-09 10:54:06,Time trial,Android,The Offpist Trail,Hirschalm,31.7,1
 Ryan Monty,2021-04-13 10:31:30,Time trial,Android,The Offpist Trail,Hirschalm,31.41,15899
 SYNO,2021-01-20 15:16:32,Time trial,iOS,The Offpist Trail,Hirschalm,31.88,11200
 Skier50,2021-03-05 11:27:27,Time trial,iOS,The Offpist Trail,Hirschalm,31.91,10899
+Susannah,2021-09-27 12:40:16,Time trial,Android,The Offpist Trail,Hirschalm,33.7,7696
 eFrostyy,2021-02-12 16:01:21,Time trial,Android,The Offpist Trail,Hirschalm,33.1,8441
 hschindele,2021-02-04 21:53:21,Time trial,iOS,The Offpist Trail,Hirschalm,30.73,22699
 massiv97,2021-07-15 3:59:32,Time trial,Android,The Offpist Trail,Hirschalm,31.6,13999
@@ -63,6 +64,7 @@ Pinsek,2021-03-09 16:45:38,Time trial,Android,The Winding Road,Hirschalm,38.46,1
 Ryan Monty,2021-04-27 14:34:38,Time trial,Android,The Winding Road,Hirschalm,37.76,17400
 SYNO,2021-01-20 15:18:50,Time trial,iOS,The Winding Road,Hirschalm,38.41,10900
 Skier50,2021-03-05 11:28:10,Time trial,iOS,The Winding Road,Hirschalm,38.13,13699
+Susannah,2021-09-27 12:41:56,Time trial,Android,The Winding Road,Hirschalm,38.88,9275
 eFrostyy,2021-02-12 16:01:58,Time trial,Android,The Winding Road,Hirschalm,39.31,8517
 hschindele,2021-04-08 21:34:02,Time trial,iOS,The Winding Road,Hirschalm,36.62,28800
 massiv97,2021-01-21 12:32:41,Time trial,Android,The Winding Road,Hirschalm,38.13,13699
@@ -78,6 +80,7 @@ Ryan Monty,2021-02-28 18:07:18,Time trial,Android,Over The Fence,Hirschalm,19.69
 SYNO,2021-01-13 18:35:41,Time trial,iOS,Over The Fence,Hirschalm,19.65,13500
 Shadow,2020-11-23 19:46:16,Time trial,iOS,Over The Fence,Hirschalm,19.12,18799
 Skier50,2021-02-15 6:14:08,Time trial,iOS,Over The Fence,Hirschalm,19.99,10100
+Susannah,2021-09-27 12:43:31,Time trial,Android,Over The Fence,Hirschalm,20.42,7474
 eFrostyy,2021-02-12 16:02:49,Time trial,Android,Over The Fence,Hirschalm,21.05,4829
 hschindele,2021-07-15 11:54:37,Time trial,iOS,Over The Fence,Hirschalm,18.17,28299
 massiv97,2021-07-15 3:58:14,Time trial,Android,Over The Fence,Hirschalm,18.84,21600
@@ -1828,7 +1831,9 @@ Skier50,2021-05-30 17:13:54,Time Trial,iOS,Pinecone Force,Pinecone Peaks,52.22,1
 hschindele,2021-04-03 16:50:46,Time Trial,iOS,Pinecone Force,Pinecone Peaks,51.42,20799
 massiv97,2021-04-09 18:52:38,Time Trial,Android,Pinecone Force,Pinecone Peaks,52.09,14099
 hschindele,2021-09-24 8:27:16,High score,iOS,The Glacier Kicker,Hirschalm,55.5,20001
-Avel,2021-09-20 13:48:56,High score,iOS,Glacier Park,Hirschalm,22119.0,20000
+Jamiemac,2021-09-27 11:29:54,High score,Android,The Glacier Kicker,Hirschalm,46.1,10754
+Avel,2021-09-20 13:48:56,High score,iOS,Glacier Park,Hirschalm,22119.0,16552
+Jamiemac,2021-09-27 11:22:35,High score,Android,Glacier Park,Hirschalm,24042.0,20001
 Avel,2021-09-20 13:50:57,High score,iOS,Waldhorn Slopestyle,Waldtal,45993.0,20001
 Avel,2021-09-20 13:53:10,High score,iOS,The Waldhorn Falls,Waldtal,130.0,20000
 Avel,2021-09-25 3:29:05,High score,iOS,The Fork,Waldtal,352.8,10612
