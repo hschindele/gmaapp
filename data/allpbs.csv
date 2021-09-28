@@ -95,6 +95,7 @@ Pinsek,2021-03-09 7:12:26,Time trial,Android,The Shortcut,Hirschalm,25.9,11000
 Ryan Monty,2021-02-28 18:08:28,Time trial,Android,The Shortcut,Hirschalm,25.88,11200
 SYNO,2021-01-08 16:56:43,Time trial,iOS,The Shortcut,Hirschalm,25.91,10899
 Skier50,2021-02-16 18:19:00,Time trial,iOS,The Shortcut,Hirschalm,25.94,10599
+Susannah,9/27/2021 19:35:59,Time trial,Android,The Shortcut,Hirschalm,26.3,8122
 eFrostyy,2021-02-12 16:03:33,Time trial,Android,The Shortcut,Hirschalm,26.55,6830
 hschindele,2021-01-06 10:46:14,Time trial,iOS,The Shortcut,Hirschalm,25.31,16900
 massiv97,2021-06-05 6:29:26,Time trial,Android,The Shortcut,Hirschalm,25.7,13000
@@ -134,16 +135,18 @@ Mountain_Greg,2021-06-22 5:03:48,Time trial,Android,The Descent,Hirschalm,28.71,
 Jamiemac,2021-06-30 3:34:26,Time trial,Android,The Descent,Hirschalm,28.68,13200
 Skier50,2021-06-30 18:51:45,Time trial,iOS,The Descent,Hirschalm,28.86,11400
 massiv97,2021-07-03 5:32:44,Time trial,Android,The Descent,Hirschalm,28.97,10300
+Susannah,9/27/2021 19:37:26,Time trial,Android,The Descent,Hirschalm,30.43,6092
 Jamiemac,2021-07-09 12:43:44,Time trial,Android,Hirschpeak Voyage,Hirschalm,35.89,8975
 Mountain_Greg,2021-07-06 14:34:54,Time trial,Android,Hirschpeak Voyage,Hirschalm,33.38,31199
 Skier50,2021-07-05 21:09:43,Time trial,iOS,Hirschpeak Voyage,Hirschalm,35.25,12500
 hschindele,2021-07-09 12:39:21,Time trial,iOS,Hirschpeak Voyage,Hirschalm,33.3,32000
 massiv97,2021-07-10 5:31:21,Time trial,Android,Hirschpeak Voyage,Hirschalm,35.11,13900
-Jamiemac,2021-07-08 15:14:16,Time trial,Android,Hirschalm show off,Hirschalm,32.8,3298
-Mountain_Greg,2021-06-30 6:31:19,Time trial,Android,Hirschalm show off,Hirschalm,32.0,10000
-Skier50,2021-07-05 21:10:28,Time trial,iOS,Hirschalm show off,Hirschalm,31.56,14400
-hschindele,2021-07-08 14:40:00,Time trial,iOS,Hirschalm show off,Hirschalm,31.08,19200
-massiv97,2021-07-09 15:07:33,Time trial,Android,Hirschalm show off,Hirschalm,34.01,616
+Jamiemac,2021-07-08 15:14:16,Time trial,Android,Hirschalm show off,Hirschalm,32.8,32000
+Mountain_Greg,2021-06-30 6:31:19,Time trial,Android,Hirschalm show off,Hirschalm,32.0,40000
+Skier50,2021-07-05 21:10:28,Time trial,iOS,Hirschalm show off,Hirschalm,31.56,44400
+Susannah,9/27/2021 19:56:29,Time trial,Android,Hirschalm show off,Hirschalm,32.17,38299
+hschindele,2021-07-08 14:40:00,Time trial,iOS,Hirschalm show off,Hirschalm,31.08,49200
+massiv97,2021-07-09 15:07:33,Time trial,Android,Hirschalm show off,Hirschalm,34.01,19900
 Avel,2021-02-24 11:59:53,Time trial,iOS,The Woodland Slalom,Waldtal,24.49,10100
 Chesty,2020-12-15 23:46:10,Time trial,iOS,The Woodland Slalom,Waldtal,24.28,12199
 Fenrir,2021-01-12 17:19:15,Time trial,Android,The Woodland Slalom,Waldtal,25.33,5625
@@ -680,8 +683,8 @@ SYNO,2021-01-22 15:59:00,Time trial,iOS,Thru Alvdalen,Dalarna,19.81,11900
 Skier50,2021-03-31 6:18:47,Time trial,iOS,Thru Alvdalen,Dalarna,19.98,10199
 hschindele,2021-04-07 13:55:35,Time trial,iOS,Thru Alvdalen,Dalarna,18.71,22899
 massiv97,2021-01-21 14:41:13,Time trial,Android,Thru Alvdalen,Dalarna,19.94,10599
-hschindele,2021-09-25 22:40:12,Time trial,iOS,Ice Slalom,Dalarna,19.62,20001
-massiv97,2021-09-26 14:01:45,Time trial,Android,Ice Slalom,Dalarna,20.64,11983
+hschindele,2021-09-25 22:40:12,Time trial,iOS,Ice Slalom,Dalarna,19.62,20000
+massiv97,2021-09-26 14:01:45,Time trial,Android,Ice Slalom,Dalarna,20.64,8956
 Avel,2021-02-15 10:33:24,Time trial,iOS,Drifting The Frozen Lake,Dalarna,9.63,10699
 BouncyJello,2020-11-19 21:33:37,Time trial,Android,Drifting The Frozen Lake,Dalarna,9.43,12699
 Fenrir,2021-01-13 11:29:28,Time trial,Android,Drifting The Frozen Lake,Dalarna,11.59,1944
@@ -1835,6 +1838,7 @@ Jamiemac,2021-09-27 11:29:54,High score,Android,The Glacier Kicker,Hirschalm,46.
 Avel,2021-09-20 13:48:56,High score,iOS,Glacier Park,Hirschalm,22119.0,16552
 Jamiemac,2021-09-27 11:22:35,High score,Android,Glacier Park,Hirschalm,24042.0,20001
 Avel,2021-09-20 13:50:57,High score,iOS,Waldhorn Slopestyle,Waldtal,45993.0,20001
+Jamiemac,9/27/2021 17:36:57,High score,Android,Waldhorn Slopestyle,Waldtal,31980.0,11658
 Avel,2021-09-20 13:53:10,High score,iOS,The Waldhorn Falls,Waldtal,130.0,20000
 Avel,2021-09-25 3:29:05,High score,iOS,The Fork,Waldtal,352.8,10612
 BouncyJello,2021-02-18 19:38:33,High score,Android,The Fork,Waldtal,382.7,20001
