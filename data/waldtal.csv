@@ -403,9 +403,9 @@ Timestamp,Link,Name,OS,Mountain,Was WR,Unnamed: 64,challenge name,type,score,cha
 2020-05-14 19:15:19,https://drive.google.com/open?id=1MnilcWTnV7XNMZGxjUuS9zqkUnPJ6y8b,BouncyJello,Android,Waldtal,TRUE,Trail,Little Drops,Time trial,10.15,Trail
 2020-05-20 12:48:51,https://drive.google.com/open?id=1RoAIbuGceiiPXB3K8twb92s3lVS1bX2n,Lars Schrier,iOS,Waldtal,TRUE,Trail,The Three Trees,Time trial,11.11,Trail
 2021-09-20 13:50:57,https://drive.google.com/open?id=1ywOhjJ-ldkv6EbIo3ckLdZTgKTMCW_TO,Avel,iOS,Waldtal,TRUE,,Waldhorn Slopestyle,High score,45993.0,Gated Trick
-2021-09-20 13:53:10,https://drive.google.com/open?id=1O7GfEbU2ykZqHhu1_BvOZKLi1Y5wr3-u,Avel,iOS,Waldtal,TRUE,,The Waldhorn Falls,High score,130.0,Triple Drop
+2021-09-20 13:53:10,https://drive.google.com/open?id=1O7GfEbU2ykZqHhu1_BvOZKLi1Y5wr3-u,Avel,iOS,Waldtal,TRUE,,The Waldhorn Falls,High score,103.0,Triple Drop
 2021-09-25 3:29:05,https://drive.google.com/open?id=1CX0D98QXTPKXl2M61E4Olt7Er8eRv1xz,Avel,iOS,Waldtal,FALSE,,The Fork,High score,352.8,Distance
-2021-09-25 3:31:25,https://drive.google.com/open?id=1RSjHww7equiNdj0_hiMWAmI74x_IZG89,Avel,iOS,Waldtal,TRUE,,The Waldhorn Falls,High score,68.8,Triple Drop
+2021-09-25 3:31:25,https://drive.google.com/open?id=1RSjHww7equiNdj0_hiMWAmI74x_IZG89,Avel,iOS,Waldtal,TRUE,,Rigid Jumps,High score,68.8,Triple Drop
 2021-09-25 3:53:07,https://drive.google.com/open?id=1ZfYfK6FuqZjfQPIXaCVRg4DpUv-utNTM,Avel,iOS,Waldtal,FALSE,,The Fatal Drops,Time trial,12.68,Trail
 2021-09-25 4:00:04,https://drive.google.com/open?id=1BehBLQWyTCCiDSN7ziQuFwaLi-gd8Rj0,Avel,iOS,Waldtal,FALSE,,Gemsgully Whites,Time trial,31.21,Race
 2021-09-27 7:50:59,https://drive.google.com/open?id=1EHUxvTxGx5iUTAl9Xl0oPYfl1J1EK54Q,hschindele,iOS,Waldtal,TRUE,,Waldhorn Voyage,Time trial,54.36,TTB
@@ -415,3 +415,4 @@ Timestamp,Link,Name,OS,Mountain,Was WR,Unnamed: 64,challenge name,type,score,cha
 9/28/2021 17:13:57,https://drive.google.com/open?id=1yCoOGs9kzGoLLSkFvFIfqQPmdxty9-CB,Susannah,Android,Waldtal,FALSE,,Gemsgully Whites,Time trial,31.71,Race
 9/28/2021 19:41:44,https://drive.google.com/open?id=1go5YEoO5mVNCSaJ5fY__0nHgBevOZFC2,Susannah,Android,Waldtal,FALSE,,The Woodland Slalom,Time trial,24.4,Race
 9/28/2021 20:16:40,https://drive.google.com/open?id=1s0WmSQC8d2-W45ARj0w3sAaqqRR0pFcB,Susannah,Android,Waldtal,FALSE,,The Siriside Slalom,Time trial,13.93,Race
+9/29/2021 10:27:45,https://drive.google.com/open?id=18dgd3yj7Sbj20Ky81tqC2QKqiC7BCApb,Susannah,Android,Waldtal,FALSE,,Woodland Deep Trail,Time trial,14.68,Trail
