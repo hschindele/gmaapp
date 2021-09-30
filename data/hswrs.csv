@@ -3,7 +3,7 @@ Timestamp,Verified?,Link,Name,OS,Mountain,Was WR,Unnamed: 64,challenge name,type
 2021-02-18 19:46:11,Yes,https://drive.google.com/open?id=1DBE2beWjSkKoALzOW5dsBaY_XP5bUX2n,BouncyJello,Android,Rotkamm,TRUE,Distance,Pilgrim Run,High score,406.2,Distance
 2021-02-18 19:44:46,Yes,https://drive.google.com/open?id=1our76mvUTfEupTeMzv71lvsgXSxgSQQo,BouncyJello,Android,Elnakka,TRUE,Distance,Boulder Hill Escape,High score,306.6,Distance
 2021-02-18 19:40:01,Yes,https://drive.google.com/open?id=17MisneTIHobonS_87bQ0x781uofhDYwu,BouncyJello,Android,Elnakka,TRUE,Slap,Bear Cub Run,High score,16.0,Slap
-2020-04-23 12:33:51,Yes,https://drive.google.com/open?id=1q4Hg129k7RB5eNRB8agltJe4-Ccw0Xih,Lars Schrier,iOS,Elnakka,TRUE,Slap,The Pist Bully,High score,31.0,Slap
+9/29/2021 14:33:28,Yes,https://drive.google.com/open?id=1l-ZMRnAEBiE3CVrOhZbK5WnQ7nxjJTaJ,Avel,iOS,Elnakka,TRUE,,The Pist Bully,High score,32.0,Slap
 2021-02-10 18:40:31,Yes,https://drive.google.com/open?id=1S_zc1NNGn_Qbwqlyk8fW3nmHUQLJCGyy,BouncyJello,Android,Saint Luvette,TRUE,Slap,Baton Rouge,High score,20.0,Slap
 2021-06-14 11:25:50,Yes,https://drive.google.com/open?id=1aOlpeyZAcPq_gAkTWB9d3jWj_hSsuNBT,hschindele,iOS,Saint Luvette,TRUE,Distance,Un Chapeau Courageux,High score,391.8,Distance
 2021-05-25 12:41:05,Yes,https://drive.google.com/open?id=1orx63HXULbmJOL0YjHSM1ADSFrtVVpKx,BouncyJello,Android,Passo Grolla,TRUE,Distance,Il Stupido,High score,290.1,Distance
@@ -19,7 +19,7 @@ Timestamp,Verified?,Link,Name,OS,Mountain,Was WR,Unnamed: 64,challenge name,type
 2021-09-25 3:17:21,Yes,https://drive.google.com/open?id=16eS2CnrGKWezOFWfcbqNQmtGzSHLrn47,Avel,iOS,Passo Grolla,TRUE,,Caso Della Stella,High score,89.8,Single Drop
 2021-09-21 14:13:20,Yes,https://drive.google.com/open?id=1ncGFTF-fQn-SlzxaW4r1gtd_V9vpVKwS,Avel,iOS,Saint Luvette,TRUE,,Trix De Ville,High score,34954.0,Gated Trick
 2021-09-24 8:27:16,Yes,https://drive.google.com/open?id=162frj19tREQrFqrGMGPGiC_TdLO01H6G,hschindele,iOS,Hirschalm,TRUE,,The Glacier Kicker,High score,55.5,Long Jump
-2021-09-24 13:59:26,Yes,https://drive.google.com/open?id=1zb9Mv0rd1ZJFDzz1hWjV2BeY2-Lb2ylR,PelagusPlays,iOS,Ben Ailig,TRUE,,The Delucia Transfers,High score,13854.0,Open Trick
+9/29/2021 22:04:48,Yes,https://drive.google.com/open?id=1Wz8tPGa6NTMbMB2PyM2CyS51YSje6k4A,hschindele,iOS,Ben Ailig,TRUE,,The Delucia Transfers,High score,20728.0,Open Trick
 2021-09-25 3:21:32,Yes,https://drive.google.com/open?id=1UheAD0XuQi2KcCRd-zDcB5srfxPCvllv,Avel,iOS,Ben Ailig,TRUE,,MacAskill Riding,High score,31039.0,Gated Trick
 2021-09-25 3:31:25,Yes,https://drive.google.com/open?id=1RSjHww7equiNdj0_hiMWAmI74x_IZG89,Avel,iOS,Waldtal,TRUE,,Rigid Jumps,High score,68.8,Triple Drop
 2021-09-25 3:38:18,Yes,https://drive.google.com/open?id=1BPFoM0sMWPErAmfTPKnZQJK7SAlTsd4C,Avel,iOS,Elnakka,TRUE,,The Boulder Hill Descent,High score,35297.0,Gated Trick
@@ -50,3 +50,4 @@ Timestamp,Verified?,Link,Name,OS,Mountain,Was WR,Unnamed: 64,challenge name,type
 9/28/2021 10:45:27,Yes,https://drive.google.com/open?id=1Q1MWVt5r1AqB_iS4ZSlFdr53Zp4y7MHV,Avel,iOS,Pinecone Peaks,TRUE,,Cone Drops,High score,144.4,Triple Drop
 9/28/2021 10:47:06,Yes,https://drive.google.com/open?id=1qg4sqr0yfl71U4ELHz1j5QO8W_2RnAnH,Avel,iOS,Pinecone Peaks,TRUE,,Gap Of Ages,High score,137.2,Triple Drop
 9/29/2021 12:25:28,Yes,https://drive.google.com/open?id=127XZ7gYkT5KAGplOO86Ol95XMDNV6ZHS,Jamiemac,Android,Elnakka,TRUE,,Overshooting,High score,56.9,Single Drop
+9/29/2021 22:18:31,Yes,https://drive.google.com/open?id=1IXe5K8dJy3nufFaI1kaEq-JN-JV4xCSo,PelagusPlays,iOS,Pinecone Peaks,TRUE,,Flight Of The Labyrinth,High score,89.0,Triple Drop
