@@ -138,7 +138,7 @@ Skier50,2021-06-30 18:51:45,Time trial,iOS,The Descent,Hirschalm,28.86,11400
 massiv97,2021-07-03 5:32:44,Time trial,Android,The Descent,Hirschalm,28.97,10300
 Susannah,9/27/2021 19:37:26,Time trial,Android,The Descent,Hirschalm,30.43,6092
 Jamiemac,2021-07-09 12:43:44,Time trial,Android,Hirschpeak Voyage,Hirschalm,35.89,8975
-Mountain_Greg,2021-07-06 14:34:54,Time trial,Android,Hirschpeak Voyage,Hirschalm,33.38,31199
+Mountain_Greg,9/30/2021 10:23:29,Time trial,Android,Hirschpeak Voyage,Hirschalm,33.15,33500
 Skier50,2021-07-05 21:09:43,Time trial,iOS,Hirschpeak Voyage,Hirschalm,35.25,12500
 hschindele,2021-07-09 12:39:21,Time trial,iOS,Hirschpeak Voyage,Hirschalm,33.3,32000
 massiv97,2021-07-10 5:31:21,Time trial,Android,Hirschpeak Voyage,Hirschalm,35.11,13900
@@ -375,7 +375,7 @@ BouncyJello,2020-11-19 23:39:45,Time trial,Android,Waldhorn Voyage,Waldtal,59.95
 Fenrir,2021-01-10 18:58:45,Time trial,Android,Waldhorn Voyage,Waldtal,64.64,7371
 Gjeep302,2021-01-24 20:21:31,Time trial,Android,Waldhorn Voyage,Waldtal,61.14,18599
 Jamiemac,2021-06-08 13:33:14,Time trial,Android,Waldhorn Voyage,Waldtal,55.06,79399
-Mountain_Greg,2021-07-06 14:41:39,Time trial,Android,Waldhorn Voyage,Waldtal,54.41,85900
+Mountain_Greg,9/30/2021 10:27:53,Time trial,Android,Waldhorn Voyage,Waldtal,53.48,95200
 Pinsek,2021-03-23 4:09:23,Time trial,Android,Waldhorn Voyage,Waldtal,61.79,12100
 Ryan Monty,2021-03-01 21:32:19,Time trial,Android,Waldhorn Voyage,Waldtal,61.92,10799
 SYNO,2021-03-04 14:49:28,Time trial,iOS,Waldhorn Voyage,Waldtal,60.26,27400
@@ -688,8 +688,9 @@ SYNO,2021-01-22 15:59:00,Time trial,iOS,Thru Alvdalen,Dalarna,19.81,11900
 Skier50,2021-03-31 6:18:47,Time trial,iOS,Thru Alvdalen,Dalarna,19.98,10199
 hschindele,2021-04-07 13:55:35,Time trial,iOS,Thru Alvdalen,Dalarna,18.71,22899
 massiv97,2021-01-21 14:41:13,Time trial,Android,Thru Alvdalen,Dalarna,19.94,10599
-hschindele,2021-09-25 22:40:12,Time trial,iOS,Ice Slalom,Dalarna,19.62,20000
-massiv97,2021-09-26 14:01:45,Time trial,Android,Ice Slalom,Dalarna,20.64,8956
+hschindele,2021-09-25 22:40:12,Time trial,iOS,Ice Slalom,Dalarna,19.62,15931
+massiv97,2021-09-26 14:01:45,Time trial,Android,Ice Slalom,Dalarna,20.64,9287
+Avel,9/30/2021 7:09:30,Time trial,iOS,Ice Slalom,Dalarna,19.19,20001
 Avel,2021-02-15 10:33:24,Time trial,iOS,Drifting The Frozen Lake,Dalarna,9.63,10699
 BouncyJello,2020-11-19 21:33:37,Time trial,Android,Drifting The Frozen Lake,Dalarna,9.43,12699
 Fenrir,2021-01-13 11:29:28,Time trial,Android,Drifting The Frozen Lake,Dalarna,11.59,1944
@@ -907,7 +908,7 @@ Avel,2021-06-07 2:51:32,Time trial,iOS,Progressive Speed,Rotkamm,36.83,11700
 BouncyJello,2021-03-04 14:11:42,Time trial,Android,Progressive Speed,Rotkamm,32.85,51499
 Gjeep302,2021-02-09 9:46:48,Time trial,Android,Progressive Speed,Rotkamm,33.9,41000
 Jamiemac,2021-04-07 16:15:12,Time trial,Android,Progressive Speed,Rotkamm,32.31,56899
-Mountain_Greg,2021-04-04 1:53:37,Time trial,Android,Progressive Speed,Rotkamm,32.14,58599
+Mountain_Greg,9/30/2021 10:26:04,Time trial,Android,Progressive Speed,Rotkamm,31.73,62699
 Pinsek,2021-04-11 13:30:46,Time trial,Android,Progressive Speed,Rotkamm,36.33,16700
 Ryan Monty,2021-04-07 17:53:03,Time trial,Android,Progressive Speed,Rotkamm,33.98,40200
 SYNO,2021-03-04 15:05:49,Time trial,iOS,Progressive Speed,Rotkamm,33.36,46400
@@ -1686,7 +1687,7 @@ Jamiemac,2021-05-25 16:55:36,Time Trial,Android,City Woods,Pinecone Peaks,15.53,
 Mountain_Greg,2021-04-04 8:08:51,Time Trial,Android,City Woods,Pinecone Peaks,15.67,10299
 Ryan Monty,2021-04-05 23:05:19,Time Trial,Android,City Woods,Pinecone Peaks,15.62,10800
 Skier50,2021-04-03 17:28:09,Time Trial,iOS,City Woods,Pinecone Peaks,15.68,10199
-hschindele,2021-05-30 11:34:43,Time Trial,iOS,City Woods,Pinecone Peaks,15.5,11999
+hschindele,10/1/2021 15:37:50,Time Trial,iOS,City Woods,Pinecone Peaks,15.49,12099
 massiv97,2021-04-05 15:43:03,Time Trial,Android,City Woods,Pinecone Peaks,15.67,10299
 GrandMk,2021-04-15 4:50:31,Time Trial,iOS,Pinecone Passage,Pinecone Peaks,28.01,29899
 Jamiemac,2021-05-25 11:15:22,Time Trial,Android,Pinecone Passage,Pinecone Peaks,27.85,31499
@@ -1744,6 +1745,7 @@ Jamiemac,2021-05-25 11:29:44,Time Trial,Android,Googly Eyes,Pinecone Peaks,17.8,
 Mountain_Greg,2021-04-07 11:24:01,Time Trial,Android,Googly Eyes,Pinecone Peaks,18.16,10399
 Ryan Monty,2021-04-06 21:37:01,Time Trial,Android,Googly Eyes,Pinecone Peaks,18.16,10399
 Skier50,2021-05-30 20:36:25,Time Trial,iOS,Googly Eyes,Pinecone Peaks,18.05,11499
+Susannah,10/1/2021 15:07:23,Time Trial,Android,Googly Eyes,Pinecone Peaks,18.64,4665
 hschindele,2021-05-30 11:37:58,Time Trial,iOS,Googly Eyes,Pinecone Peaks,17.81,13900
 massiv97,2021-04-09 18:53:21,Time Trial,Android,Googly Eyes,Pinecone Peaks,18.17,10299
 Jamiemac,2021-05-25 11:30:48,Time Trial,Android,The Execution,Pinecone Peaks,21.87,16299
@@ -1827,7 +1829,7 @@ massiv97,2021-04-09 18:51:10,Time Trial,Android,Tic Tac Toe,Pinecone Peaks,9.96,
 Jamiemac,2021-05-25 11:41:02,Time Trial,Android,Tic Tac Toe,Pinecone Peaks,9.69,13100
 Skier50,2021-05-30 19:42:13,Time Trial,iOS,Tic Tac Toe,Pinecone Peaks,9.85,11500
 Jamiemac,2021-05-25 11:42:48,Time Trial,Android,Make Haste,Pinecone Peaks,64.45,45499
-Mountain_Greg,2021-04-17 1:32:44,Time Trial,Android,Make Haste,Pinecone Peaks,62.61,63900
+Mountain_Greg,9/30/2021 10:24:48,Time Trial,Android,Make Haste,Pinecone Peaks,62.1,68999
 Ryan Monty,2021-04-07 7:24:16,Time Trial,Android,Make Haste,Pinecone Peaks,67.92,10799
 Skier50,2021-06-30 19:17:25,Time Trial,iOS,Make Haste,Pinecone Peaks,64.26,47399
 hschindele,2021-04-03 16:50:15,Time Trial,iOS,Make Haste,Pinecone Peaks,64.71,42900
@@ -1840,14 +1842,17 @@ hschindele,2021-04-03 16:50:46,Time Trial,iOS,Pinecone Force,Pinecone Peaks,51.4
 massiv97,2021-04-09 18:52:38,Time Trial,Android,Pinecone Force,Pinecone Peaks,52.09,14099
 hschindele,2021-09-24 8:27:16,High score,iOS,The Glacier Kicker,Hirschalm,55.5,20001
 Jamiemac,2021-09-27 11:29:54,High score,Android,The Glacier Kicker,Hirschalm,46.1,10754
-Avel,2021-09-20 13:48:56,High score,iOS,Glacier Park,Hirschalm,22119.0,16552
-Jamiemac,2021-09-27 11:22:35,High score,Android,Glacier Park,Hirschalm,24042.0,20001
+Avel,9/30/2021 7:11:04,High score,iOS,Glacier Park,Hirschalm,25295.0,20001
+Jamiemac,2021-09-27 11:22:35,High score,Android,Glacier Park,Hirschalm,24042.0,18012
+Mountain_Greg,9/30/2021 10:22:38,High score,Android,Glacier Park,Hirschalm,19844.0,12683
 Avel,2021-09-20 13:50:57,High score,iOS,Waldhorn Slopestyle,Waldtal,45993.0,20001
 Jamiemac,9/27/2021 17:36:57,High score,Android,Waldhorn Slopestyle,Waldtal,31980.0,11658
 Avel,2021-09-25 3:31:25,High score,iOS,Rigid Jumps,Waldtal,68.8,20001
 Jamiemac,9/28/2021 7:38:56,High score,Android,Rigid Jumps,Waldtal,62.6,14649
+Mountain_Greg,9/30/2021 10:26:39,High score,Android,Rigid Jumps,Waldtal,60.2,12985
 Avel,2021-09-20 13:53:10,High score,iOS,The Waldhorn Falls,Waldtal,103.0,20000
 Jamiemac,9/28/2021 13:46:04,High score,Android,The Waldhorn Falls,Waldtal,98.9,16073
+Mountain_Greg,9/30/2021 10:27:18,High score,Android,The Waldhorn Falls,Waldtal,95.4,13337
 Avel,2021-09-25 3:29:05,High score,iOS,The Fork,Waldtal,352.8,10612
 BouncyJello,2021-02-18 19:38:33,High score,Android,The Fork,Waldtal,382.7,20001
 Bramspr,2020-02-02 14:17:38,High score,iOS,The Fork,Waldtal,307.0,4020
@@ -1873,9 +1878,12 @@ Skier50,2021-04-09 10:33:27,High score,iOS,Bear Cub Run,Elnakka,13.0,11893
 hschindele,2020-02-03 19:37:41,High score,iOS,Bear Cub Run,Elnakka,14.0,14143
 massiv97,2021-01-07 11:48:09,High score,Android,Bear Cub Run,Elnakka,14.0,14143
 Jamiemac,9/29/2021 12:25:28,High score,Android,Overshooting,Elnakka,56.9,20000
-Avel,2021-09-25 6:50:37,High score,iOS,The Yards,Elnakka,48.4,15472
-Gucci Garrett,2021-09-22 7:58:48,High score,Android,The Yards,Elnakka,44.1,8909
-hschindele,2021-09-25 7:44:52,High score,iOS,The Yards,Elnakka,50.4,20000
+Mountain_Greg,9/30/2021 10:19:04,High score,Android,Overshooting,Elnakka,56.0,24459
+Avel,2021-09-25 6:50:37,High score,iOS,The Yards,Elnakka,48.4,14216
+Gucci Garrett,2021-09-22 7:58:48,High score,Android,The Yards,Elnakka,44.1,9111
+Jamiemac,9/30/2021 6:25:25,High score,Android,The Yards,Elnakka,48.5,14364
+Mountain_Greg,9/30/2021 10:21:28,High score,Android,The Yards,Elnakka,51.7,20001
+hschindele,2021-09-25 7:44:52,High score,iOS,The Yards,Elnakka,50.4,17484
 Avel,9/29/2021 14:33:28,High score,iOS,The Pist Bully,Elnakka,32.0,20001
 BouncyJello,2021-01-13 17:46:50,High score,iOS,The Pist Bully,Elnakka,25.0,10906
 Bramspr,2020-02-02 14:27:01,High score,iOS,The Pist Bully,Elnakka,16.0,5001
@@ -1889,10 +1897,16 @@ Skier50,2021-04-09 10:35:36,High score,iOS,The Pist Bully,Elnakka,26.0,11893
 hschindele,2020-04-13 10:29:57,High score,iOS,The Pist Bully,Elnakka,28.0,14143
 massiv97,2021-01-13 17:46:03,High score,Android,The Pist Bully,Elnakka,25.0,10906
 Avel,2021-09-25 3:38:18,High score,iOS,The Boulder Hill Descent,Elnakka,35297.0,20000
+Mountain_Greg,9/30/2021 10:17:54,High score,Android,The Boulder Hill Descent,Elnakka,34684.0,18459
+Jamiemac,9/30/2021 13:12:03,High score,Android,The Boulder Hill Descent,Elnakka,32899.0,14614
 Avel,2021-09-20 13:46:24,High score,iOS,XL Park World,Elnakka,65833.0,20001
+Mountain_Greg,9/30/2021 10:22:02,High score,Android,XL Park World,Elnakka,30002.0,10001
 Avel,2021-09-25 3:43:45,High score,iOS,Terve Jumping,Elnakka,26963.0,0
-Avel,2021-09-20 13:55:02,High score,iOS,Elnakka Freedom,Elnakka,425.0,0
+Mountain_Greg,9/30/2021 10:20:47,High score,Android,Terve Jumping,Elnakka,25402.0,0
+Avel,9/30/2021 7:06:06,High score,iOS,Elnakka Freedom,Elnakka,28090.0,0
+Mountain_Greg,9/30/2021 10:18:30,High score,Android,Elnakka Freedom,Elnakka,21956.0,0
 Avel,2021-09-25 3:41:58,High score,iOS,The Road Gaps,Elnakka,112.0,20000
+Mountain_Greg,9/30/2021 10:20:07,High score,Android,The Road Gaps,Elnakka,105.3,10302
 Avel,2021-09-25 3:33:45,High score,iOS,Boulder Hill Escape,Elnakka,298.1,16027
 BouncyJello,2021-02-18 19:44:46,High score,Android,Boulder Hill Escape,Elnakka,306.6,20001
 Bramspr,2020-05-05 13:04:47,High score,iOS,Boulder Hill Escape,Elnakka,243.4,3854
@@ -1907,6 +1921,7 @@ massiv97,2021-03-01 7:11:49,High score,Android,Boulder Hill Escape,Elnakka,292.0
 massiv97,2021-09-26 15:25:50,High score,Android,Ski Jumping,Dalarna,71.5,20001
 Avel,2021-09-20 13:57:06,High score,iOS,Orsa Animal Park,Dalarna,48133.0,20001
 Avel,2021-09-25 14:32:45,High score,iOS,Rotkamm Style I,Rotkamm,35989.0,20001
+Mountain_Greg,9/30/2021 10:25:27,High score,Android,Rotkamm Style I,Rotkamm,35372.0,18622
 Avel,2021-09-25 14:28:50,High score,iOS,The Descender,Rotkamm,111.0,20000
 Avel,2021-09-25 14:34:41,High score,iOS,Pilgrim Run,Rotkamm,353.7,11543
 BouncyJello,2021-02-18 19:46:11,High score,Android,Pilgrim Run,Rotkamm,406.2,20000
@@ -1972,14 +1987,16 @@ Ryan Monty,2021-05-04 19:02:08,High score,Android,The Meall Exit,Ben Ailig,305.4
 SYNO,2021-03-04 16:21:28,High score,iOS,The Meall Exit,Ben Ailig,279.3,6577
 Skier50,2021-05-25 11:53:17,High score,iOS,The Meall Exit,Ben Ailig,290.8,10319
 massiv97,2021-05-25 15:24:55,High score,Android,The Meall Exit,Ben Ailig,294.7,12021
-PelagusPlays,2021-09-24 13:59:26,High score,iOS,The Delucia Transfers,Ben Ailig,13854.0,29
-hschindele,9/29/2021 22:04:48,High score,iOS,The Delucia Transfers,Ben Ailig,20728.0,20000
+PelagusPlays,2021-09-24 13:59:26,High score,iOS,The Delucia Transfers,Ben Ailig,13854.0,1373
+hschindele,9/29/2021 22:04:48,High score,iOS,The Delucia Transfers,Ben Ailig,20728.0,12653
+Mountain_Greg,9/30/2021 10:17:10,High score,Android,The Delucia Transfers,Ben Ailig,22145.0,20001
 Avel,2021-09-25 6:54:46,High score,iOS,Ollies Invite Only,Mount Fairview,47624.0,0
 massiv97,2021-09-26 15:40:56,High score,Android,Ollies Invite Only,Mount Fairview,39947.0,0
 Avel,2021-09-25 7:02:30,High score,iOS,The Sidehit Road,Mount Fairview,28542.0,20001
 Avel,2021-09-25 6:52:52,High score,iOS,Best Eagle Cookie Park,Mount Fairview,24050.0,0
 massiv97,2021-09-26 15:41:52,High score,Android,Best Eagle Cookie Park,Mount Fairview,21674.0,0
 Avel,2021-09-26 8:44:18,High score,iOS,The Woodland Jam,Mount Fairview,48181.0,0
+Mountain_Greg,9/30/2021 10:24:11,High score,Android,The Woodland Jam,Mount Fairview,43191.0,0
 Avel,2021-09-25 6:59:10,High score,iOS,Booster Berries,Mount Fairview,32744.0,0
 massiv97,2021-09-26 15:42:38,High score,Android,Booster Berries,Mount Fairview,28201.0,0
 Avel,2021-09-25 6:56:36,High score,iOS,Freeride Scout,Mount Fairview,32820.0,20001
@@ -1987,6 +2004,7 @@ Avel,9/28/2021 10:39:11,High score,iOS,Send It Dropping,Pinecone Peaks,98.3,2000
 PelagusPlays,9/29/2021 22:18:31,High score,iOS,Flight Of The Labyrinth,Pinecone Peaks,89.0,20000
 Avel,9/28/2021 10:45:27,High score,iOS,Cone Drops,Pinecone Peaks,144.4,20000
 Avel,9/28/2021 10:47:06,High score,iOS,Gap Of Ages,Pinecone Peaks,137.2,20001
+Foxster,9/30/2021 9:02:15,High score,Android,Pinecone Jibber,Pinecone Peaks,23946.0,20001
 Avel,2021-06-06 6:16:36,High score,iOS,Find Your Way,Pinecone Peaks,283.8,19319
 Mountain_Greg,2021-04-08 11:56:57,High score,Android,Find Your Way,Pinecone Peaks,262.3,466
 Skier50,2021-06-08 6:36:54,High score,iOS,Find Your Way,Pinecone Peaks,284.0,20001

@@ -10,16 +10,16 @@ Timestamp,Verified?,Link,Name,OS,Mountain,Was WR,Unnamed: 64,challenge name,type
 2021-05-07 14:45:27,Yes,https://drive.google.com/open?id=1GA4gPEIXHNfB-qLNjVDMldZCkwSpSmo8,BouncyJello,Android,Ben Ailig,TRUE,Distance,The Meall Exit,High score,307.7,Distance
 2021-06-08 6:36:54,Yes,https://drive.google.com/open?id=1z_iiG3l0PIUk6Dvwsjt8PkhNFh4f_uS_,Skier50,iOS,Pinecone Peaks,TRUE,Distance,Find Your Way,High score,284.0,Distance
 2021-09-20 13:46:24,Yes,https://drive.google.com/open?id=1UMA0b1tIPLIKGKesvtJ08KRgBl9I93xl,Avel,iOS,Elnakka,TRUE,,XL Park World,High score,65833.0,Gated Trick
-2021-09-27 11:22:35,Yes,https://drive.google.com/open?id=1m49C0tIMBCNJ1sZ0ETRLduXAFBFmv8VX,Jamiemac,Android,Hirschalm,TRUE,,Glacier Park,High score,24042.0,Open Trick
+9/30/2021 7:11:04,Yes,https://drive.google.com/open?id=1rotVLH30GL8JfHKXWuICjstpd3JjFpFA,Avel,iOS,Hirschalm,TRUE,,Glacier Park,High score,25295.0,Open Trick
 2021-09-20 13:50:57,Yes,https://drive.google.com/open?id=1ywOhjJ-ldkv6EbIo3ckLdZTgKTMCW_TO,Avel,iOS,Waldtal,TRUE,,Waldhorn Slopestyle,High score,45993.0,Gated Trick
 2021-09-20 13:53:10,Yes,https://drive.google.com/open?id=1O7GfEbU2ykZqHhu1_BvOZKLi1Y5wr3-u,Avel,iOS,Waldtal,TRUE,,The Waldhorn Falls,High score,103.0,Triple Drop
-2021-09-20 13:55:02,Yes,https://drive.google.com/open?id=154Enzzm2fo4eQ5etGPf5m-wHsHmqMttP,Avel,iOS,Elnakka,TRUE,,Elnakka Freedom,High score,425.0,Open Trick
+9/30/2021 7:06:06,Yes,https://drive.google.com/open?id=1gHRXQvJ0600fWVS16OW8nvHthZC5IrqP,Avel,iOS,Elnakka,TRUE,,Elnakka Freedom,High score,28090.0,Open Trick
 2021-09-20 13:57:06,Yes,https://drive.google.com/open?id=1763M_pVzPzCP8qt0aWo17mwfawm_E9R9,Avel,iOS,Dalarna,TRUE,,Orsa Animal Park,High score,48133.0,Gated Trick
-2021-09-25 7:44:52,Yes,https://drive.google.com/open?id=1uUVOmTGtTB34fn1i3EhfW0451UqqF0ci,hschindele,iOS,Elnakka,TRUE,,The Yards,High score,50.4,Long Jump
+9/30/2021 10:21:28,Yes,https://drive.google.com/open?id=1_pvXSy2lE1CCbgvlkBlc7FL2Aeft10-e,Mountain_Greg,Android,Elnakka,TRUE,,The Yards,High score,51.7,Long Jump
 2021-09-25 3:17:21,Yes,https://drive.google.com/open?id=16eS2CnrGKWezOFWfcbqNQmtGzSHLrn47,Avel,iOS,Passo Grolla,TRUE,,Caso Della Stella,High score,89.8,Single Drop
 2021-09-21 14:13:20,Yes,https://drive.google.com/open?id=1ncGFTF-fQn-SlzxaW4r1gtd_V9vpVKwS,Avel,iOS,Saint Luvette,TRUE,,Trix De Ville,High score,34954.0,Gated Trick
 2021-09-24 8:27:16,Yes,https://drive.google.com/open?id=162frj19tREQrFqrGMGPGiC_TdLO01H6G,hschindele,iOS,Hirschalm,TRUE,,The Glacier Kicker,High score,55.5,Long Jump
-9/29/2021 22:04:48,Yes,https://drive.google.com/open?id=1Wz8tPGa6NTMbMB2PyM2CyS51YSje6k4A,hschindele,iOS,Ben Ailig,TRUE,,The Delucia Transfers,High score,20728.0,Open Trick
+9/30/2021 10:17:10,Yes,https://drive.google.com/open?id=1_oFHYeQOlyqTLslwXkRTRfqpr02Q3IIG,Mountain_Greg,Android,Ben Ailig,TRUE,,The Delucia Transfers,High score,22145.0,Open Trick
 2021-09-25 3:21:32,Yes,https://drive.google.com/open?id=1UheAD0XuQi2KcCRd-zDcB5srfxPCvllv,Avel,iOS,Ben Ailig,TRUE,,MacAskill Riding,High score,31039.0,Gated Trick
 2021-09-25 3:31:25,Yes,https://drive.google.com/open?id=1RSjHww7equiNdj0_hiMWAmI74x_IZG89,Avel,iOS,Waldtal,TRUE,,Rigid Jumps,High score,68.8,Triple Drop
 2021-09-25 3:38:18,Yes,https://drive.google.com/open?id=1BPFoM0sMWPErAmfTPKnZQJK7SAlTsd4C,Avel,iOS,Elnakka,TRUE,,The Boulder Hill Descent,High score,35297.0,Gated Trick
@@ -51,3 +51,4 @@ Timestamp,Verified?,Link,Name,OS,Mountain,Was WR,Unnamed: 64,challenge name,type
 9/28/2021 10:47:06,Yes,https://drive.google.com/open?id=1qg4sqr0yfl71U4ELHz1j5QO8W_2RnAnH,Avel,iOS,Pinecone Peaks,TRUE,,Gap Of Ages,High score,137.2,Triple Drop
 9/29/2021 12:25:28,Yes,https://drive.google.com/open?id=127XZ7gYkT5KAGplOO86Ol95XMDNV6ZHS,Jamiemac,Android,Elnakka,TRUE,,Overshooting,High score,56.9,Single Drop
 9/29/2021 22:18:31,Yes,https://drive.google.com/open?id=1IXe5K8dJy3nufFaI1kaEq-JN-JV4xCSo,PelagusPlays,iOS,Pinecone Peaks,TRUE,,Flight Of The Labyrinth,High score,89.0,Triple Drop
+9/30/2021 9:02:15,Yes,https://drive.google.com/open?id=1_ygYMFt_KhKUb_tiKEFshSYshedE0cHw,Foxster,Android,Pinecone Peaks,TRUE,,Pinecone Jibber,High score,23946.0,Open Trick
