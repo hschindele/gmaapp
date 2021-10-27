@@ -3333,7 +3333,7 @@ Timestamp,Verified?,Link,Name,OS,Mountain,Was WR,Unnamed: 64,challenge name,type
 2021-09-29 22:18:31,Yes,https://drive.google.com/open?id=1IXe5K8dJy3nufFaI1kaEq-JN-JV4xCSo,PelagusPlays,iOS,Pinecone Peaks,TRUE,,Flight Of The Labyrinth,High score,89.0,Triple Drop
 2021-09-30 6:25:25,Yes,https://drive.google.com/open?id=1I4WVc7CkGA8OEguQgnRsOPWeVfWkf4j1,Jamiemac,Android,Elnakka,FALSE,,The Yards,High score,48.5,Long Jump
 2021-09-30 7:06:06,Yes,https://drive.google.com/open?id=1gHRXQvJ0600fWVS16OW8nvHthZC5IrqP,Avel,iOS,Elnakka,TRUE,,Elnakka Freedom,High score,28090.0,Open Trick
-2021-09-30 7:09:30,Yes,https://drive.google.com/open?id=1RRz6uQctP5Lu6r8y5oCUoNH7yJcHIJVd,Avel,iOS,Dalarna,FALSE,,Ice Slalom,Time trial,19.19,Trail
+2021-09-30 7:09:30,Yes,https://drive.google.com/open?id=1RRz6uQctP5Lu6r8y5oCUoNH7yJcHIJVd,Avel,iOS,Dalarna,TRUE,,Ice Slalom,Time trial,19.19,Trail
 2021-09-30 7:11:04,Yes,https://drive.google.com/open?id=1rotVLH30GL8JfHKXWuICjstpd3JjFpFA,Avel,iOS,Hirschalm,TRUE,,Glacier Park,High score,25295.0,Open Trick
 2021-09-30 9:02:15,Yes,https://drive.google.com/open?id=1_ygYMFt_KhKUb_tiKEFshSYshedE0cHw,Foxster,Android,Pinecone Peaks,TRUE,,Pinecone Jibber,High score,23946.0,Open Trick
 2021-09-30 10:17:10,Yes,https://drive.google.com/open?id=1_oFHYeQOlyqTLslwXkRTRfqpr02Q3IIG,Mountain_Greg,Android,Ben Ailig,TRUE,,The Delucia Transfers,High score,22145.0,Open Trick
@@ -3380,7 +3380,7 @@ Timestamp,Verified?,Link,Name,OS,Mountain,Was WR,Unnamed: 64,challenge name,type
 2021-10-02 13:37:36,Yes,https://drive.google.com/open?id=1ofKmxAuC_TFD2jj-Ii4TTTRtYcjF9VGz,massiv97,Android,Pinecone Peaks,TRUE,,Desolate Hills Natural,High score,31418.0,Open Trick
 2021-10-02 13:38:31,Yes,https://drive.google.com/open?id=14SZp8DRQ0CC-E5mua849TnA_-scmlLKv,massiv97,Android,Pinecone Peaks,TRUE,,Pine Trickster,High score,37607.0,Open Trick
 2021-10-02 15:37:03,Yes,https://drive.google.com/open?id=1cgr-pwjE2uLJ6aBlycoZ7n3ai0CljH0e,hschindele,iOS,Pinecone Peaks,TRUE,,City Woods,Time Trial,15.25,Race
-2021-10-02 15:43:27,Yes,https://drive.google.com/open?id=1vj_OG0s9yFMOCg83bbYhEDt6mWkFdax9,Gucci Garrett,Android,Dalarna,TRUE,,Ice Slalom,Time trial,21.39,Trail
+2021-10-02 15:43:27,Yes,https://drive.google.com/open?id=1vj_OG0s9yFMOCg83bbYhEDt6mWkFdax9,Gucci Garrett,Android,Dalarna,FALSE,,Ice Slalom,Time trial,21.39,Trail
 2021-10-02 15:43:30,Yes,https://drive.google.com/open?id=10tby0TBF949CTc85CGS7uXlTwjx10sMb,Foxster,Android,Dalarna,TRUE,,Fulu Air,High score,8603.0,Single Trick
 2021-10-02 23:15:46,Yes,https://drive.google.com/open?id=1aSMFkskBTl1eRMSOwR23DLxMk4eT2EtE,PelagusPlays,iOS,Pinecone Peaks,TRUE,,Flight Of The Labyrinth,High score,90.4,Triple Drop
 2021-10-03 9:02:12,Yes,https://drive.google.com/open?id=1Iu2xE-wsDh3PibPw-HnL4eq0WNQN5xW7,massiv97,Android,Dalarna,FALSE,,Ice Slalom,Time trial,20.04,Trail
