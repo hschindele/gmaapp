@@ -81,6 +81,7 @@ def mountain_layout(mountain, prefix, defchal):
 )
 
 def mountaincontent(challenge_selected, range_selected, player_selected, mountain):
+    print(challenge_selected)
     istt = True
     type = 'Time'
     wrdff = allwrs.copy()
