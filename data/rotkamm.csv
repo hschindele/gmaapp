@@ -14,8 +14,8 @@ Timestamp,Link,Name,OS,Mountain,Was WR,Unnamed: 64,challenge name,type,score,cha
 2020-11-19 22:04:49,https://drive.google.com/open?id=1ri2rrm_oIzR5UD8iN9lncjmmtRVPdOET,BouncyJello,Android,Rotkamm,FALSE,Race,The Broken Trail,Time trial,40.43,Race
 2020-11-19 23:11:21,https://drive.google.com/open?id=1aS4eFlDLJw-b2Enf1JvCS3CBaFW3YRmw,BouncyJello,Android,Rotkamm,TRUE,Trail,Precision Drops,Time trial,15.75,Trail
 2020-11-20 10:43:03,https://drive.google.com/open?id=1gBtegAjKM0c_-iTFf0bumsMxC54PqW_0,Chesty,iOS,Rotkamm,FALSE,Distance,Pilgrim Run,High score,310.0,Distance
-2020-11-24 14:33:49,https://drive.google.com/open?id=1N5q3nI1-yqr-oPNB91s3kfTGPffX1jwJ,Shadow,iOS,Rotkamm,FALSE,Trail,Gross Air,Time trial,9.31,Trail
-2020-11-24 14:34:44,https://drive.google.com/open?id=1rCBnVSftelHOod9rb9vF4OBgHzG0o5HQ,Shadow,iOS,Rotkamm,FALSE,Trail,Slippery Slope,Time trial,22.89,Trail
+2020-11-24 14:33:49,https://drive.google.com/open?id=1N5q3nI1-yqr-oPNB91s3kfTGPffX1jwJ,OKAR_Spec,iOS,Rotkamm,FALSE,Trail,Gross Air,Time trial,9.31,Trail
+2020-11-24 14:34:44,https://drive.google.com/open?id=1rCBnVSftelHOod9rb9vF4OBgHzG0o5HQ,OKAR_Spec,iOS,Rotkamm,FALSE,Trail,Slippery Slope,Time trial,22.89,Trail
 2020-11-26 16:58:01,https://drive.google.com/open?id=1VL6rxz7SUBWUR0MQJhd3b7VNY3sOILjq,SYNO,iOS,Rotkamm,FALSE,Trail,Gross Air,Time trial,9.47,Trail
 2020-12-22 8:07:20,https://drive.google.com/open?id=1QfHeorQd7aiVRD2O-KMUR-ZfmuhcXYHs,hschindele,iOS,Rotkamm,TRUE,Race,The Village Run,Time trial,26.96,Race
 2020-12-22 12:43:18,https://drive.google.com/open?id=1YwRmfjpjll0pJ-h3RGsCzkjMnxSCZlJS,hschindele,iOS,Rotkamm,TRUE,Race,The Broken Trail,Time trial,39.93,Race
@@ -370,3 +370,11 @@ Timestamp,Link,Name,OS,Mountain,Was WR,Unnamed: 64,challenge name,type,score,cha
 2021-12-23 11:30:45,https://drive.google.com/open?id=1msuKctvYhplal7yJB3Z4RS3BwXAZxDag,Mountain_Greg,Android,Rotkamm,FALSE,,Rotkamm Jumper,High score,25619.0,Gated Trick
 2021-12-25 22:11:52,https://drive.google.com/open?id=1yeVXzqQFPzGy5cq1Irc896TRLP3RvLrm,🍊Koolaid,iOS,Rotkamm,FALSE,,Gross Air,Time trial,9.45,Trail
 2021-12-26 8:29:46,https://drive.google.com/open?id=1TjNwrhxiWwo40qaWvMtqnx1JaSmiDzYF,🍊Koolaid,iOS,Rotkamm,FALSE,,Gross Air,Time trial,9.3,Trail
+2021-12-30 12:46:33,https://drive.google.com/open?id=12SlcKX1zlRdoTpXE2dcsqsQpLnmxV5mr,hschindele,iOS,Rotkamm,TRUE,,The Descender,High score,116.8,Triple Drop
+2021-12-30 12:47:09,https://drive.google.com/open?id=1vq1luHKnZR2VpXy8ufYbtcPTfQSaP1H6,hschindele,iOS,Rotkamm,FALSE,,Corner Flight,High score,6.49,Airtime
+2021-12-30 14:33:47,https://drive.google.com/open?id=1v4v8i8OjY5N6y7IdK5AB-krTXvzWIreN,Avel,iOS,Rotkamm,TRUE,,The Rollercoaster,Time trial,29.93,Trail
+2021-12-30 14:34:46,https://drive.google.com/open?id=1yYGUSMIc_8Q-_2aYI6-nKJ5JJUlWjus6,Avel,iOS,Rotkamm,FALSE,,The Ice Slope,Time trial,21.35,TTB
+2021-12-31 6:12:15,https://drive.google.com/open?id=1Sn2_-DwxnLCTO2knigdbsbikG00WzFyF,Mountain_Greg,Android,Rotkamm,FALSE,,Gross Air,Time trial,9.16,Trail
+2022-01-01 10:31:31,https://drive.google.com/open?id=191dVLYRibW0d1FN7YRnqhRLPQbnBvXv4,Jamiemac,Android,Rotkamm,FALSE,,Gross Air,Time trial,9.07,Trail
+2022-01-24 13:17:26,https://drive.google.com/open?id=1-qUrikZE8V1becG6SpBODZqATpneObaL,Avel,iOS,Rotkamm,TRUE,,Rotkamm Jumper,High score,30419.0,Gated Trick
+2022-01-28 21:28:12,https://drive.google.com/open?id=1Ped9n8WHDP13T8vMGCvKNnZNx2uMX42k,Olm842,iOS,Rotkamm,TRUE,,The Descender,High score,120.9,Triple Drop
