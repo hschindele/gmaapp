@@ -196,7 +196,7 @@ Ryan Monty,2021-04-13 13:38:35,Time trial,Android,The Woodland Track,Waldtal,21.
 SYNO,2021-01-05 9:35:41,Time trial,iOS,The Woodland Track,Waldtal,21.48,10199
 Skier50,2021-03-31 6:12:02,Time trial,iOS,The Woodland Track,Waldtal,21.33,11700
 eFrostyy,2021-02-12 16:21:13,Time trial,Android,The Woodland Track,Waldtal,21.83,7212
-hschindele,2020-11-14 21:04:49,Time trial,iOS,The Woodland Track,Waldtal,20.89,16099
+hschindele,2022-02-15 18:04:09,Time trial,iOS,The Woodland Track,Waldtal,20.85,16499
 massiv97,2021-01-13 16:01:20,Time trial,Android,The Woodland Track,Waldtal,21.38,11200
 🍊Koolaid,2021-12-15 21:01:52,Time trial,iOS,The Woodland Track,Waldtal,21.44,10599
 Antaris,2021-01-01 12:47:34,Time trial,iOS,Gemsgully Whites,Waldtal,31.21,12899
@@ -216,7 +216,7 @@ Susannah,2021-09-28 17:13:57,Time trial,Android,Gemsgully Whites,Waldtal,31.71,8
 Timmy,2020-12-06 15:59:46,Time trial,Android,Gemsgully Whites,Waldtal,31.93,6532
 eFrostyy,2021-02-12 16:21:56,Time trial,Android,Gemsgully Whites,Waldtal,31.66,8534
 gonnik,2020-05-03 7:03:36,Time trial,Android,Gemsgully Whites,Waldtal,32.04,5858
-hschindele,2020-11-14 21:06:12,Time trial,iOS,Gemsgully Whites,Waldtal,30.96,15399
+hschindele,2022-02-15 18:05:02,Time trial,iOS,Gemsgully Whites,Waldtal,30.91,15899
 massiv97,2021-01-02 15:47:02,Time trial,Android,Gemsgully Whites,Waldtal,31.41,10899
 🍊Koolaid,2021-12-15 21:12:25,Time trial,iOS,Gemsgully Whites,Waldtal,31.46,10399
 Avel,2021-03-27 5:56:12,Time trial,iOS,Peak To Valley Run,Waldtal,50.82,11799
@@ -513,7 +513,7 @@ Foxster,2022-01-02 8:15:41,Time trial,Android,Swivel Loop,Elnakka,11.19,10099
 Jamiemac,2021-07-05 13:19:42,Time trial,Android,Swivel Loop,Elnakka,11.17,10299
 Mountain_Greg,2021-06-22 5:03:11,Time trial,Android,Swivel Loop,Elnakka,11.17,10299
 Skier50,2021-06-30 18:56:55,Time trial,iOS,Swivel Loop,Elnakka,11.18,10199
-hschindele,2021-09-24 8:52:25,Time trial,iOS,Swivel Loop,Elnakka,10.88,13199
+hschindele,2022-02-15 18:27:46,Time trial,iOS,Swivel Loop,Elnakka,10.85,13499
 massiv97,2021-06-26 17:08:26,Time trial,Android,Swivel Loop,Elnakka,11.17,10299
 🍊Koolaid,2021-12-22 18:13:51,Time trial,iOS,Swivel Loop,Elnakka,11.14,10599
 Avel,2022-01-24 13:14:55,Time trial,iOS,Pristine Rush,Elnakka,22.27,17300
@@ -533,7 +533,7 @@ Pinsek,2021-03-09 6:20:58,Time trial,Android,Clover Road Trail,Elnakka,17.87,112
 Ryan Monty,2021-04-23 18:13:56,Time trial,Android,Clover Road Trail,Elnakka,16.95,20500
 SYNO,2021-03-04 14:53:02,Time trial,iOS,Clover Road Trail,Elnakka,17.08,19200
 Skier50,2021-03-08 14:37:55,Time trial,iOS,Clover Road Trail,Elnakka,17.99,10100
-hschindele,2021-06-21 10:01:43,Time trial,iOS,Clover Road Trail,Elnakka,16.34,26600
+hschindele,2022-02-15 18:17:13,Time trial,iOS,Clover Road Trail,Elnakka,15.98,30199
 massiv97,2021-02-11 18:00:13,Time trial,Android,Clover Road Trail,Elnakka,17.07,19299
 🍊Koolaid,2021-12-23 10:44:01,Time trial,iOS,Clover Road Trail,Elnakka,17.94,10599
 Avel,2021-04-04 11:52:49,Time trial,iOS,Ellnau River Rush,Elnakka,21.37,16299
@@ -1009,7 +1009,7 @@ Pinsek,2021-04-11 15:00:28,Time trial,Android,Tour De Moyen,Saint Luvette,22.84,
 Ryan Monty,2021-03-30 23:59:00,Time trial,Android,Tour De Moyen,Saint Luvette,22.34,16600
 SYNO,2021-03-04 15:06:45,Time trial,iOS,Tour De Moyen,Saint Luvette,22.38,16200
 Skier50,2021-03-19 10:05:51,Time trial,iOS,Tour De Moyen,Saint Luvette,22.68,13200
-hschindele,2021-02-15 9:22:54,Time trial,iOS,Tour De Moyen,Saint Luvette,22.14,18599
+hschindele,2022-02-15 18:28:47,Time trial,iOS,Tour De Moyen,Saint Luvette,21.45,25500
 massiv97,2021-07-15 4:09:20,Time trial,Android,Tour De Moyen,Saint Luvette,22.32,16799
 Avel,2021-09-19 8:45:29,Time trial,iOS,Pic Moyen,Saint Luvette,37.15,38500
 BouncyJello,2021-05-25 12:45:51,Time trial,Android,Pic Moyen,Saint Luvette,37.49,35099
@@ -1330,7 +1330,7 @@ Pinsek,2021-04-13 12:06:52,Time trial,Android,La Transitions,Passo Grolla,10.4,1
 Ryan Monty,2021-03-10 2:06:59,Time trial,Android,La Transitions,Passo Grolla,10.48,10199
 SYNO,2021-01-13 18:32:05,Time trial,iOS,La Transitions,Passo Grolla,10.43,10700
 Skier50,2021-06-04 6:10:12,Time trial,iOS,La Transitions,Passo Grolla,9.37,21300
-hschindele,2021-06-03 13:30:23,Time trial,iOS,La Transitions,Passo Grolla,9.34,21600
+hschindele,2022-02-15 18:30:05,Time trial,iOS,La Transitions,Passo Grolla,9.22,22799
 massiv97,2021-02-21 15:03:57,Time trial,Android,La Transitions,Passo Grolla,9.85,16500
 Avel,2021-06-11 11:40:39,Time trial,iOS,Il Creativo,Passo Grolla,23.98,10199
 BouncyJello,2020-05-05 10:07:32,Time trial,Android,Il Creativo,Passo Grolla,23.26,17399
