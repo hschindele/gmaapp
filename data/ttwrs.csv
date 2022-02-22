@@ -97,7 +97,7 @@ Timestamp,Verified?,Link,Name,OS,Mountain,Was WR,Unnamed: 64,challenge name,type
 2021-07-15 11:54:37,Yes,https://drive.google.com/open?id=17jvV26tSH7O8FrI4kAC8Zt2IPGO1vdAe,hschindele,iOS,Hirschalm,TRUE,Trail,Over The Fence,Time trial,18.17,Trail
 2020-11-24 15:07:16,Yes,https://drive.google.com/open?id=1blKbFhm9fyBM3DZWfTurcqMLZ0vQBBzt,hschindele,iOS,Waldtal,TRUE,Trail,The Big Kicker,Time trial,17.54,Trail
 2021-09-19 8:41:22,Yes,https://drive.google.com/open?id=1ROeRzO2aen6fqw1MBxRf4d4cOB67HzJ3,Avel,iOS,Saint Luvette,TRUE,Race,Tour De Moyen,Time trial,21.4,Race
-2021-09-19 8:45:29,Yes,https://drive.google.com/open?id=1lFdb7bTMsRPHGv85Sdfg3doztISCq-nW,Avel,iOS,Saint Luvette,TRUE,Race,Pic Moyen,Time trial,37.15,Race
+2022-02-21 16:53:10,Yes,https://drive.google.com/open?id=1BFwzSu0WM8k74sFLDGFQtf_bDXajYuu1,hschindele,iOS,Saint Luvette,TRUE,,Pic Moyen,Time trial,36.93,Race
 2021-12-30 15:22:30,Yes,https://drive.google.com/open?id=14nUaVfM1Djw40YF7SHz1DvCNXxRM42pI,Avel,iOS,Waldtal,TRUE,,The Three Trees,Time trial,10.6,Trail
 2022-01-27 17:10:54,Yes,https://drive.google.com/open?id=1Fpu--SSaBDH3Bne8QuI5okRZFjAJezjh,Avel,iOS,Waldtal,TRUE,,A Balancing Act,Time trial,21.92,Trail
 2021-03-11 15:01:14,Yes,https://drive.google.com/open?id=1djmoa38-Lwma-nDPD2qcZn9Dr3iYx-FJ,hschindele,iOS,Dalarna,TRUE,Race,Skogsloppet,Time trial,35.64,Race
@@ -161,11 +161,11 @@ Timestamp,Verified?,Link,Name,OS,Mountain,Was WR,Unnamed: 64,challenge name,type
 2021-07-06 8:43:15,Yes,https://drive.google.com/open?id=1dlEFh6fCGgPtlsRO0YXQhweAoHKLtyCv,hschindele,iOS,Passo Grolla,TRUE,Race,The Bowls,Time trial,28.19,Race
 2021-06-30 19:10:49,Yes,https://drive.google.com/open?id=1AQTzNQqD5gVHd4XiFzuUc3WDCdJK3Od_,Skier50,iOS,Passo Grolla,TRUE,Race,Tutti Frutti,Time trial,13.76,Race
 2021-09-25 15:31:47,Yes,https://drive.google.com/open?id=1_iYf-713HoctGXIxAOHXav7c-oRGhAqp,hschindele,iOS,Passo Grolla,TRUE,,Autostrada,Time trial,22.83,TTB
-2021-09-25 14:11:29,Yes,https://drive.google.com/open?id=10irp13bMDDf9bwyvaDdz8lfZSA2GFpNZ,Avel,iOS,Ben Ailig,TRUE,,Downhill Void,Time Trial,18.58,Race
+2022-02-20 17:45:45,Yes,https://drive.google.com/open?id=1dbQqkBvaxRK4vK0h2hvTAVimxktFP2IG,hschindele,iOS,Ben Ailig,TRUE,,Downhill Void,Time Trial,18.09,Race
 2021-10-31 7:00:35,Yes,https://drive.google.com/open?id=1VEsHbBZq226at4qr4CqywzUxDXO_0KVP,Avel,iOS,Ben Ailig,TRUE,,Downhill Skirmish,Time Trial,19.11,Race
 2021-06-25 9:22:31,Yes,https://drive.google.com/open?id=18_Ar7BpEGf7xIiWEJa1r3sZnrV8QXwoO,hschindele,iOS,Pinecone Peaks,TRUE,Race,Mound Racing,Time Trial,32.91,Race
 2021-06-30 6:30:39,Yes,https://drive.google.com/open?id=1vJ8AWhxMci6CKyZJCZXCARXXtFIBXcbY,Mountain_Greg,Android,Dalarna,TRUE,TTB,Sarnaheden Sightseeing,Time trial,41.58,TTB
-2021-11-30 15:54:30,Yes,https://drive.google.com/open?id=1Ht9nn2nvB6c-GlKIxVd2vB5JS9XI3G1Z,Avel,iOS,Saint Luvette,TRUE,,Route Colline,Time trial,45.42,TTB
+2022-02-18 21:19:10,Yes,https://drive.google.com/open?id=1-u05muhiWhaKaBJ20r3nT8fLnWEajz9r,hschindele,iOS,Saint Luvette,TRUE,,Route Colline,Time trial,45.32,TTB
 2021-07-08 14:40:00,Yes,https://drive.google.com/open?id=17FG70KyItY93YK22TQ3v0IqzwaQikbP9,hschindele,iOS,Hirschalm,TRUE,TTB,Hirschalm show off,Time trial,31.08,TTB
 2021-09-30 10:23:29,Yes,https://drive.google.com/open?id=1JfL2E3u4nXoV7jSvbbpUKeSZaE4c-OmZ,Mountain_Greg,Android,Hirschalm,TRUE,,Hirschpeak Voyage,Time trial,33.15,TTB
 2021-12-18 9:17:17,Yes,https://drive.google.com/open?id=1yEtSL1lsyir-VVq57MdVB6kD7LKpOEHL,hschindele,iOS,Passo Grolla,TRUE,,Carosello Uno,Time trial,33.52,Trail
