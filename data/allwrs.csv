@@ -66,7 +66,7 @@ Timestamp,Verified?,Link,Name,OS,Mountain,Was WR,Unnamed: 64,challenge name,type
 2021-06-16 19:46:09,Yes,https://drive.google.com/open?id=1svwZCXVe8VIvIPPLdMVKyEObcIjZV70M,hschindele,iOS,Passo Grolla,TRUE,Trail,Rockerfeller,Time trial,12.75,Trail
 2020-12-18 22:38:29,Yes,https://drive.google.com/open?id=1R7nrA3dfyeGyMtZvOlBY9vPStgvSyUdk,hschindele,iOS,Waldtal,TRUE,Race,The Woodland Slalom,Time trial,23.76,Race
 2021-10-31 6:58:59,Yes,https://drive.google.com/open?id=1hUIuBnbSrBBNDjxff5gh-lHotEafypYz,Avel,iOS,Passo Grolla,TRUE,,Peak avalanche escape,Time trial,30.51,Race
-2022-02-22 13:38:43,Yes,https://drive.google.com/open?id=1JgsjxL7V1S0aqievdxyHC2eGCVGnx3Jt,Skier50,iOS,Passo Grolla,TRUE,,Tombola,Time trial,18.99,Race
+2022-02-24 8:50:05,Yes,https://drive.google.com/open?id=1L4angK8LdLNDGKu89_nIz32e4IUGxtq5,hschindele,iOS,Passo Grolla,TRUE,,Tombola,Time trial,18.97,Race
 2021-06-16 17:53:31,Yes,https://drive.google.com/open?id=1ZXWwAO7tOHkDRVUXIMNnoFUYJ0ya48bw,hschindele,iOS,Passo Grolla,TRUE,Race,Shards,Time trial,25.39,Race
 2021-07-26 12:46:30,Yes,https://drive.google.com/open?id=1p-SmjmLj4kGa2pnVAOoD23zeFHRd7n5v,Mountain_Greg,Android,Saint Luvette,TRUE,TTB,Full Luvette,Time trial,46.8,TTB
 2021-02-24 13:33:03,Yes,https://drive.google.com/open?id=1wfMsViCrOEAq3octxJke7VB136hBCyyU,hschindele,iOS,Saint Luvette,TRUE,Trail,Route Extreme,Time trial,37.52,Trail
@@ -192,7 +192,7 @@ Timestamp,Verified?,Link,Name,OS,Mountain,Was WR,Unnamed: 64,challenge name,type
 2021-09-21 14:13:20,Yes,https://drive.google.com/open?id=1ncGFTF-fQn-SlzxaW4r1gtd_V9vpVKwS,Avel,iOS,Saint Luvette,TRUE,,Trix De Ville,High score,34954.0,Gated Trick
 2022-01-04 15:22:33,Yes,https://drive.google.com/open?id=149-nu4A6NuPHhClF9VFl0gfMtXcoOpRZ,Gjeep302,iOS,Hirschalm,TRUE,,The Glacier Kicker,High score,56.9,Long Jump
 2021-12-22 12:26:51,Yes,https://drive.google.com/open?id=1EjJ5zprHAMJ13T0IY6m_zY0rWtkHd3nP,Avel,iOS,Ben Ailig,TRUE,,The Delucia Transfers,High score,30628.0,Open Trick
-2021-09-25 3:21:32,Yes,https://drive.google.com/open?id=1UheAD0XuQi2KcCRd-zDcB5srfxPCvllv,Avel,iOS,Ben Ailig,TRUE,,MacAskill Riding,High score,31039.0,Gated Trick
+2022-02-23 17:24:31,Yes,https://drive.google.com/open?id=1njDoBBdHX5fuJLwEezbvc92MLpdlWp0L,Jamiemac,Android,Ben Ailig,TRUE,,MacAskill Riding,High score,31096.0,Gated Trick
 2022-01-06 14:20:27,Yes,https://drive.google.com/open?id=1n3h4nW3d-JRJTcaMSBQaJX2-GiZC-tUM,Mountain_Greg,Android,Waldtal,FALSE,,Rigid Jumps,High score,71.3,Triple Drop
 2021-09-25 3:38:18,Yes,https://drive.google.com/open?id=1BPFoM0sMWPErAmfTPKnZQJK7SAlTsd4C,Avel,iOS,Elnakka,TRUE,,The Boulder Hill Descent,High score,35297.0,Gated Trick
 2021-12-17 0:48:12,Yes,https://drive.google.com/open?id=1ebdUe1NCJKm74AkQXWFWZCPeYq_QTzVr,Avel,iOS,Elnakka,TRUE,,The Road Gaps,High score,121.3,Triple Drop
