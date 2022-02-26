@@ -4,6 +4,7 @@ from scipy.optimize import curve_fit
 import matplotlib.pyplot as plt
 
 numTTTDs = 172
+numHSTDs = 80
 
 chals = pd.read_csv('gmachallenges.csv')
 df = pd.read_csv('gmaraw.csv')
@@ -255,6 +256,8 @@ print('Making TD Table')
 
 tddf = allpbs.copy()
 tddf['TD'] = False
+tddf['TTTD'] = False
+tddf['HSTD'] = False
 ind = 0
 for score in tddf.score:
     chalname = tddf['challenge name'].iloc[ind]
@@ -262,18 +265,35 @@ for score in tddf.score:
     if tddf['type'].iloc[ind] != 'High score':
         if tddf['score'].iloc[ind] < curchalrow.TD:
             tddf['TD'].iloc[ind] = True
+            tddf['TTTD'].iloc[ind] = True
+    else:
+        if tddf['score'].iloc[ind] > curchalrow.TD:
+            tddf['TD'].iloc[ind] = True
+            tddf['HSTD'].iloc[ind] = True
     ind += 1
 
-fulltddf = tddf.groupby('Name')['TD'].sum()
+fulltddf = tddf.groupby('Name')['TD','TTTD','HSTD'].sum()
 
 fulltddf.to_csv('TDDF.csv')
 fulltddf = fulltddf.reset_index()
 
 ind = 0
 for numTDs in fulltddf['TD']:
+    if numTDs == (numTTTDs+numHSTDs):
+        name = fulltddf['Name'].iloc[ind]
+        achievementsdf = achievementsdf.append([{'Name':name,'Award':'Grand Mountain Master','Importance':3}])
+    ind += 1
+ind = 0
+for numTDs in fulltddf['TTTD']:
     if numTDs == numTTTDs:
         name = fulltddf['Name'].iloc[ind]
-        achievementsdf = achievementsdf.append([{'Name':name,'Award':'Speedy Boi','Importance':3}])
+        achievementsdf = achievementsdf.append([{'Name':name,'Award':'Speedy Boi','Importance':4}])
+    ind += 1
+ind = 0
+for numTDs in fulltddf['HSTD']:
+    if numTDs == numHSTDs:
+        name = fulltddf['Name'].iloc[ind]
+        achievementsdf = achievementsdf.append([{'Name':name,'Award':'Stomper','Importance':4}])
     ind += 1
 
 achievementsdf.to_csv('achievments.csv')

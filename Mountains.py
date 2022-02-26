@@ -81,7 +81,6 @@ def mountain_layout(mountain, prefix, defchal):
 )
 
 def mountaincontent(challenge_selected, range_selected, player_selected, mountain):
-    print(challenge_selected)
     istt = True
     type = 'Time'
     wrdff = allwrs.copy()
@@ -271,7 +270,7 @@ def graphinfo(challenge_selected, player_selected, indf):
         type = 'Score'
     dff = indf.copy()
     dff = dff[dff["challenge name"] == challenge_selected]
-    dffpast = dff[dff['Was WR'] == True]
+    dffpast = dff[(dff['Was WR'] == True) | (dff['Was WR'] == 'TRUE')]
     curnumWRs = dff.shape[0]
     dffpast = dffpast.sort_values(by=['Timestamp'])
     fig = px.line(dffpast, x='Timestamp', y='score',
@@ -280,7 +279,6 @@ def graphinfo(challenge_selected, player_selected, indf):
             'score': type
         },
         title=challenge_selected+" World Record History")
-    
     fig.update_traces(mode="markers+lines",hovertemplate = dffpast['Name']+'<br>'+'%{y}'+'<br>'+dffpast['OS']+'<br>'+dffpast['Timestamp'])
     fig.update_layout(hovermode="x", xaxis_tickformat = '%B<br>%Y')
     

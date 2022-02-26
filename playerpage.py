@@ -526,7 +526,7 @@ def update_player_page(playername, n_clicks):
                     ]),
                     dbc.Col([
                         html.Div([
-                            html.H3(playername+"'s Info TDs: "+str(getTDcount(playername))+" / 172",
+                            html.H3(playername+"'s Info TDs: "+str(getTDcount(playername))+" / 252",
                                 style={'text-align': 'Center'}
                             ),
                             html.Hr(),
