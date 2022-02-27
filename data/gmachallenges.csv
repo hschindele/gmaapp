@@ -8,7 +8,7 @@ DD,TD,Challenge Name,Mountain,type,chaltype
 26.00,25.00,Jumping the Cracks,Hirschalm,Time Trial,Trail
 25.00,24.00,Sightseeing Tour,Hirschalm,Time Trial,Trail
 31.00,29.00,The Descent,Hirschalm,Time Trial,Trail
-38.00,35.50,Hirschpeak Voyage,Hirschalm,Time Trial,TTB
+38.00,36.00,Hirschpeak Voyage,Hirschalm,Time Trial,TTB
 39.00,35.00,Hirschalm show off,Hirschalm,Time Trial,TTB
 25.50,24.50,The Woodland Slalom,Waldtal,Time Trial,Race
 22.20,21.50,The Woodland Track,Waldtal,Time Trial,Race
@@ -53,8 +53,8 @@ DD,TD,Challenge Name,Mountain,type,chaltype
 28.50,25.50,Mora Barnyards,Dalarna,Time Trial,Trail
 20.00,19.00,Leksand Rail,Dalarna,Time Trial,Trail
 21.00,20.00,Thru Alvdalen,Dalarna,Time Trial,Trail
-23.00,20.50,Ice Slalom,Dalarna,Time Trial,Trail
-10.50,9.70,Drifting The Frozen Lake,Dalarna,Time Trial,Trail
+23.00,9.70,Ice Slalom,Dalarna,Time Trial,Trail
+10.50,20.50,Drifting The Frozen Lake,Dalarna,Time Trial,Trail
 46.00,44.00,Dalarna Voyage,Dalarna,Time Trial,TTB
 50.00,44.00,Sarnaheden Sightseeing,Dalarna,Time Trial,TTB
 30.50,28.00,The Village Run,Rotkamm,Time Trial,Race
@@ -178,8 +178,8 @@ DD,TD,Challenge Name,Mountain,type,chaltype
 83.00,90.00,The Waldhorn Falls,Waldtal,High Score,Triple Drop
 295.00,350.00,The Fork,Waldtal,High Score,Distance
 9.00,12.00,Bear Cub Run,Elnakka,High Score,Slap
-40.00,55.00,Overshooting,Elnakka,High Score,Single Drop
-35.00,45.00,The Yards,Elnakka,High Score,Long Jump
+40.00,60.00,Overshooting,Elnakka,High Score,Single Drop
+35.00,50.00,The Yards,Elnakka,High Score,Long Jump
 16.00,24.00,The Pist Bully,Elnakka,High Score,Slap
 12000.00,30000.00,The Boulder Hill Descent,Elnakka,High Score,Gated Trick
 14000.00,30000.00,XL Park World,Elnakka,High Score,Gated Trick
@@ -229,16 +229,16 @@ DD,TD,Challenge Name,Mountain,type,chaltype
 12000.00,30000.00,Meall Lines,Ben Ailig,High Score,Distance
 4.20,6.00,Flutters,Mount Fairview,High Score,Airtime
 35.00,45.00,The Timber Road Gap,Mount Fairview,High Score,Single Drop
-50.00,70.00,Shoot Out,Mount Fairview,High Score,Single Drop
+50.00,60.00,Shoot Out,Mount Fairview,High Score,Single Drop
 100.00,135.00,The Three Diamonds,Mount Fairview,High Score,Triple Drop
 22000.00,38000.00,Ollies Invite Only,Mount Fairview,High Score,Gated Trick
 13000.00,25000.00,The Sidehit Road,Mount Fairview,High Score,Gated Trick
 12500.00,20000.00,Best Eagle Cookie Park,Mount Fairview,High Score,Gated Trick
 20000.00,40000.00,The Woodland Jam,Mount Fairview,High Score,Open Trick
 15000.00,28000.00,Booster Berries,Mount Fairview,High Score,Open Trick
-12000.00,35000.00,Freeride Scout,Mount Fairview,High Score,Open Trick
+12000.00,32000.00,Freeride Scout,Mount Fairview,High Score,Open Trick
 4.30,10.00,Desolate Drops,Pinecone Peaks,High Score,Airtime
-4.50,7.00,Pinecone Dropper,Pinecone Peaks,High Score,Airtime
+4.50,6.00,Pinecone Dropper,Pinecone Peaks,High Score,Airtime
 75.00,85.00,Send It Dropping,Pinecone Peaks,High Score,Triple Drop
 60.00,85.00,Flight Of The Labyrinth,Pinecone Peaks,High Score,Triple Drop
 110.00,135.00,Cone Drops,Pinecone Peaks,High Score,Triple Drop
