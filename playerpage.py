@@ -15,7 +15,7 @@ import dash_html_components as html
 import pathlib
 from dash.dependencies import Input, Output
 from utils import Header, sidebar
-from helpers import recentPBs, calcHSpoints, convertMillisNoHours, getTDcount
+from helpers import recentPBs, calcHSpoints, convertMillisNoHours, getTDcount, convertMillis
 
 PATH = pathlib.Path(__file__)
 DATA_PATH = PATH.joinpath("../data").resolve()
@@ -294,6 +294,17 @@ def makemountainPBs(pbdf):
         pbtables.append(playerdt)
     return pbtables, sumofbests
 
+def maketotsob(pbdf):
+    ttdt = pbdf[pbdf['type'] == 'Time Trial']
+    print(ttdt['Time / Score'].dtypes)
+    if(0 in ttdt['Points'].values):
+        return 'Incomplete'
+    else:
+        ttdt['Time / Score'] = pd.to_numeric(ttdt['Time / Score'])
+        presum = (ttdt['Time / Score'].sum())*1000
+        return convertMillis(int(presum))
+    
+
 def makePBdf(playername):
         recentpbs = recentPBs(playername)
         ttsubstotal = 0
@@ -473,12 +484,11 @@ def update_player_page(playername, n_clicks):
             elif originalsub['Was WR'].iloc[0] == True:
                 substring = substring+' - (Prev WR)'
             recent_submission_strings.append(substring)
-
-            
         
         if n_clicks % 2 == 0:
             return dbc.Col([
                 html.H3(playername+"'s Personal Bests"),
+                html.H4("Total Sum Of Best: "+maketotsob(playerdf)),
                 html.Br(),
                 dbc.Row([
                     dbc.Col([
@@ -632,11 +642,13 @@ def update_player_page(playername, n_clicks):
 def player_compare(orgplayer, playertocomp):
     playerinfo = makePBdf(orgplayer)
     playerdf = playerinfo[7]
+    playersob = maketotsob(playerdf)
     playerdf = playerdf.rename(columns={'Time / Score':orgplayer})
     playerdf = playerdf.drop(columns=['DD','TD','Points','Rank'])
     if playertocomp != '':
         compinfo = makePBdf(playertocomp)
         compdf = compinfo[7]
+        compsob = maketotsob(compdf)
         compdf = compdf.rename(columns={'Time / Score':playertocomp})
         compdf = compdf.drop(columns=['DD','TD','Points'])
         playerdf[playertocomp] = compdf[playertocomp]
@@ -679,7 +691,9 @@ def player_compare(orgplayer, playertocomp):
         return html.Div([
                 dbc.Row([
                     dbc.Col([
-                        html.H3("Comparing against "+str(playertocomp)),
+                        html.H3("Comparing "+orgplayer+" VS "+str(playertocomp)),
+                        html.H4(orgplayer+"'s Total Sum of Bests: "+playersob),
+                        html.H4(playertocomp+"'s Total Sum of Bests: "+compsob),
                         html.Hr(),
                         html.H4('Hirschalm 🇦🇹'),
                         pblist[0],
