@@ -278,7 +278,7 @@ def graphinfo(challenge_selected, player_selected, indf):
             'Timestamp': 'Date Set',
             'score': type
         },
-        title=challenge_selected+" World Record History")
+        title=challenge_selected+" World Record Historasdfy")
     fig.update_traces(mode="markers+lines",hovertemplate = dffpast['Name']+'<br>'+'%{y}'+'<br>'+dffpast['OS']+'<br>'+dffpast['Timestamp'])
     fig.update_layout(hovermode="x", xaxis_tickformat = '%B<br>%Y')
     
