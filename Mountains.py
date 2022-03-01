@@ -304,7 +304,7 @@ def challengeinfo(challenge_selected, indf):
         type = 'Score'
     dff = indf.copy()
     dff = dff[dff["challenge name"] == challenge_selected]
-    dffpast = dff[dff['Was WR'] == True]
+    dffpast = dff[(dff['Was WR'] == True) | (dff['Was WR'] == 'TRUE')]
     curnumWRs = dffpast.shape[0]
     curchal = challenges[challenges['Challenge Name'] == challenge_selected]
     td = curchal['TD'].iloc[0]
