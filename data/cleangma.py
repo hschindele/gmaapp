@@ -8,6 +8,7 @@ numHSTDs = 80
 
 chals = pd.read_csv('gmachallenges.csv')
 df = pd.read_csv('gmaraw.csv')
+df = df[df['What mountain is your run for?']!='Agpat Island']
 df = df[df['Verified?'] == "Yes"]
 df = df.replace(np.nan, '', regex=True)
 df['challenge name'] = df["Select TT Challenge"] + df["Select HS Challenge"]
