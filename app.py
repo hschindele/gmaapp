@@ -8,7 +8,6 @@ import time
 from time import strftime
 from time import gmtime
 from datetime import datetime
-
 import dash  # (version 1.12.0)
 import dash_table as dt
 import dash_core_components as dcc
