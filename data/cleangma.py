@@ -5,7 +5,7 @@ import matplotlib.pyplot as plt
 
 numTTTDs = 172
 numHSTDs = 80
-
+print('blah')
 chals = pd.read_csv('gmachallenges.csv')
 df = pd.read_csv('gmaraw.csv')
 df = df[df['What mountain is your run for?']!='Agpat Island']
