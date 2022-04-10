@@ -294,7 +294,7 @@ Avel,2021-10-10 12:39:16,Time trial,iOS,The Swing Passage,Waldtal,17.23,17699
 Gjeep302,2022-03-14 13:11:28,Time trial,iOS,The Swing Passage,Waldtal,17.96,10399
 Jamiemac,2021-07-04 5:06:05,Time trial,Android,The Swing Passage,Waldtal,17.98,10199
 Jonathan,2022-04-04 7:35:23,Time trial,iOS,The Swing Passage,Waldtal,17.7,13000
-Mountain_Greg,2021-06-22 5:07:30,Time trial,Android,The Swing Passage,Waldtal,17.96,10399
+Mountain_Greg,2022-04-06 13:57:25,Time trial,Android,The Swing Passage,Waldtal,17.36,16400
 Skier50,2021-06-30 18:54:31,Time trial,iOS,The Swing Passage,Waldtal,17.86,11400
 hschindele,2021-11-24 14:19:34,Time trial,iOS,The Swing Passage,Waldtal,16.96,20399
 massiv97,2021-06-27 11:13:28,Time trial,Android,The Swing Passage,Waldtal,17.98,10199
@@ -537,7 +537,7 @@ BouncyJello,2020-11-19 23:06:13,Time trial,Android,Clover Road Trail,Elnakka,17.
 Fenrir,2021-01-12 18:22:59,Time trial,Android,Clover Road Trail,Elnakka,18.86,3035
 Gjeep302,2021-01-17 16:56:11,Time trial,Android,Clover Road Trail,Elnakka,16.93,20700
 Jamiemac,2021-04-04 15:41:59,Time trial,Android,Clover Road Trail,Elnakka,16.98,20199
-Mountain_Greg,2021-03-11 5:54:35,Time trial,Android,Clover Road Trail,Elnakka,17.36,16400
+Mountain_Greg,2022-04-07 12:49:08,Time trial,Android,Clover Road Trail,Elnakka,16.61,23900
 Pinsek,2021-03-09 6:20:58,Time trial,Android,Clover Road Trail,Elnakka,17.87,11299
 Ryan Monty,2021-04-23 18:13:56,Time trial,Android,Clover Road Trail,Elnakka,16.95,20500
 SYNO,2021-03-04 14:53:02,Time trial,iOS,Clover Road Trail,Elnakka,17.08,19200
@@ -1366,7 +1366,7 @@ Skier50,2021-02-27 17:07:29,Time trial,iOS,Il Creativo,Passo Grolla,23.94,10599
 SwampfoxAK,2020-04-30 23:07:53,Time trial,Android,Il Creativo,Passo Grolla,25.98,5034
 hschindele,2021-07-19 15:42:46,Time trial,iOS,Il Creativo,Passo Grolla,21.75,32500
 massiv97,2021-01-07 12:00:57,Time trial,Android,Il Creativo,Passo Grolla,23.73,12699
-Avel,2021-10-10 14:10:53,Time trial,iOS,Skipping Ice Bergs,Passo Grolla,27.8,11999
+Avel,2022-04-10 6:40:56,Time trial,iOS,Skipping Ice Bergs,Passo Grolla,24.05,49499
 BouncyJello,2020-05-05 10:08:25,Time trial,Android,Skipping Ice Bergs,Passo Grolla,27.32,16799
 Fenrir,2021-02-22 16:58:08,Time trial,Android,Skipping Ice Bergs,Passo Grolla,34.52,491
 Jamiemac,2021-04-21 16:47:18,Time trial,Android,Skipping Ice Bergs,Passo Grolla,24.8,41999
@@ -1374,6 +1374,7 @@ Mountain_Greg,2021-03-17 11:27:28,Time trial,Android,Skipping Ice Bergs,Passo Gr
 Pinsek,2021-04-12 16:47:46,Time trial,Android,Skipping Ice Bergs,Passo Grolla,27.27,17300
 Ryan Monty,2021-04-22 15:42:35,Time trial,Android,Skipping Ice Bergs,Passo Grolla,25.25,37500
 SYNO,2021-02-02 12:38:14,Time trial,iOS,Skipping Ice Bergs,Passo Grolla,27.97,10300
+SanicBuum ,2022-04-09 15:00:41,Time trial,Android,Skipping Ice Bergs,Passo Grolla,24.76,42399
 Skier50,2021-05-30 16:59:31,Time trial,iOS,Skipping Ice Bergs,Passo Grolla,26.98,20199
 hschindele,2021-01-02 11:41:47,Time trial,iOS,Skipping Ice Bergs,Passo Grolla,25.24,37600
 massiv97,2021-02-21 15:05:13,Time trial,Android,Skipping Ice Bergs,Passo Grolla,27.16,18400
@@ -2113,12 +2114,13 @@ Mountain_Greg,2021-09-30 10:20:47,High score,Android,Terve Jumping,Elnakka,25402
 hschindele,2022-02-16 9:33:43,High score,iOS,Terve Jumping,Elnakka,29924.0,17580
 massiv97,2021-10-11 6:39:05,High score,Android,Terve Jumping,Elnakka,25315.0,10368
 🍊Koolaid,2022-01-09 13:57:28,High score,iOS,Terve Jumping,Elnakka,23368.0,8295
-Avel,2021-09-30 7:06:06,High score,iOS,Elnakka Freedom,Elnakka,28090.0,20001
-Foxster,2022-01-05 6:01:38,High score,Android,Elnakka Freedom,Elnakka,23333.0,11639
-Jamiemac,2021-10-26 12:18:19,High score,Android,Elnakka Freedom,Elnakka,25787.0,15389
-Mountain_Greg,2021-11-25 4:17:29,High score,Android,Elnakka Freedom,Elnakka,23262.0,11545
-hschindele,2022-02-16 13:50:29,High score,iOS,Elnakka Freedom,Elnakka,24135.0,12751
-massiv97,2021-10-11 6:39:51,High score,Android,Elnakka Freedom,Elnakka,22753.0,10895
+Avel,2021-09-30 7:06:06,High score,iOS,Elnakka Freedom,Elnakka,28090.0,14806
+Foxster,2022-01-05 6:01:38,High score,Android,Elnakka Freedom,Elnakka,23333.0,10897
+Jamiemac,2021-10-26 12:18:19,High score,Android,Elnakka Freedom,Elnakka,25787.0,12764
+Mountain_Greg,2021-11-25 4:17:29,High score,Android,Elnakka Freedom,Elnakka,23262.0,10848
+Olm842 ,2022-04-08 9:29:37,High score,iOS,Elnakka Freedom,Elnakka,32757.0,20001
+hschindele,2022-02-16 13:50:29,High score,iOS,Elnakka Freedom,Elnakka,24135.0,11475
+massiv97,2021-10-11 6:39:51,High score,Android,Elnakka Freedom,Elnakka,22753.0,10498
 Avel,2021-12-17 0:48:12,High score,iOS,The Road Gaps,Elnakka,121.3,20000
 Jamiemac,2021-10-27 5:51:11,High score,Android,The Road Gaps,Elnakka,118.3,17605
 Mountain_Greg,2022-01-06 9:35:22,High score,Android,The Road Gaps,Elnakka,115.7,15762
@@ -2130,7 +2132,7 @@ Bramspr,2020-05-05 13:04:47,High score,iOS,Boulder Hill Escape,Elnakka,243.4,385
 Fenrir,2021-01-12 18:22:15,High score,Android,Boulder Hill Escape,Elnakka,247.5,4288
 Gjeep302,2021-02-03 17:03:33,High score,Android,Boulder Hill Escape,Elnakka,289.7,12876
 Jamiemac,2021-01-26 11:42:15,High score,Android,Boulder Hill Escape,Elnakka,296.8,15493
-Mountain_Greg,2021-01-26 14:04:13,High score,Android,Boulder Hill Escape,Elnakka,286.9,11970
+Mountain_Greg,2022-04-07 14:32:26,High score,Android,Boulder Hill Escape,Elnakka,295.9,15134
 Olm842 ,2022-03-09 21:37:39,High score,iOS,Boulder Hill Escape,Elnakka,291.3,13424
 SYNO,2021-01-24 18:05:36,High score,iOS,Boulder Hill Escape,Elnakka,296.7,15453
 Skier50,2021-04-09 10:38:45,High score,iOS,Boulder Hill Escape,Elnakka,284.2,11157
@@ -2265,11 +2267,12 @@ Jamiemac,2022-01-26 7:58:03,High score,Android,Caso Della Stella,Passo Grolla,82
 Mountain_Greg,2021-12-26 10:13:27,High score,Android,Caso Della Stella,Passo Grolla,82.5,11935
 hschindele,2022-02-18 21:20:39,High score,iOS,Caso Della Stella,Passo Grolla,82.1,11602
 massiv97,2021-10-06 15:13:27,High score,Android,Caso Della Stella,Passo Grolla,81.1,10810
-Avel,2021-12-31 6:31:51,High score,iOS,Ruby Con Aria,Passo Grolla,9.52,15141
-Jamiemac,2021-12-08 15:58:11,High score,Android,Ruby Con Aria,Passo Grolla,10.02,17355
-Mountain_Greg,2021-12-21 6:02:11,High score,Android,Ruby Con Aria,Passo Grolla,10.54,20001
-hschindele,2022-02-18 21:21:24,High score,iOS,Ruby Con Aria,Passo Grolla,9.06,13355
-massiv97,2021-10-06 15:15:02,High score,Android,Ruby Con Aria,Passo Grolla,8.84,12577
+Avel,2021-12-31 6:31:51,High score,iOS,Ruby Con Aria,Passo Grolla,9.52,15044
+Jamiemac,2021-12-08 15:58:11,High score,Android,Ruby Con Aria,Passo Grolla,10.02,17207
+Jonathan,2022-04-10 4:04:53,High score,iOS,Ruby Con Aria,Passo Grolla,10.58,20000
+Mountain_Greg,2021-12-21 6:02:11,High score,Android,Ruby Con Aria,Passo Grolla,10.54,19787
+hschindele,2022-02-18 21:21:24,High score,iOS,Ruby Con Aria,Passo Grolla,9.06,13295
+massiv97,2021-10-06 15:15:02,High score,Android,Ruby Con Aria,Passo Grolla,8.84,12532
 Avel,2021-12-22 12:15:49,High score,iOS,Red Lumber Flow,Passo Grolla,33135.0,16792
 Jamiemac,2022-01-26 8:26:48,High score,Android,Red Lumber Flow,Passo Grolla,33518.0,20001
 Mountain_Greg,2022-01-07 2:13:09,High score,Android,Red Lumber Flow,Passo Grolla,32018.0,10083
