@@ -233,7 +233,7 @@ Timestamp,Link,Name,OS,Mountain,Select TT Challenge.10,Enter time as (sec).(mil)
 2021-10-01 15:37:50,https://drive.google.com/open?id=1isp5hHvgE71CFmlG2ET20TzQwVauvpPR,hschindele,iOS,Pinecone Peaks,,,,,,TRUE,,City Woods,Time Trial,15.49,Race
 2021-10-01 17:10:15,https://drive.google.com/open?id=1-QWspim59f07Q0S9pOKy3dNHjDnumeW1,hschindele,iOS,Pinecone Peaks,,,,,,TRUE,,City Woods,Time Trial,15.4,Race
 2021-10-01 22:08:32,https://drive.google.com/open?id=1gdRuwjLWMFhCkR4TazIROI_GatybpXGl,PelagusPlays,iOS,Pinecone Peaks,,,,,,TRUE,,Flight Of The Labyrinth,High score,89.4,Triple Drop
-2021-10-02 7:15:19,https://drive.google.com/open?id=1YlvEUOFHfq20QT7PbVySkybixwE94QeB,Avel,iOS,Pinecone Peaks,,,,,,TRUE,,City Woods,Time Trial,15.43,Race
+2021-10-02 7:15:19,https://drive.google.com/open?id=1YlvEUOFHfq20QT7PbVySkybixwE94QeB,Avel,iOS,Pinecone Peaks,,,,,,FALSE,,City Woods,Time Trial,15.43,Race
 2021-10-02 7:16:41,https://drive.google.com/open?id=18k39_6H8ECvDwA9nSQFdoCW5mO6wSUU3,Avel,iOS,Pinecone Peaks,,,,,,TRUE,,City Woods,Time Trial,15.37,Race
 2021-10-02 7:37:48,https://drive.google.com/open?id=1OCO4M3UnJPCGdmY2_HHGhsDmO7PulfKY,hschindele,iOS,Pinecone Peaks,,,,,,TRUE,,City Woods,Time Trial,15.36,Race
 2021-10-02 13:36:26,https://drive.google.com/open?id=1PTt0LLviF00i9p0xbWf_SRE-T-pQAY2k,massiv97,Android,Pinecone Peaks,,,,,,TRUE,,Send It Tricky,High score,20614.0,Open Trick
@@ -297,7 +297,7 @@ Timestamp,Link,Name,OS,Mountain,Select TT Challenge.10,Enter time as (sec).(mil)
 2021-12-26 2:14:45,https://drive.google.com/open?id=1ZFIRzWC1QejiFjsefL01dvmBkDaiB91m,Mountain_Greg,Android,Pinecone Peaks,,,,,,FALSE,,Desolate Drops,High score,10.39,Airtime
 2021-12-30 4:57:33,https://drive.google.com/open?id=1WfA6DkfEZyJ1rq4gyeFNuLdxOfIhuiIL,Mountain_Greg,Android,Pinecone Peaks,,,,,,FALSE,,Desolate Hills Natural,High score,33932.0,Open Trick
 2021-12-30 4:58:45,https://drive.google.com/open?id=1mzsqm1Y_u6_nboUbZ_0pVSfCltfs1nfS,Mountain_Greg,Android,Pinecone Peaks,,,,,,TRUE,,Pine Trickster,High score,39542.0,Open Trick
-2021-12-30 5:01:54,https://drive.google.com/open?id=1VUDt3Z8urx9sF23iejA1LAstHGWWoOSO,Mountain_Greg,Android,Pinecone Peaks,,,,,,TRUE,,Pinecone Jibber,High score,32850.0,Open Trick
+2021-12-30 5:01:54,https://drive.google.com/open?id=1VUDt3Z8urx9sF23iejA1LAstHGWWoOSO,Mountain_Greg,Android,Pinecone Peaks,,,,,,FALSE,,Pinecone Jibber,High score,32850.0,Open Trick
 2021-12-30 5:03:27,https://drive.google.com/open?id=1Hd_PVLxXPJudQdv2HYBKx5ws9if53-w9,Mountain_Greg,Android,Pinecone Peaks,,,,,,FALSE,,Flight Of The Labyrinth,High score,87.7,Triple Drop
 2021-12-30 5:05:10,https://drive.google.com/open?id=1R3B2dxDOd6PL_FW0cBN3bmLT4WUObh_8,Mountain_Greg,Android,Pinecone Peaks,,,,,,FALSE,,Cone Drops,High score,140.3,Triple Drop
 2021-12-30 14:30:08,https://drive.google.com/open?id=1NSJLZ4CWL5Iw313SKCvXGq3voi9oz5qt,Avel,iOS,Pinecone Peaks,,,,,,FALSE,,Flight Of The Labyrinth,High score,85.7,Triple Drop
@@ -341,3 +341,8 @@ Timestamp,Link,Name,OS,Mountain,Select TT Challenge.10,Enter time as (sec).(mil)
 2022-03-05 8:34:16,https://drive.google.com/open?id=1JnMLa6K11cCIHpaO0HO1gJ4NgQzn64vB,Olm842,iOS,Pinecone Peaks,,,,,,FALSE,,Send It Tricky,High score,27373.0,Open Trick
 2022-03-14 4:31:34,https://drive.google.com/open?id=1RMS3X3DRzT8zgCa7jJF6gCT9G-ksdKWJ,Jamiemac,Android,Pinecone Peaks,,,,,,FALSE,,Make Haste,Time Trial,64.19,TTB
 2022-03-21 4:47:09,https://drive.google.com/open?id=1lK4AoOhLl2uHl_pIogTBr_mEnqX0RvSA,Jamiemac,Android,Pinecone Peaks,,,,,,TRUE,,Desolate Hills Natural,High score,46879.0,Open Trick
+2022-03-22 20:01:55,https://drive.google.com/open?id=1JVHm8y9h7sRcT8W38y2MYMs26uxJOJe1,The Book,iOS,Pinecone Peaks,,,,,,TRUE,,Desolate Drops,High score,15.09,Airtime
+2022-03-23 8:02:32,https://drive.google.com/open?id=1985tNa3EggxQKSDuzcZbagm2nq0e2owH,Jonathan,iOS,Pinecone Peaks,,,,,True,TRUE,,Pinecone Dropper,High score,7.17,Airtime
+2022-03-26 7:29:13,https://drive.google.com/open?id=1B9psZxBbTXODs5uVOy3BBlWAIYwyYyMZ,Jonathan,iOS,Pinecone Peaks,,,,,,TRUE,,Desolate Drops,High score,15.48,Airtime
+2022-03-26 16:29:23,https://drive.google.com/open?id=11huw8NWD1Cg7127LQTWnUCxehl4V4khR,Avel,iOS,Pinecone Peaks,,,,,,FALSE,,Make Haste,Time Trial,63.96,TTB
+2022-03-26 16:30:49,https://drive.google.com/open?id=1ZL8xRWuqrTX9R9G69yFaDCgYKwMnDVn4,Avel,iOS,Pinecone Peaks,,,,,,FALSE,,Pinecone Force,Time Trial,51.17,TTB
