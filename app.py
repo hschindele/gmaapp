@@ -26,7 +26,7 @@ PATH = pathlib.Path(__file__)
 DATA_PATH = PATH.joinpath("../data").resolve()
 
 external_stylesheets = [dbc.themes.BOOTSTRAP]
-numchallenges = 260
+numchallenges = 266
 
 app = dash.Dash(__name__, meta_tags=[{"name": "viewport", "content": "width=device-width"}],suppress_callback_exceptions=True, external_stylesheets=external_stylesheets)
 app.title = "GMA Leaderboards"
