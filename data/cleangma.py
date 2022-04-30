@@ -3,12 +3,10 @@ import numpy as np
 from scipy.optimize import curve_fit
 import matplotlib.pyplot as plt
 
-numTTTDs = 172
-numHSTDs = 80
-print('blah')
+numTTTDs = 180
+numHSTDs = 86
 chals = pd.read_csv('gmachallenges.csv')
 df = pd.read_csv('gmaraw.csv')
-df = df[df['What mountain is your run for?']!='Agpat Island']
 df = df[df['Verified?'] == "Yes"]
 df = df.replace(np.nan, '', regex=True)
 df['challenge name'] = df["Select TT Challenge"] + df["Select HS Challenge"]
@@ -16,7 +14,7 @@ df['type'] = df["Challenge Type "] + df["Challenge Type"]
 df['score'] = df["Enter score as just a number"].astype(str) + df["Enter time as (sec).(mil) EX: 62.69"].astype(str)
 df = df.drop(['Select TT Challenge','Select HS Challenge','Challenge Type ','Challenge Type','Enter score as just a number','Enter time as (sec).(mil) EX: 62.69','Enter Mountain Score'], axis=1)
 
-for i in range(1,10):
+for i in range(1,11):
 	ttstring = "Select TT Challenge."+str(i)
 	hsstring = "Select HS Challenge."+str(i)
 	ttscore = "Enter time as (sec).(mil) EX: 62.69."+str(i)
@@ -25,7 +23,7 @@ for i in range(1,10):
 	df['score'] = df['score'] + df[ttscore].astype(str) + df[hsscore].astype(str)
 	df = df.drop([ttscore, hsscore, ttstring, hsstring], axis = 1)
 
-for i in range(1,9):
+for i in range(1,10):
 	challengestring = "Challenge Type."+str(i)
 	df['type'] = df['type'] + df[challengestring]
 	df = df.drop([challengestring], axis=1)
@@ -89,6 +87,7 @@ cleanpas = clean[(clean['Mountain'] == "Passo Grolla") & (clean['challenge name'
 cleanben = clean[(clean['Mountain'] == "Ben Ailig") & (clean['challenge name'] != "")]
 cleanmou = clean[(clean['Mountain'] == "Mount Fairview") & (clean['challenge name'] != "")]
 cleanpin = clean[(clean['Mountain'] == "Pinecone Peaks") & (clean['challenge name'] != "")]
+cleanagp = clean[(clean['Mountain'] == "Agpat Island") & (clean['challenge name'] != "")]
 cleanhir.to_csv('hirschalm.csv', index=False)
 cleanwal.to_csv('waldtal.csv', index=False)
 cleaneln.to_csv('elnakka.csv', index=False)
@@ -99,6 +98,7 @@ cleanpas.to_csv('passo grolla.csv', index=False)
 cleanben.to_csv('ben ailig.csv', index=False)
 cleanmou.to_csv('mount fairview.csv', index=False)
 cleanpin.to_csv('pinecone peaks.csv', index=False)
+cleanagp.to_csv('agpat island.csv', index=False)
 
 allpbs = pd.DataFrame()
 print("Making PB Sheet")
@@ -172,7 +172,7 @@ hspbs = allpbs[allpbs['type'] == 'High score']
 
 mountain_prefixes = [('Hirschalm','hir'),('Waldtal','wal'),('Elnakka','eln'),('Dalarna','dal'),
                      ('Rotkamm', 'rot'), ('Saint Luvette', 'sai'), ('Passo Grolla', 'pas'),
-                     ('Ben Ailig', 'ben'), ('Mount Fairview','fai'), ('Pinecone Peaks','pin')]
+                     ('Ben Ailig', 'ben'), ('Mount Fairview','fai'), ('Pinecone Peaks','pin'), ('Agpat Island','agp')]
 
 allpbs[allpbs['Points'] > 10000] = allpbs[allpbs['Points'] > 10000].round({'Points':-2})
 

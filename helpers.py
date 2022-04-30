@@ -20,7 +20,7 @@ external_stylesheets = [dbc.themes.BOOTSTRAP]
 app = dash.Dash(__name__, meta_tags=[{"name": "viewport", "content": "width=device-width"}],suppress_callback_exceptions=True, external_stylesheets=external_stylesheets)
 
 mountains_list = ['Hirschalm', 'Waldtal', 'Elnakka', 'Dalarna', 'Rotkamm', 'Saint Luvette',
-                  'Passo Grolla', 'Ben Ailig', 'Mount Fairview', 'Pinecone Peaks']
+                  'Passo Grolla', 'Ben Ailig', 'Mount Fairview', 'Pinecone Peaks', 'Agpat Island']
 
 # Fits score to exponential curve given two points
 def calcHSpoints(x1,y1,x2,y2,score):

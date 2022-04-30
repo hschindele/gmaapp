@@ -44,6 +44,7 @@ pasdf = pd.read_csv(DATA_PATH.joinpath("passo grolla.csv"))
 bendf = pd.read_csv(DATA_PATH.joinpath("ben ailig.csv"))
 moudf = pd.read_csv(DATA_PATH.joinpath("mount fairview.csv"))
 pindf = pd.read_csv(DATA_PATH.joinpath("pinecone peaks.csv"))
+agpdf = pd.read_csv(DATA_PATH.joinpath("agpat island.csv"))
 allwrs = pd.read_csv(DATA_PATH.joinpath("allwrs.csv"))
 sortedwrs = pd.read_csv(DATA_PATH.joinpath("sortedwrs.csv"))
 challenges = pd.read_csv(DATA_PATH.joinpath("gmachallenges.csv"))
@@ -56,7 +57,7 @@ achievmentsdf = pd.read_csv(DATA_PATH.joinpath("achievments.csv"))
 TDdf = pd.read_csv(DATA_PATH.joinpath("TDDF.csv"))
 
 mountains_list = ['Hirschalm', 'Waldtal', 'Elnakka', 'Dalarna', 'Rotkamm', 'Saint Luvette',
-                  'Passo Grolla', 'Ben Ailig', 'Mount Fairview', 'Pinecone Peaks']
+                  'Passo Grolla', 'Ben Ailig', 'Mount Fairview', 'Pinecone Peaks', 'Agpat Island']
 
 sum_of_bests = calcSumofBests()
 tenrecent = recentWRs()
@@ -188,6 +189,8 @@ def display_page(pathname):
         return mount_fairview_layout
     elif pathname == '/pineconepeaks':
         return pinecone_peaks_layout
+    elif pathname == '/agpatisland':
+        return agpat_island_layout
     elif pathname == '/player-search':
         return player_layout
     elif pathname == '/records-and-rankings':
@@ -438,6 +441,11 @@ def update_record(chaltypedrop, sorttype):
                         mountainwrlist[9],
                         html.H4('Pinecone Peaks Sum of Best: '+sum_of_bests[9]),
                         html.Br(),
+                        html.H4('Agpat Island 🇬🇱'),
+                        html.Hr(),
+                        mountainwrlist[10],
+                        html.H4('Agpat Island Sum of Best: '+sum_of_bests[10]),
+                        html.Br(),
                         mtnranks
                         ],
                     style={'margin-left':15}
@@ -478,6 +486,7 @@ passo_grolla_layout = mountain_layout('Passo Grolla','Pas','Loggers Groove')
 ben_ailig_layout = mountain_layout('Ben Ailig','Ben','The Swindler')
 mount_fairview_layout = mountain_layout('Mount Fairview','Mou','Grand Mountain Cup I')
 pinecone_peaks_layout = mountain_layout('Pinecone Peaks','Pin','City Woods')
+agpat_island_layout = mountain_layout('Agpat Island','Agp','Agpat Journey')
 
 @app.callback(Output('Hirschalm-content', 'children'), [Input('Hir_dropdown', 'value'), Input('Range', 'value'),Input('Players','value')])
 def update_hir_rows(challenge_selected, range_selected, player_selected):
@@ -607,6 +616,19 @@ def update_pin_info(challenge_selected):
 @app.callback(Output('Pinecone Peaks-content2', 'children'), [Input('Pin_dropdown','value'),Input('Players','value')])
 def update_graph_pin(challenge_selected, player_selected):
     return graphinfo(challenge_selected, player_selected, pindf)
+    
+    
+@app.callback(Output('Agpat Island-content', 'children'), [Input('Agp_dropdown', 'value'), Input('Range', 'value'),Input('Players','value')])
+def update_agp_rows(challenge_selected, range_selected, player_selected):
+    return mountaincontent(challenge_selected, range_selected, player_selected, 'Agpat Island')
+
+@app.callback(Output('Agp challenge info','children'),Input('Agp_dropdown', 'value'))
+def update_agp_info(challenge_selected):
+    return challengeinfo(challenge_selected, agpdf)
+    
+@app.callback(Output('Agpat Island-content2', 'children'), [Input('Agp_dropdown','value'),Input('Players','value')])
+def update_graph_agp(challenge_selected, player_selected):
+    return graphinfo(challenge_selected, player_selected, agpdf)
     
 @app.callback(Output('archive-content', 'children'), [Input('archiveselect','value')])
 def update_archive(outtype):

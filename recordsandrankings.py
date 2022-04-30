@@ -18,7 +18,7 @@ app = dash.Dash(__name__, meta_tags=[{"name": "viewport", "content": "width=devi
 allpbs = pd.read_csv(DATA_PATH.joinpath("allpbs.csv"))
 
 mountains_list = ['Hirschalm', 'Waldtal', 'Elnakka', 'Dalarna', 'Rotkamm', 'Saint Luvette',
-                  'Passo Grolla', 'Ben Ailig', 'Mount Fairview', 'Pinecone Peaks']
+                  'Passo Grolla', 'Ben Ailig', 'Mount Fairview', 'Pinecone Peaks','Agpat Island']
                   
 totsumofbest = (sortedwrs[sortedwrs['type'] != 'High score'].score.sum())*1000
 
@@ -308,6 +308,20 @@ def mountainrankpage(outtype):
                 ]),
                 dbc.Col([
                     hsranks[9]
+                ])
+            ]),
+            html.Br(),
+            html.H5('Agpat Island Rankings'),
+            html.Hr(),
+            dbc.Row([
+                dbc.Col([
+                    overallranks[10]
+                ]),
+                dbc.Col([
+                    ttranks[10]
+                ]),
+                dbc.Col([
+                    hsranks[10]
                 ])
             ]),
         ])

@@ -39,7 +39,8 @@ sidebar = html.Div(
                 dbc.NavLink("Passo Grolla 🇮🇹", href="/passogrolla", active="exact"),
                 dbc.NavLink("Ben Ailig 🏴󠁧󠁢󠁳󠁣󠁴󠁿", href="/benailig", active="exact"),
                 dbc.NavLink("Mount Fairview 🇨🇦", href="/mountfairview", active="exact"),
-                dbc.NavLink("Pinecone Peaks 🇺🇸", href="/pineconepeaks", active="exact")
+                dbc.NavLink("Pinecone Peaks 🇺🇸", href="/pineconepeaks", active="exact"),
+                dbc.NavLink("Agpat Island 🇬🇱", href="/agpatisland", active="exact")
             ],
             vertical=True,
             pills=True,

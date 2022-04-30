@@ -171,6 +171,14 @@ DD,TD,Challenge Name,Mountain,type,chaltype
 12.00,10.00,Tic Tac Toe,Pinecone Peaks,Time Trial,Trail
 75.00,68.00,Make Haste,Pinecone Peaks,Time Trial,TTB
 55.50,52.50,Pinecone Force,Pinecone Peaks,Time Trial,TTB
+25.00,23.00,Agpat Journey,Agpat Island,Time Trial,Race
+22.50,20.25,Aluu Race Track,Agpat Island,Time Trial,Race
+16.00,15.50,Ilineq Track,Agpat Island,Time Trial,Race
+22.50,22.00,Nanoq danger,Agpat Island,Time Trial,Race
+17.50,17.10,The Pilot Hike,Agpat Island,Time Trial,Race
+16.20,15.75,Ukioq Track,Agpat Island,Time Trial,Race
+24.00,22.75,Gunnbjorns Line,Agpat Island,Time Trial,Trail
+22.50,20.00,Across Agpat,Agpat Island,Time Trial,TTB
 35.00,45.00,The Glacier Kicker,Hirschalm,High Score,Long Jump
 5000.00,17000.00,Glacier Park,Hirschalm,High Score,Open Trick
 10000.00,28000.00,Waldhorn Slopestyle,Waldtal,High Score,Gated Trick
@@ -251,3 +259,9 @@ DD,TD,Challenge Name,Mountain,type,chaltype
 20000.00,32000.00,Desolate Hills Natural,Pinecone Peaks,High Score,Open Trick
 20000.00,32000.00,Pine Trickster,Pinecone Peaks,High Score,Open Trick
 240.00,280.00,Find Your Way,Pinecone Peaks,High Score,Distance
+4.70,9.00,The Brand,Agpat Island,High Score,Airtime
+50.00,75.00,The Seagull,Agpat Island,High Score,Long Jump
+10000.00,14000.00,Greenland spin,Agpat Island,High Score,Single Trick
+15000.00,35000.00,Aappaluttoq Park Lap,Agpat Island,High Score,Gated Trick
+3500.00,12500.00,Quick Turns,Agpat Island,High Score,Gated Trick
+12500.00,25000.00,Tungujortoq Park Lap,Agpat Island,High Score,Gated Trick
