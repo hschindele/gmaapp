@@ -209,7 +209,7 @@ Timestamp,Link,Name,OS,Mountain,Was WR,Unnamed: 69,challenge name,type,score,cha
 2021-02-20 15:14:44,https://drive.google.com/open?id=1lK53-pmFwFwUQkgjPjgnw0BcCH8W7yHA,Skier50,iOS,Waldtal,FALSE,Trail,Woodland Deep Trail,Time trial,14.53,Trail
 2021-02-22 16:46:34,https://drive.google.com/open?id=1k0s7_Ac9N9vqOFyFYOA-6EkS54foOf3W,Fenrir,Android,Waldtal,FALSE,Trail,Over The Pist,Time trial,9.8,Trail
 2021-02-22 17:05:57,https://drive.google.com/open?id=1Br2M-qL0iIT43OWZ4kkhR5LDJipWQKfC,Fenrir,Android,Waldtal,FALSE,Trail,The Fatal Drops,Time trial,15.16,Trail
-2021-02-22 17:06:32,https://drive.google.com/open?id=1XHevffE26ULykDuQVyeSHNekDSIrDH2y,Fenrir,Android,Waldtal,FALSE,Distance,The Fork,High score,351.8,Distance
+2021-02-22 17:06:32,https://drive.google.com/open?id=1XHevffE26ULykDuQVYesHNekDSIrDH2y,Fenrir,Android,Waldtal,FALSE,Distance,The Fork,High score,351.8,Distance
 2021-02-22 17:15:14,https://drive.google.com/open?id=1Xe_dcAqTUssm8u7nRmB6_Rhxi16thPB4,Fenrir,Android,Waldtal,FALSE,Trail,Woodland Deep Trail,Time trial,14.74,Trail
 2021-02-23 6:27:56,https://drive.google.com/open?id=1jaugBSSKpsHK2iXno9zvYsVT6NmQXuPo,Mountain_Greg,Android,Waldtal,FALSE,Race,Gemsgully Whites,Time trial,31.15,Race
 2021-02-23 14:10:09,https://drive.google.com/open?id=1-H5MS8woAivKyzcVuK0xop3o63qSQsvQ,Skier50,iOS,Waldtal,FALSE,Race,The Woodland Slalom,Time trial,24.48,Race
@@ -524,3 +524,18 @@ Timestamp,Link,Name,OS,Mountain,Was WR,Unnamed: 69,challenge name,type,score,cha
 2022-04-15 6:50:11,https://drive.google.com/open?id=1m56Edfc9vs6ZXYaXrcbtoFRjjFi-6kpR,Mountain_Greg,Android,Waldtal,FALSE,,The Crowd Pleaser,Time trial,13.57,Trail
 2022-04-18 2:41:07,https://drive.google.com/open?id=1n0rRa-VI-SbGbixttqGRodjm-B1e2P9k,Avel,iOS,Waldtal,TRUE,,The Woodland Slalom,Time trial,21.94,Race
 2022-04-20 15:12:41,https://drive.google.com/open?id=1yhaw5UrI_1QmRitGw7Kalq1MDVQhSZtq,Jamiemac,Android,Waldtal,FALSE,,The Woodland Slalom,Time trial,22.67,Race
+2022-06-29 8:33:37,https://drive.google.com/open?id=1xgE2rKkG52gXHEtmwmhtQTljF57T1NY7,GSM,Android,Waldtal,TRUE,,The Waldhorn Falls,High score,110.6,Triple Drop
+2022-06-30 5:32:37,https://drive.google.com/open?id=1FgTh7dRHnNW8hPYTkaHRIemWlJ9pGy7i,GSM,Android,Waldtal,TRUE,,Rigid Jumps,High score,72.6,Triple Drop
+2022-07-22 10:28:30,https://drive.google.com/open?id=1CXn0DnxGLZsCbCoDR_i5INbeezouUAwS,GSM,Android,Waldtal,TRUE,,Rigid Jumps,High score,73.3,Triple Drop
+2022-07-23 8:32:45,https://drive.google.com/open?id=1cXX_NhK2gsRUi9AUKgowIKeE7Tv-9Jot,Avel,iOS,Waldtal,TRUE,,Peak To Valley Run,Time trial,48.38,Race
+2022-07-23 15:26:40,https://drive.google.com/open?id=1UG-tNOtKiGd9SAo1-nGCQmo4HliiqVNj,GSM,Android,Waldtal,,,The Fork,High score,350.5,Distance
+2022-07-23 15:28:09,https://drive.google.com/open?id=1CV5BJ89bNVs0RVmOSSuNlt1csdYGs_Ev,GSM,Android,Waldtal,,,Waldhorn Slopestyle,High score,33944.0,Gated Trick
+2022-07-25 10:55:25,https://drive.google.com/open?id=1J2AS_z-tuGsyGNGrFEqiY6E9t3gzRWYX,hschindele,iOS,Waldtal,TRUE,,Peak To Valley Run,Time trial,47.91,Race
+2022-08-01 1:16:46,https://drive.google.com/open?id=1m3fHMeEotQd2OqOnBej1BfFwB6siOFtr,GSM,Android,Waldtal,FALSE,,The Fork,High score,254.0,Distance
+2022-08-01 9:15:22,https://drive.google.com/open?id=1mevidu-c6Cj3IWNKPULwK_OmSXgHH48Z,GSM,Android,Waldtal,FALSE,,Waldhorn Slopestyle,High score,39524.0,Gated Trick
+2022-08-02 9:11:29,https://drive.google.com/open?id=127P0Q3LVfcdd0ozQtZXdS8DO5HyNcvyo,GSM,Android,Waldtal,FALSE,,Waldhorn Slopestyle,High score,41623.0,Gated Trick
+2022-08-02 9:12:09,https://drive.google.com/open?id=1yHazsARNzpkcbnnmh0T8O4ELkmJq5RbQ,GSM,Android,Waldtal,FALSE,,The Fork,High score,356.8,Distance
+2022-08-06 16:58:39,https://drive.google.com/open?id=11ukyck9lFnhEfIAWGVh3q4ROVsHz852o,GSM,Android,Waldtal,FALSE,,The Fork,High score,359.1,Distance
+2022-09-26 6:58:39,https://drive.google.com/open?id=1iShiszdL85JMcn2gfxqtWuHB92YoeGdL,CrystalEel13467,Android,Waldtal,FALSE,,Waldhorn Voyage,Time trial,53.41,TTB
+2022-10-28 0:22:49,https://drive.google.com/open?id=1i1Agvw4xuBCnr0NkTFFHNVZXZbHBmGHq,Libertarian Scofflaw,iOS,Waldtal,FALSE,,The Woodland Slalom,Time trial,25.26,Race
+2022-10-28 0:25:44,https://drive.google.com/open?id=136zsSTrdQ2k4mT5ptfkMCieT6q9kjO0I,Libertarian Scofflaw,iOS,Waldtal,FALSE,,The Woodland Track,Time trial,23.66,Race

@@ -46,7 +46,7 @@ Timestamp,Link,Name,OS,Mountain,Was WR,Unnamed: 69,challenge name,type,score,cha
 2021-01-07 11:55:04,https://drive.google.com/open?id=1DxaCLIqSyCvUz9v6PTfj_N41jBfjQ4LT,massiv97,Android,Passo Grolla,FALSE,Race,La Bomba,Time trial,9.33,Race
 2021-01-07 11:55:52,https://drive.google.com/open?id=1n9-sFQdJRZiWMlf-Drd8vIdqBajnegi_,massiv97,Android,Passo Grolla,FALSE,Race,Peak avalanche escape,Time trial,34.89,Race
 2021-01-07 11:56:40,https://drive.google.com/open?id=16m-AX2sPd7tpKzjLx-JoueBZi8cVUyO7,massiv97,Android,Passo Grolla,FALSE,Race,Maniaco,Time trial,19.75,Race
-2021-01-07 11:58:37,https://drive.google.com/open?id=15CqEGivHVdS__kEJBivRYESD3e5f4fys,massiv97,Android,Passo Grolla,FALSE,Race,Tombola,Time trial,21.27,Race
+2021-01-07 11:58:37,https://drive.google.com/open?id=15CqEGivHVdS__kEJBivRYesD3e5f4fys,massiv97,Android,Passo Grolla,FALSE,Race,Tombola,Time trial,21.27,Race
 2021-01-07 11:59:29,https://drive.google.com/open?id=1zbBLEWqCA5bPEUimwZQNxJSTq8a0bZA3,massiv97,Android,Passo Grolla,FALSE,Race,The Icy Slide,Time trial,19.8,Race
 2021-01-07 12:00:13,https://drive.google.com/open?id=1lnS_pkRzu3DxIVqqPuUOBiZ9ejNTikmO,massiv97,Android,Passo Grolla,FALSE,Trail,La Transitions,Time trial,10.36,Trail
 2021-01-07 12:00:57,https://drive.google.com/open?id=1IIiqrj8Uwn4xgNQfKp5_uwlUZirUMSmj,massiv97,Android,Passo Grolla,FALSE,Trail,Il Creativo,Time trial,23.73,Trail
@@ -560,3 +560,13 @@ Timestamp,Link,Name,OS,Mountain,Was WR,Unnamed: 69,challenge name,type,score,cha
 2022-04-19 14:54:49,https://drive.google.com/open?id=18oePGMSvlVlTPYA4NSCIrGqweoKVz94Q,Avel,iOS,Passo Grolla,TRUE,,The Forever Run,Time trial,42.43,TTB
 2022-04-20 6:18:57,https://drive.google.com/open?id=13fHGwSG2RyVqXmC0lrmDsAXaj5CqA-jt,Mountain_Greg,Android,Passo Grolla,FALSE,,Il Fenomeno,High score,29255.0,Gated Trick
 2022-04-20 15:11:23,https://drive.google.com/open?id=1gu7uudzP8DcZrCJb5qkPDbMWmuTbVnko,Jamiemac,Android,Passo Grolla,FALSE,,The Forever Run,Time trial,43.83,TTB
+2022-04-23 11:29:18,https://drive.google.com/open?id=1RjYKn_qYpS1OcuCuGxERJMSjB-qNqEZA,Mountain_Greg,Android,Passo Grolla,FALSE,,The Forever Run,Time trial,45.28,TTB
+2022-04-23 13:54:17,https://drive.google.com/open?id=13WJAwehs9tv1ZKftzot7ZWtdcoG27a4j,Jamiemac,Android,Passo Grolla,FALSE,,Peak avalanche escape,Time trial,32.39,Race
+2022-05-04 4:47:43,https://drive.google.com/open?id=12edv6Ky04mp05rC3CFHeGcRdksKQaMUt,Jonathan,iOS,Passo Grolla,FALSE,,Il Creativo,Time trial,22.89,Trail
+2022-05-05 10:58:25,https://drive.google.com/open?id=1K44HSZXY8HN4v0TMQCKPxNTGiyQ6PV2V,Jonathan,iOS,Passo Grolla,FALSE,,Elasto Mania Due,Time trial,15.65,Trail
+2022-05-05 10:59:24,https://drive.google.com/open?id=1JjllWirskrEX7mhRbluEd4BovlBERnS2,Jonathan,iOS,Passo Grolla,FALSE,,Rockerfeller,Time trial,13.26,Trail
+2022-05-05 11:00:10,https://drive.google.com/open?id=15ypsA5hVc7WQY80fj-GM8htBkktapZA7,Jonathan,iOS,Passo Grolla,FALSE,,Peak avalanche escape,Time trial,33.9,Race
+2022-05-05 11:02:48,https://drive.google.com/open?id=1eKAyUtHItgHVG9saZG7F5QuK7uu9kydo,Jonathan,iOS,Passo Grolla,FALSE,,Maniaco,Time trial,18.56,Race
+2022-06-28 11:31:20,https://drive.google.com/open?id=1Jvez6iZ44z_TvTyjTT7kMcrsnODLs5XV,Wrog,iOS,Passo Grolla,FALSE,,Caso Della Stella,High score,87.4,Single Drop
+2022-07-23 15:29:47,https://drive.google.com/open?id=1_lNJp5a1iftmQRq8B4NH8GfXc0CKSWs8,GSM,Android,Passo Grolla,TRUE,,Down,High score,154.7,Triple Drop
+2022-09-26 22:45:28,https://drive.google.com/open?id=17jlFXhYBYvVOgHXsQyD_XjYtQdCzF6fG,CrystalEel13467,Android,Passo Grolla,TRUE,,Il Stupido,High score,294.3,Distance

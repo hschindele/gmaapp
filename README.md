@@ -2,7 +2,7 @@
 
 The GMA Community Leaderboard is a Dash Application hosted through Heroku that allows for viewing and analyzing highscores and world records for the mobile game Grand Mountain Adventure. 
 
-The site can be accessed here: [https://gmaleaderboards.herokuapp.com/](https://gmaleaderboards.herokuapp.com/)
+The site can be accessed here: [https://gmaleaderboard.gart.sh/](https://gmaleaderboard.gart.sh/)
 
 ## Features
 
